@@ -1,0 +1,8 @@
+@use "../_abstracts/colors";
+@use "../_partials/mixins";
+@use "../_partials/variables";
+
+/* TYPOGRAPHY */
+$bodyFontFamily: var(--ff-body) !important;
+$titleFontFamily: var(--ff-secondary);
+$fontStack: var(--ff-body);
