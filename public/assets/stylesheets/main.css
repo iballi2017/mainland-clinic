@@ -214,8 +214,16 @@ body {
   color: var(--base-text-color);
 }
 
+
+.container-wrap{
+  --max-width: 1280px;
+  --padding: 1rem;
+  width: min(var(--max-width), 100% - var(--padding) * 2);
+  margin-inline: auto;
+}
+
 .main-wrapper {
-  --max-width: 1600px;
+  --max-width: 995px;
   --padding: 1rem;
   width: min(var(--max-width), 100% - var(--padding) * 2);
   margin-inline: auto;

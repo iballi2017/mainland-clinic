@@ -1,11 +1,4 @@
 
-.main-wrapper {
-  --max-width: 1600px;
-  --padding: 1rem;
-  width: min(var(--max-width), 100% - (var(--padding) * 2));
-  margin-inline: auto;
-}
-
 .intro-content {
   --max-width: 1312px;
   --padding: 1rem;
