@@ -1,6 +1,6 @@
 @use "../_abstracts/colors";
 @use "../_partials/mixins";
-@use "../_partials/variables";
+@use "../_partials/root";
 
 /* TYPOGRAPHY */
 $bodyFontFamily: var(--ff-body) !important;

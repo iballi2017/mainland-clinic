@@ -2,16 +2,13 @@
 @use "../_abstracts/typography";
 @use "../_partials/mixins";
 
+/* SHARED CLASSES */
+
 .even-columns {
   display: grid;
   gap: 1rem;
 
-  // @include mixins.minmq(50em) {
-  //   grid-auto-flow: column;
-  //   grid-auto-columns: 1fr;
-  // }
-
-  @media (min-width) {
+  @include mixins.minmq(50em) {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
@@ -81,10 +78,15 @@
   }
 }
 
-.mb-100 {
-  margin-bottom: 1rem;
-}
 
 .img-fluid {
   width: 100%;
+}
+
+.border-radius-500 {
+  border-radius: 5px;
+}
+
+.overflow-hidden{
+  overflow: auto;
 }

@@ -63,10 +63,15 @@ svg {
 }
 :root {
   /* COLORS */
-  --primary-color: #208d05;
-  --accent-color: #eef2f8;
-  --secondary-color: #1b2c19;
-  --base-text-color: #5b5b5b;
+  --clr-primary-500: hsl(108, 93%, 29%);
+  --clr-primary-600: hsl(97, 58%, 24%);
+  --clr-accent-500: hsl(216, 42%, 95%);
+  --clr-neurtral-500: #FFFFFF;
+  --clr-secondary-500: hsl(114, 28%, 14%);
+  --base-text-color-100: #c4c4c4;
+  --base-text-color-200: hsl(0, 0%, 85%);
+  --base-text-color-500: hsl(0, 0%, 36%);
+  --base-text-color: var(--clr-secondary-500);
   /* TYPOGRAPHY */
   @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;700&display=swap");
   --ff-primary: "Open Sans", sans-serif;
@@ -103,6 +108,147 @@ svg {
   --fw-bold: 700;
 }
 
+/* UTILITY CLASSES */
+.text-primary-500 {
+  color: var(--clr-primary-500);
+}
+
+.text-secondary-500 {
+  color: var(--clr-secondary-500);
+}
+
+.text-accent-500 {
+  color: var(--clr-accent-500);
+}
+
+.base-text-color-100 {
+  color: var(--base-text-color-100);
+}
+
+.base-text-color-200 {
+  color: var(--base-text-color-200);
+}
+
+.base-text-color-500 {
+  color: var(--base-text-color-500);
+}
+
+.bg-primary-500 {
+  background-color: var(--clr-primary-500);
+}
+
+.bg-secondary-500 {
+  background-color: var(--clr-secondary-500);
+}
+
+.bg-accent-500 {
+  background-color: var(--clr-accent-500);
+}
+
+.fw-light {
+  font-weight: var(--fw-light);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fs-nav {
+  font-size: var(--fs-nav);
+}
+
+.fs-hero-title {
+  font-size: var(--fs-hero-title);
+}
+
+.fs-section-headline {
+  font-size: var(--fs-section-headline);
+}
+
+.fs-section-title {
+  font-size: var(--fs-section-title);
+}
+
+.fs-card-body {
+  font-size: var(--fs-card-body);
+}
+
+.fs-footer-body {
+  font-size: var(--fs-footer-body);
+}
+
+.fs-button {
+  font-size: var(--fs-button);
+}
+
+.fs-50 {
+  font-size: var(--fs-50);
+}
+
+.fs-100 {
+  font-size: var(--fs-100);
+}
+
+.fs-150 {
+  font-size: var(--fs-150);
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.fs-500 {
+  font-size: var(--fs-500);
+}
+
+.fs-600 {
+  font-size: var(--fs-600);
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.mb-100 {
+  margin-bottom: 1rem;
+}
+
 /* minimum media query */
 /* maximum media query */
 /* maximum and minimum query */
@@ -111,12 +257,12 @@ svg {
 /* form control appearance */
 /* 'before' pseudo element style */
 /* 'after' pseudo element style */
-/* TYPOGRAPHY */
+/* TYPOGRAPHY */ /* SHARED CLASSES */
 .even-columns {
   display: grid;
   gap: 1rem;
 }
-@media (min-width) {
+@media (min-width: 50em) {
   .even-columns {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
@@ -181,12 +327,16 @@ svg {
   margin-bottom: 0.2em;
 }
 
-.mb-100 {
-  margin-bottom: 1rem;
-}
-
 .img-fluid {
   width: 100%;
+}
+
+.border-radius-500 {
+  border-radius: 5px;
+}
+
+.overflow-hidden {
+  overflow: auto;
 }
 
 * {
@@ -214,19 +364,27 @@ body {
   color: var(--base-text-color);
 }
 
-
-.container-wrap{
-  --max-width: 1280px;
+.container {
+  --max-width: 1200px;
   --padding: 1rem;
   width: min(var(--max-width), 100% - var(--padding) * 2);
   margin-inline: auto;
 }
 
-.main-wrapper {
-  --max-width: 995px;
-  --padding: 1rem;
-  width: min(var(--max-width), 100% - var(--padding) * 2);
-  margin-inline: auto;
+.brand-logo {
+  display: block;
+  max-width: 124px;
+}
+
+.cta {
+  display: inline-block;
+  color: var(--clr-neurtral-500);
+  background-color: var(--clr-primary-500);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.cta:hover {
+  background-color: var(--clr-primary-600);
 }
 
 .intro-content {
@@ -234,6 +392,23 @@ body {
   --padding: 1rem;
   width: min(var(--max-width), 100%);
   margin-inline: auto;
+}
+
+@media (min-width: 50em) {
+  .services-list-grid .grid-row-1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .services-list-grid .grid-row-1 .fs-section-headline {
+    max-width: 200px;
+  }
+  .services-list-grid .grid-row-1 .services-list {
+    display: flex;
+  }
+  .services-list-grid .grid-row-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,117 @@
+/* UTILITY CLASSES */
+
+.text-primary-500 {
+  color: var(--clr-primary-500);
+}
+.text-secondary-500 {
+  color: var(--clr-secondary-500);
+}
+.text-accent-500 {
+  color: var(--clr-accent-500);
+}
+
+.base-text-color-100 {
+  color: var(--base-text-color-100);
+}
+.base-text-color-200 {
+  color: var(--base-text-color-200);
+}
+.base-text-color-500 {
+  color: var(--base-text-color-500);
+}
+
+.bg-primary-500 {
+  background-color: var(--clr-primary-500);
+}
+.bg-secondary-500 {
+  background-color: var(--clr-secondary-500);
+}
+.bg-accent-500 {
+  background-color: var(--clr-accent-500);
+}
+
+.fw-light {
+  font-weight: var(--fw-light);
+}
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fs-nav {
+  font-size: var(--fs-nav);
+}
+.fs-hero-title {
+  font-size: var(--fs-hero-title);
+}
+.fs-section-headline {
+  font-size: var(--fs-section-headline);
+}
+.fs-section-title {
+  font-size: var(--fs-section-title);
+}
+.fs-card-body {
+  font-size: var(--fs-card-body);
+}
+.fs-footer-body {
+  font-size: var(--fs-footer-body);
+}
+.fs-button {
+  font-size: var(--fs-button);
+}
+
+.fs-50 {
+  font-size: var(--fs-50);
+}
+.fs-100 {
+  font-size: var(--fs-100);
+}
+.fs-150 {
+  font-size: var(--fs-150);
+}
+.fs-200 {
+  font-size: var(--fs-200);
+}
+.fs-300 {
+  font-size: var(--fs-300);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-600 {
+  font-size: var(--fs-600);
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+.d-flex {
+  display: flex;
+}
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.mb-100 {
+  margin-bottom: 1rem;
+}

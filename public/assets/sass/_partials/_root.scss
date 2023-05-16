@@ -1,9 +1,14 @@
 :root {
   /* COLORS */
-  --primary-color: #208d05;
-  --accent-color: #eef2f8;
-  --secondary-color: #1b2c19;
-  --base-text-color: #5b5b5b;
+  --clr-primary-500: hsl(108, 93%, 29%); //#208d05;
+  --clr-primary-600: hsl(97, 58%, 24%); //#345F19;
+  --clr-accent-500: hsl(216, 42%, 95%); //#eef2f8;
+  --clr-neurtral-500: #FFFFFF;
+  --clr-secondary-500: hsl(114, 28%, 14%); //#1b2c19;
+  --base-text-color-100: #c4c4c4; //#C4C4C4;
+  --base-text-color-200: hsl(0, 0%, 85%); //#D9D9D9;
+  --base-text-color-500: hsl(0, 0%, 36%); //#5b5b5b;
+  --base-text-color: var(--clr-secondary-500);
 
   /* TYPOGRAPHY */
   @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;700&display=swap");
