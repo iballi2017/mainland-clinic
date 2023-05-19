@@ -31,6 +31,15 @@
   padding: var(--size-400) 0;
 }
 
+.top-bar {
+  a {
+    transition: all 400ms ease-in-out;
+    &:hover {
+      color: var(--clr-accent-500);
+    }
+  }
+}
+
 @include mixins.maxmq(50em) {
   .top-bar {
     display: none;

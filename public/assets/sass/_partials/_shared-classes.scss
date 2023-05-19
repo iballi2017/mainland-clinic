@@ -25,11 +25,9 @@
 .text-decoration-none {
   text-decoration: none;
 }
+
 a {
   transition: all 400ms ease-in-out;
-  &:hover {
-    color: var(--clr-accent-500);
-  }
 }
 
 .fade-in {

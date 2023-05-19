@@ -3,9 +3,9 @@ $(document).ready(function () {
     loop: true,
     autoplay: true,
     smartSpeed: 1500,
-    // animateOut: "fadeOut",
-    // animateOut: "slideOutDown",
-    // animateIn: "flipInX",
+    animateOut: "fadeOut",
+    animateOut: "slideOutDown",
+    animateIn: "flipInX",
     items: 1,
     // navText: ['<i data-feather="menu"></i>', ' <i data-feather="menu"></i>'],
   });
@@ -27,6 +27,9 @@ $(document).ready(function () {
         items: 1,
       },
       600: {
+        items: 3,
+      },
+      1000: {
         items: 3,
       },
     },
