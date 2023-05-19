@@ -2,24 +2,16 @@
   /* COLORS */
   --clr-primary-500: hsl(108, 93%, 29%); //#208d05;
   --clr-primary-600: hsl(97, 58%, 24%); //#345F19;
-  --clr-primary-700: hsl(0, 0%, 36%); //#5b5b5b;
-
-  --clr-accent-50: #c3c3c3; //#C3C3C3;
-  --clr-accent-400: hsl(0, 0%, 95%); //#F3F3F3;
   --clr-accent-500: hsl(216, 42%, 95%); //#eef2f8;
-  --clr-accent-600: hsl(0, 0%, 85%); //#D9D9D9;
-  --clr-accent-700: #c4c4c4; //#C4C4C4;
-
-  --clr-neutral-500: #ffffff;
+  --clr-neurtral-500: #FFFFFF;
   --clr-secondary-500: hsl(114, 28%, 14%); //#1b2c19;
-
-  --base-text-color-100: var(--clr-accent-700);
-  --base-text-color-200: var(--clr-accent-600);
-  --base-text-color-500: var(--clr-primary-700);
+  --base-text-color-100: #c4c4c4; //#C4C4C4;
+  --base-text-color-200: hsl(0, 0%, 85%); //#D9D9D9;
+  --base-text-color-500: hsl(0, 0%, 36%); //#5b5b5b;
   --base-text-color: var(--clr-secondary-500);
 
   /* TYPOGRAPHY */
-  // @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;700&display=swap");
 
   // @font-face {
   //   font-family: "klavika_basicregular";
@@ -69,8 +61,8 @@
   --fs-button: var(--fs-150);
 
   /* SIZES */
-  --size-200: 0.2rem;
-  --size-300: 0.5rem;
+  --size-200: .2rem;
+  --size-300: .5rem;
   --size-400: 1rem;
   --size-500: 1.5rem;
   --size-600: 2rem;
@@ -82,23 +74,19 @@
   --fw-bold: 700;
 }
 
-@media (max-width: 50em) {
+@media (min-width: 50em) {
   :root {
     // --fs-nav: var(--fs-400);
     // --fs-body: var(--fs-450);
-    --fs-hero-title: var(--fs-200);
-    --fs-section-headline: var(--fs-300);
-    --fs-section-title: var(--fs-100);
+    // --fs-secondary-heading: var(--fs-500);
     // --fs-primary-heading: var(--fs-800);
     // --fs-hero-heading: var(--fs-850);
     // --fs-button: var(--fs-350);
 
-    // --size-400: .6rem;
-    // --size-500: 1.1rem;
-    // --size-600: 1.7rem;
-
-    
-  --fs-500: 2.1rem; /*40px*/
-  --fs-600: 2.7rem; /*70px*/
+    // --size-200: 1.25rem; /* 20px */
+    // --size-300: 3.53rem; /* 27px */
+    // --size-400: 3.53rem; /* 38px */
+    // --size-500: 3.53rem; /* 57px */
+    // --size-900: 4.375rem; /* 70px */
   }
 }

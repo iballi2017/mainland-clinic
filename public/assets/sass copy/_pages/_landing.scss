@@ -23,29 +23,6 @@
   }
 }
 
-#reviews{
-  .sub-heading{
-    max-width: 550px;
-    text-align: center;
-    margin: 0 auto;
-  }
-}
-
-ul[data-type="sponsors"]{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  flex-wrap: wrap;
-  li{
-    max-width: 150px;
-  }
-  @include mixins.minmq(50em) {
-    flex-wrap: nowrap;
-    gap: 20px;
-  }
-}
-
 @include mixins.minmq(50em) {
   .services-list-grid {
     .grid-row-1 {

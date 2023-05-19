@@ -6,11 +6,3 @@
 $bodyFontFamily: var(--ff-body) !important;
 $titleFontFamily: var(--ff-secondary);
 $fontStack: var(--ff-body);
-
-.ff-title{
-    font-family: $titleFontFamily;
-}
-
-.ff-body{
-    font-family: $bodyFontFamily;
-}

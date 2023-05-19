@@ -14,79 +14,55 @@
   }
 }
 
-.title {
-  // font-family: typography.$bodyFontFamily;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 20px;
-  text-transform: uppercase;
-  font-feature-settings: "pnum" on, "lnum" on;
-  color: #2d748e;
-}
-
-.tagline {
-  font-family: klavikabold;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 40px;
-  font-feature-settings: "pnum" on, "lnum" on;
-  color: #f2b760;
-  // @include mixins.minmq(50em) {
-  //   max-width: 350px;
-  // }
-  @media (min-width) {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-  }
-}
-
-.page-intro {
-  // font-family: typography.$titleFontFamily;
-  font-family: var(--ff-secondary);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  color: #191a1b;
-  margin-bottom: 0.5em;
-}
-
-.spacer-y-300 {
-  margin-top: var(--fs-600);
-  margin-bottom: var(--fs-600);
-  height: 1px;
-}
-
-.link {
-  font-family: klavikabold;
-  font-style: normal;
-  font-weight: 700;
-  // font-size: 20px;
-  // line-height: 24px;
-  text-transform: uppercase;
-  color: #f2b760;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  &::after {
-    // @include mixins.after("", inherit)
-    content: url(../assets/icons/chevron-right.svg);
-    margin-left: 0.4em;
-    margin-bottom: 0.2em;
-  }
-}
-
-
 .img-fluid {
   width: 100%;
 }
 
-.border-radius-500 {
-  border-radius: 5px;
+.list-style-none {
+  list-style: none;
 }
 
-.overflow-hidden{
-  overflow: auto;
+.text-decoration-none {
+  text-decoration: none;
+}
+a {
+  transition: all 400ms ease-in-out;
+  &:hover {
+    color: var(--clr-accent-500);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out;
+  &.appear {
+    opacity: 1;
+  }
+}
+
+.from-left,
+.from-right,
+.from-bottom  {
+  transition: transform 800ms ease-in-out;
+  position: absolute;
+  &.appear {
+    position: relative;
+    transform: translateX(0);
+  }
+}
+
+.from-left {
+  transform: translateX(-50%);
+}
+.from-right {
+  transform: translateX(50%);
+}
+
+.from-bottom {
+  transform: translateY(-50%);
+}
+
+.toolbar.sticky-top {
+  top: -100px;
+  transition: .5s;
 }

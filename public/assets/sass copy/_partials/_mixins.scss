@@ -79,3 +79,8 @@
 @mixin padding-block($size) {
     padding-block: $size;
 }
+
+/* border-radius size */
+@mixin border-radius($size) {
+    border-radius: $size;
+}

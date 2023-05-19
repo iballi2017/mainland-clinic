@@ -1,0 +1,45 @@
+@use "../_partials/mixins";
+
+#our-services-section {
+  .first-row {
+    display: flex;
+    justify-content: space-between;
+    > .title {
+      width: 245px;
+    }
+
+    .row {
+      width: calc(100% - 245px);
+    }
+  }
+
+  .second-row {
+    display: flex;
+    justify-content: space-between;
+    > .title {
+      width: 480px;
+    }
+
+    .row {
+      width: calc(100% - 480px);
+    }
+  }
+
+  @include mixins.maxmq(50em) {
+    .first-row,
+    .second-row {
+      flex-wrap: wrap;
+      > .title {
+        width: auto;
+        flex-basis: 100%;
+      }
+      .row {
+        width: auto;
+        flex-basis: 100%;
+      }
+    }
+    .second-row {
+      flex-wrap: wrap;
+    }
+  }
+}
