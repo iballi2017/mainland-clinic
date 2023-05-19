@@ -831,6 +831,7 @@ input[type=search].form-control:focus,
 input[type=search].form-select:focus,
 select.form-control:focus,
 select.form-select:focus {
+  background-color: unset;
   outline: 0;
   box-shadow: none;
   border: 1px solid var(--clr-primary-500);
