@@ -10,7 +10,6 @@ $(document).ready(function () {
     // navText: ['<i data-feather="menu"></i>', ' <i data-feather="menu"></i>'],
   });
 
-
   $(".reviews-owl-slider").owlCarousel({
     loop: true,
     autoplay: true,
@@ -43,4 +42,16 @@ $(document).ready(function () {
       $(".sticky-top").css("top", "-100px");
     }
   });
+
+  // const myDropdown = document.getElementById("myDropdown");
+  // myDropdown.addEventListener("mouseenter", (event) => {
+  //   if ($("#myDropdown div:last-child").hasClass("show")) return null;
+  //   $("#myDropdown div:last-child").addClass("show");
+  // });
+
+  // myDropdown.addEventListener("mouseleave", (event) => {
+  //   console.log($("#myDropdown").hasClass("show"));
+  //   if ($("#myDropdown div:last-child").hasClass("show"))
+  //     return $("#myDropdown div:last-child").removeClass("show");
+  // });
 });

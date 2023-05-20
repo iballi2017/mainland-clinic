@@ -20,7 +20,9 @@
             <div class="brand-logo mx-auto">
                 <img src="../assets/images/brand-logo-alt.svg" alt="" class="img-fluid">
             </div>
-            <div class="card form-card login-card">
+            <div class="card form-card" style="
+            max-width: 500px;
+            margin: 0 auto;">
                 <div class="card-body py-5">
                     <h5 class="title text-center fw-semi-bold fs-300">SIGN UP</h5>
                     <form action="">
@@ -70,7 +72,7 @@
                             <input type="password" class="form-control" id="ConfirmPassword">
                         </div>
                         <div class="d-grid gap-2">
-                            <button class="button fs-600" type="button">Register</button>
+                            <button class="button fs-600 submit-btn" type="button">Register</button>
                         </div>
                     </form>
                     <p class="text-center mt-5">Don’t have an account?&nbsp;&nbsp;&nbsp;<a href="./auth.html"
@@ -81,10 +83,11 @@
 
 
         <!-- Success message -->
-        <div class="text-center d-flex align-items-center justify-content-center flex-column" style="min-height: 100vh;">
+        <div class="text-center d-flex align-items-center justify-content-center flex-column"
+            style="min-height: 100vh;">
             <h1 class="fs-200 fw-semi-bold">Account Created successfully.</h1>
             <p class="fs-150 mb-4">A mail was sent to your email for verification </p>
-            <a href="#" class="button">Go home</a>
+            <a href="/" class="button">Go home</a>
         </div>
     </div>
 </body>

@@ -34,15 +34,15 @@
                 <!-- <span class="mx-3"></span> -->
                 <span>clientservices@hacmedical.org</span>
             </div>
-            <span><a href="#" class="base-text-color-100 text-decoration-none">login</a> | <a href="#"
-                    class="base-text-color-100 text-decoration-none">Sign Up</a></span>
+            <span><a href="./views/auth.html" class="base-text-color-100 text-decoration-none">login</a> | <a
+                    href="./views/signup.html" class="base-text-color-100 text-decoration-none">Sign Up</a></span>
         </div>
     </div>
     <header class="toolbar sticky-top">
-        <nav class="navbar bg-white navbar-expand-lg">
-            <div class="container py-1 py-xl-3">
-                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                <a href="#" class="navbar-brand">
+        <nav class="navbar bg-white navbar-expand-lg py-lg-0">
+            <!-- <div class="container py-1 py-xl-3"> -->
+                <div class="container">
+                <a href="./" class="navbar-brand">
                     <img src="./assets/images/brand-logo.svg" alt="Mainland Clinics" class="img-fluid">
                 </a>
                 <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
@@ -55,15 +55,26 @@
                 <nav class="collapse navbar-collapse" id="navbarColor02">
                     <ul role="list" class="navbar-nav ms-auto" aria-label="primary">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">About us
+                            <a class="nav-link active" href="./views/about-us.php">About us
                                 <span class="visually-hidden">(current)</span>
                             </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Services</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item py-2 text-center" href="./views/clinical-services.php">Clinical Services</a>
+                                <a class="dropdown-item py-2 text-center" href="./views/fitness-wellness-test.php">Fitness/Wellness Test</a>
+                                <a class="dropdown-item py-2 text-center" href="./views/telemedicine.php">Telemedicine</a>
+                                <a class="dropdown-item py-2 text-center" href="./views/pre-employment-test.php">Pre-employment Test</a>
+                                <a class="dropdown-item py-2 text-center" href="./views/food-handlers-test.php">Food Handlers Test</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact us</a>
+                            <a class="nav-link" href="./views/contact-us.php">Contact us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Career</a>
@@ -88,63 +99,63 @@
     <!-- MAIN -->
     <main>
         <!-- Hero sliders -->
-            <!-- OwlCarousel for Hero -->
-            <div class="hero-owl-slider | owl-carousel owl-theme">
-                <div class="hero-item position-relative">
-                    <img src="./assets/images/hero-banner-3.jpg" class="d-block w-100" alt="Your Health, Our Priority">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-sm-10 col-lg-8 p-4" style="background: rgba(0, 0, 0, .4);">
-                                    <h1 class="fs-hero-title text-white animated animate__slideInDown">Healthy Starts Here
-                                    </h1>
-                                    <p class="fs-400 text-white mb-4 pb-2 animated animate__fadeIn">Experience Quality
-                                        Healthcare and Wellness Support at Our State-of-the-Art Clinic</p>
-                                    <a href="" class="button py-md-3 px-md-5 me-3 animated animate__slideInLeft">Read
-                                        More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-item position-relative">
-                    <img src="./assets/images/hero-banner-2.jpg" class="d-block w-100" alt="Experience Better Health">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-sm-10 col-lg-8 p-4" style="background: rgba(0, 0, 0, .4);">
-                                    <h1 class="fs-hero-title text-white animated animate__slideInDown">Experience Better
-                                        Health</h1>
-                                    <p class="fs-400 text-white mb-4 pb-2 animated animate__fadeIn">Trust Our Expert Team
-                                        of Healthcare Professionals to Provide Quality Medical Care and Support for Your
-                                        Health Needs</p>
-                                    <a href="" class="button py-md-3 px-md-5 me-3 animated animate__slideInLeft">Read
-                                        More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-item position-relative">
-                    <img src="./assets/images/hero-banner-1.jpg" class="d-block w-100" alt="Your Health, Our Priority">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-sm-10 col-lg-8 p-4" style="background: rgba(0, 0, 0, .4);">
-                                    <h1 class="fs-hero-title text-white animated animate__slideInDown">Your Health, Our
-                                        Priority
-                                    </h1>
-                                    <p class="fs-400 text-white mb-4 pb-2 animated animate__fadeIn">Experience
-                                        Compassionate Care and Comprehensive Medical Services at Our Healthcare Facility
-                                    </p>
-                                    <a href="" class="button py-md-3 px-md-5 me-3 animated animate__slideInLeft">Read
-                                        More</a>
-                                </div>
+        <!-- OwlCarousel for Hero -->
+        <div class="hero-owl-slider | owl-carousel owl-theme">
+            <div class="hero-item position-relative">
+                <img src="./assets/images/hero-banner-3.jpg" class="d-block w-100" alt="Your Health, Our Priority">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8 p-4" style="background: rgba(0, 0, 0, .4);">
+                                <h1 class="fs-hero-title text-white animated animate__slideInDown">Healthy Starts Here
+                                </h1>
+                                <p class="fs-400 text-white mb-4 pb-2 animated animate__fadeIn">Experience Quality
+                                    Healthcare and Wellness Support at Our State-of-the-Art Clinic</p>
+                                <a href="" class="button py-md-3 px-md-5 me-3 animated animate__slideInLeft">Read
+                                    More</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="hero-item position-relative">
+                <img src="./assets/images/hero-banner-2.jpg" class="d-block w-100" alt="Experience Better Health">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8 p-4" style="background: rgba(0, 0, 0, .4);">
+                                <h1 class="fs-hero-title text-white animated animate__slideInDown">Experience Better
+                                    Health</h1>
+                                <p class="fs-400 text-white mb-4 pb-2 animated animate__fadeIn">Trust Our Expert Team
+                                    of Healthcare Professionals to Provide Quality Medical Care and Support for Your
+                                    Health Needs</p>
+                                <a href="" class="button py-md-3 px-md-5 me-3 animated animate__slideInLeft">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-item position-relative">
+                <img src="./assets/images/hero-banner-1.jpg" class="d-block w-100" alt="Your Health, Our Priority">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8 p-4" style="background: rgba(0, 0, 0, .4);">
+                                <h1 class="fs-hero-title text-white animated animate__slideInDown">Your Health, Our
+                                    Priority
+                                </h1>
+                                <p class="fs-400 text-white mb-4 pb-2 animated animate__fadeIn">Experience
+                                    Compassionate Care and Comprehensive Medical Services at Our Healthcare Facility
+                                </p>
+                                <a href="" class="button py-md-3 px-md-5 me-3 animated animate__slideInLeft">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
 
 
@@ -161,12 +172,14 @@
                     <div class="col-12 col-md-7">
                         <div class="fade-in">
                             <h2 class="fs-section-title animate__animated animate__fadeIn">About us</h2>
-                            <h3 class="fs-section-headline fw-bold">Take Control of Your Health Today</h3>
-                            <p>At Mainland Clinic, we are dedicated to providing the highest quality of medical care and
+                            <h3 class="fs-section-headline fw-bold" style="max-width: 500px;">Take Control of Your
+                                Health Today</h3>
+                            <p class="line-height-400">At Mainland Clinic, we are dedicated to providing the highest
+                                quality of medical care and
                                 wellness support to our patients. We believe that everyone deserves access to
                                 compassionate,
                                 personalized healthcare that meets their unique needs and goals.</p>
-                            <a href="#" class="button">Read more</a>
+                            <a href="./views/about-us.php" class="button">Read more</a>
                         </div>
                     </div>
                 </div>
@@ -341,6 +354,7 @@
             </div>
         </section>
 
+        <!-- Partners -->
         <section class="padding-block-700">
             <div class="container">
                 <div class="row">
@@ -442,7 +456,7 @@
 
         <hr style="border: 1px solid var(--clr-accent-50)">
 
-        <p class="text-center base-text-color-200 fs-50 pb-2">Mainland clinic 2023</p>
+        <p class="mb-0 text-center base-text-color-200 fs-50 pb-2">Mainland clinic 2023</p>
     </footer>
     <!-- jquery-3.7.0 -->
     <script src="./assets/lib/jquery-3.7.0.min.js"></script>

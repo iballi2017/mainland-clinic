@@ -3,8 +3,8 @@
 .feature-card {
   overflow: hidden;
   position: relative;
-  &:hover{
-    img{
+  &:hover {
+    img {
       transform: scale(1.1);
     }
   }
@@ -12,7 +12,7 @@
     transform: scale(1);
     position: relative;
     z-index: 0;
-    transition: transform .5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
   }
   .title {
     position: absolute;
@@ -49,7 +49,7 @@
   line-height: calc(var(--size-400) + var(--size-200));
   .review-footer {
     position: relative;
-    .foot-image{
+    .foot-image {
       width: 60px;
       height: 60px;
       border-radius: 100vmax;
@@ -61,8 +61,26 @@
   }
 }
 
-
-.form-card{
+.form-card {
   border: 1px solid var(--clr-accent-50);
   // C3C3C3
+}
+
+.com-card {
+  background: #ffffff;
+  border: 1px solid #969696;
+  border-radius: 5px;
+  padding: 2.5em 1.3em .8em 1.3em;
+  height: 100%;
+  .icon{
+    max-width: 70px;
+    margin: 0 auto;
+    margin-bottom: 1.6em;
+  }
+  .title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #163d1a;
+  }
 }

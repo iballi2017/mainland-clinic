@@ -16,8 +16,14 @@
 .text-primary-500 {
   color: var(--clr-primary-500);
 }
+.text-primary-700 {
+  color: var(--clr-primary-700);
+}
 .text-secondary-500 {
   color: var(--clr-secondary-500);
+}
+.text-accent-300 {
+  color: var(--clr-accent-300);
 }
 .text-accent-500 {
   color: var(--clr-accent-500);
@@ -43,11 +49,18 @@
 .bg-primary-500 {
   background-color: var(--clr-primary-500);
 }
+.bg-primary-700 {
+  background-color: var(--clr-primary-700);
+}
 .bg-primary-600 {
   background-color: var(--clr-primary-600);
 }
 .bg-secondary-500 {
   background-color: var(--clr-secondary-500);
+}
+
+.bg-accent-300 {
+  background-color: var(--clr-accent-300);
 }
 .bg-accent-500 {
   background-color: var(--clr-accent-500);
@@ -147,7 +160,9 @@
 }
 
 .padding-block-800 {
-  @include mixins.padding-block(calc(var(--size-600) + var(--size-400) + var(--size-400)));
+  @include mixins.padding-block(
+    calc(var(--size-600) + var(--size-400) + var(--size-400))
+  );
 }
 
 /* Line Heights */
@@ -158,7 +173,6 @@
 .line-height-400 {
   line-height: var(--fs-400);
 }
-
 
 // .mt-100 {
 //   margin-top: 1rem;

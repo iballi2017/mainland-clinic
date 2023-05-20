@@ -64,3 +64,13 @@ a {
   top: -100px;
   transition: .5s;
 }
+
+.bg-primary-500{
+  &:hover{
+    background-color: var(--clr-primary-600);
+  }
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}

@@ -1,3 +1,5 @@
+@use "../_partials/mixins";
+
 // input[type="text"],
 // input[type="password"],
 // input[type="number"],
@@ -19,6 +21,39 @@
 //     }
 //   }
 // }
+.brand-logo {
+  width: calc(var(--size-600) * 5);
+  margin-bottom: calc(var(--size-600) * 2);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="search"],
+textarea,
+select {
+  &.form-control,
+  &.form-select {
+    border: 1px solid var(--clr-accent-50);
+    border-radius: 5px;
+    &:focus {
+      background-color: unset;
+      outline: 0;
+      box-shadow: none;
+      border: 1px solid var(--clr-primary-500);
+    }
+  }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="search"],
+select {
+  height: 45px;
+}
 
 .control-wrapper-merge-button {
   display: flex;
@@ -44,4 +79,25 @@
   }
 }
 
+.input-group.single-control {
+  span.input-group-text {
+    border-top: 2px solid var(--clr-primary-500);
+  }
 
+  @include mixins.maxmq(50em) {
+    input.form-control {
+      border-top-right-radius: 5px !important;
+      border-bottom-right-radius: 5px !important;
+    }
+    span.input-group-text {
+      display: block;
+      width: 100%;
+      margin-top: 0.5em;
+      border-bottom: 2px solid var(--clr-primary-500);
+      border-top-left-radius: 5px !important;
+      border-bottom-left-radius: 5px !important;
+    }
+  }
+}
+
+/* Contact Us Form*/
