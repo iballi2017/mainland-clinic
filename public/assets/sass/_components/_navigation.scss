@@ -42,7 +42,7 @@
 
 @include mixins.maxmq(50em) {
   .top-bar {
-    display: none;
+    // display: none;
   }
   .primary-header {
     background-color: var(--clr-neurtral-500);

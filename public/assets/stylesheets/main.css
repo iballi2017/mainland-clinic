@@ -566,9 +566,6 @@ a.button {
 }
 
 @media (max-width: 50em) {
-  .top-bar {
-    display: none;
-  }
   .primary-header {
     background-color: var(--clr-neurtral-500);
     position: fixed;
