@@ -71,6 +71,9 @@ svg {
   --clr-accent-700: #c4c4c4;
   --clr-neutral-500: #ffffff;
   --clr-secondary-500: hsl(114, 28%, 14%);
+  --clr-secondary-500: hsl(114, 28%, 14%);
+  --clr-alt-100: hsl(277, 93%, 29%);
+  --clr-alt-200: hsl(223, 70%, 63%);
   --base-text-color-100: var(--clr-accent-700);
   --base-text-color-200: var(--clr-accent-600);
   --base-text-color-500: var(--clr-primary-700);
@@ -99,6 +102,7 @@ svg {
   --fs-button: var(--fs-150);
   /* SIZES */
   --size-200: 0.2rem;
+  --size-250: 0.313rem; /* 5px */
   --size-300: 0.5rem;
   --size-400: 1rem;
   --size-500: 1.5rem;
@@ -165,6 +169,14 @@ svg {
 
 .text-neutral-500 {
   color: var(--clr-neutral-500);
+}
+
+.text-alt-100 {
+  color: var(--clr-alt-100);
+}
+
+.text-alt-200 {
+  color: var(--clr-alt-200);
 }
 
 .base-text-color-100 {
@@ -287,6 +299,14 @@ svg {
 
 .text-decoration-none {
   text-decoration: none;
+}
+
+.border-accent-50 {
+  border-color: var(--clr-accent-50) !important;
+}
+
+.rounded-250 {
+  border-radius: var(--size-250) !important;
 }
 
 /* Padding */
@@ -618,18 +638,19 @@ a.button {
   color: var(--clr-accent-500);
 }
 
-.nav-item:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu {
   padding: 1.5em 1em 1.5em 1em;
   display: block;
+  z-index: 10000;
 }
-.nav-item:hover .dropdown-menu .dropdown-item {
+.dropdown:hover .dropdown-menu .dropdown-item {
   font-size: var(--fs-nav);
 }
-.nav-item:hover .dropdown-menu .dropdown-item:hover {
+.dropdown:hover .dropdown-menu .dropdown-item:hover {
   background-color: #c7f38e;
   border-radius: 20px;
 }
-.nav-item .dropdown-toggle::after {
+.dropdown .dropdown-toggle::after {
   margin-left: 0.655em;
 }
 
@@ -685,6 +706,21 @@ a.button {
 }
 .top-bar a:hover {
   color: var(--clr-accent-500);
+  border-radius: var(--size-250);
+}
+.top-bar .dropdown-menu a {
+  color: inherit;
+}
+.top-bar .dropdown-menu a:hover {
+  border-radius: var(--size-250) !important;
+}
+.top-bar .dropdown-menu a:last-child {
+  border: 1px solid #ea526f;
+  color: #ea526f;
+}
+.top-bar .dropdown-menu a:last-child:hover {
+  background-color: #ea526f !important;
+  color: #FFFFFF;
 }
 
 footer .navbar-brand {
@@ -711,7 +747,7 @@ textarea.form-select,
 select.form-control,
 select.form-select {
   border: 1px solid var(--clr-accent-50);
-  border-radius: 5px;
+  border-radius: var(--size-250);
 }
 input[type=text].form-control:focus, input[type=text].form-select:focus,
 input[type=password].form-control:focus,
@@ -739,13 +775,14 @@ input[type=email],
 input[type=search],
 select {
   height: 45px;
+  font-size: var(--fs-100);
 }
 
 .control-wrapper-merge-button {
   display: flex;
   align-items: center;
   height: var(--size-600);
-  border-radius: 5px;
+  border-radius: var(--size-250);
   padding: 0.5em 0.9em 0.5em 0;
 }
 .control-wrapper-merge-button input {
@@ -770,16 +807,125 @@ select {
 }
 @media (max-width: 50em) {
   .input-group.single-control input.form-control {
-    border-top-right-radius: 5px !important;
-    border-bottom-right-radius: 5px !important;
+    border-top-right-radius: var(--size-250) !important;
+    border-bottom-right-radius: var(--size-250) !important;
   }
   .input-group.single-control span.input-group-text {
     display: block;
     width: 100%;
     margin-top: 0.5em;
     border-bottom: 2px solid var(--clr-primary-500);
-    border-top-left-radius: 5px !important;
-    border-bottom-left-radius: 5px !important;
+    border-top-left-radius: var(--size-250) !important;
+    border-bottom-left-radius: var(--size-250) !important;
+  }
+}
+
+.bg-accent-300 input[type=text].form-control, .bg-accent-300 input[type=text].form-select,
+.bg-accent-300 input[type=password].form-control,
+.bg-accent-300 input[type=password].form-select,
+.bg-accent-300 input[type=number].form-control,
+.bg-accent-300 input[type=number].form-select,
+.bg-accent-300 input[type=email].form-control,
+.bg-accent-300 input[type=email].form-select,
+.bg-accent-300 input[type=search].form-control,
+.bg-accent-300 input[type=search].form-select,
+.bg-accent-300 textarea.form-control,
+.bg-accent-300 textarea.form-select,
+.bg-accent-300 select.form-control,
+.bg-accent-300 select.form-select {
+  border: none;
+}
+.bg-accent-300 input[type=text].form-control:focus, .bg-accent-300 input[type=text].form-select:focus,
+.bg-accent-300 input[type=password].form-control:focus,
+.bg-accent-300 input[type=password].form-select:focus,
+.bg-accent-300 input[type=number].form-control:focus,
+.bg-accent-300 input[type=number].form-select:focus,
+.bg-accent-300 input[type=email].form-control:focus,
+.bg-accent-300 input[type=email].form-select:focus,
+.bg-accent-300 input[type=search].form-control:focus,
+.bg-accent-300 input[type=search].form-select:focus,
+.bg-accent-300 textarea.form-control:focus,
+.bg-accent-300 textarea.form-select:focus,
+.bg-accent-300 select.form-control:focus,
+.bg-accent-300 select.form-select:focus {
+  background-color: #ffffff;
+}
+
+.custom-select {
+  border: 1px solid var(--clr-accent-50);
+  height: 36px;
+}
+.custom-select select {
+  border: none;
+  height: 100%;
+  font-size: var(--fs-50);
+}
+.custom-select select.form-select {
+  padding-right: calc(1.5em + 0.75rem) !important;
+  background-image: url("../images/icons/dropdown-purple.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: right calc(0.375em + 0.1875rem) center !important;
+  background-size: calc(0.75em + 0.175rem) calc(0.75em + 0.175rem) !important;
+  cursor: pointer;
+}
+.custom-select select:focus {
+  border: none;
+}
+
+.cust-file-display {
+  display: block;
+  position: relative;
+}
+.cust-file-display input[type=file] {
+  position: absolute;
+  opacity: 0;
+  background-color: unset;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.cust-file-display span {
+  display: block;
+  cursor: pointer;
+}
+.cust-file-display span .icon-wrap {
+  max-width: 50px;
+  margin-bottom: 1.4em;
+}
+.cust-file-display span .icon-wrap + p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: var(--clr-primary-700);
+  text-align: center;
+}
+.cust-file-display span:first-child {
+  margin-bottom: 0.5rem;
+}
+.cust-file-display span:last-child {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid var(--clr-accent-600);
+  border-radius: var(--size-250);
+  padding: 1.5em;
+}
+@media (min-width: 50em) {
+  .cust-file-display span .icon-wrap {
+    max-width: 120px;
+    margin-bottom: 2em;
+  }
+  .cust-file-display span .icon-wrap + p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--clr-primary-700);
+  }
+  .cust-file-display span:last-child {
+    padding: 3em;
   }
 }
 
@@ -914,6 +1060,33 @@ select {
   padding-top: 1.3em;
   padding-bottom: 5em;
   background-color: lightgrey;
+}
+
+#file-list .file-item {
+  border: 1px solid #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 0.8em;
+  border-radius: 3px;
+  margin-bottom: 0.5em;
+}
+#file-list .file-item:last-child {
+  margin-bottom: 0;
+}
+#file-list .file-item span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1b3512;
+  max-width: calc(100% - 20px);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#file-list .file-item button {
+  border: none;
+  max-width: 20px;
 }
 
 .intro-content {

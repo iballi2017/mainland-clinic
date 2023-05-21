@@ -7,7 +7,7 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../" class="base-text-color-500 text-decoration-none">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Services</li>
+                <li class="breadcrumb-item" aria-current="page">Services</li>
                 <li class="breadcrumb-item active" aria-current="page">Contact us</li>
             </ol>
         </nav>
@@ -45,6 +45,9 @@
                 <textarea name="" id="" cols="30" rows="5" class="form-control border-0"></textarea>
             </div>
             <button class="button fs-600 submit-btn" type="button">Submit</button>
+            <span class="text-alt-100 fw-regular fs-300">
+                Sent!
+            </span>
         </form>
     </div>
 </section>

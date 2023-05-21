@@ -7,7 +7,7 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../" class="base-text-color-500 text-decoration-none">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Services</li>
+                <li class="breadcrumb-item" aria-current="page">Services</li>
                 <li class="breadcrumb-item active" aria-current="page">Food Handlers Test</li>
             </ol>
         </nav>

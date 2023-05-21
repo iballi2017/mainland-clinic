@@ -40,13 +40,14 @@
   }
 }
 
-.nav-item {
+.dropdown {
   .nav-link {
   }
   &:hover {
     .dropdown-menu {
       padding: 1.5em 1em 1.5em 1em;
       display: block;
+      z-index: 10000;
       .dropdown-item {
         font-size: var(--fs-nav);
         &:hover {

@@ -48,7 +48,7 @@
                 </p>
                 <form action="">
                     <div class="control-wrapper-merge-button bg-accent-50">
-                        <input type="text" id="email" class="w-100 px-3">
+                        <input type="text" id="email" class="w-100 px-3" style="background: unset;">
                         <button class="bg-0">
                             <span class="visually-hidden">Subscribe</span>
                             <img src="../assets/images/icons/green-plane.svg" alt="" class="img-fluid">

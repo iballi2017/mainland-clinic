@@ -14,7 +14,12 @@
 
   --clr-neutral-500: #ffffff;
   --clr-secondary-500: hsl(114, 28%, 14%); //#1b2c19;
+  --clr-secondary-500: hsl(114, 28%, 14%); //#1b2c19;
 
+
+  --clr-alt-100: hsl(277, 93%, 29%); //#59058D;
+  --clr-alt-200: hsl(223, 70%, 63%); //#5F84E3;
+  
   --base-text-color-100: var(--clr-accent-700);
   --base-text-color-200: var(--clr-accent-600);
   --base-text-color-500: var(--clr-primary-700);
@@ -72,6 +77,7 @@
 
   /* SIZES */
   --size-200: 0.2rem;
+  --size-250: 0.313rem; /* 5px */
   --size-300: 0.5rem;
   --size-400: 1rem;
   --size-500: 1.5rem;

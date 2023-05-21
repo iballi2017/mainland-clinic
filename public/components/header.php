@@ -65,13 +65,10 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="../views/contact-us.php">Contact us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Career</a>
+                            <a class="nav-link" href="../views/career.php">Career</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Shop</a>

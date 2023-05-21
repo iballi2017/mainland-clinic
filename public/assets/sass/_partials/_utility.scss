@@ -33,6 +33,13 @@
   color: var(--clr-neutral-500);
 }
 
+.text-alt-100 {
+  color: var(--clr-alt-100);
+}
+.text-alt-200 {
+  color: var(--clr-alt-200);
+}
+
 .base-text-color-100 {
   color: var(--base-text-color-100);
 }
@@ -130,6 +137,14 @@
 
 .text-decoration-none {
   text-decoration: none;
+}
+
+.border-accent-50 {
+  border-color: var(--clr-accent-50) !important;
+}
+
+.rounded-250{
+  border-radius: var(--size-250) !important;
 }
 
 /* Padding */
