@@ -32,14 +32,26 @@
                 <!-- <span class="mx-3"></span> -->
                 <span>clientservices@hacmedical.org</span>
             </div>
-            <span><a href="../views/auth.html" class="base-text-color-100 text-decoration-none">login</a> | <a href="../views/signup.html" class="base-text-color-100 text-decoration-none">Sign Up</a></span>
+            <div>
+                <a href="../views/auth.html" class="base-text-color-100 text-decoration-none">login</a> | <a href="../views/signup.html" class="base-text-color-100 text-decoration-none">Sign Up</a>
+                <div class="dropdown">
+                    <span class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account</span>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item py-2" href="#">My profile</a>
+                        <a class="dropdown-item py-2" href="#">Appointment history</a>
+                        <a class="dropdown-item py-2" href="#">My Order history</a>
+                        <a class="dropdown-item py-2" href="#">Wishlist</a>
+                        <a class="dropdown-item py-2" href="#">Log out</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <header class="toolbar sticky-top">
-        <nav class="navbar bg-white navbar-expand-lg py-0">
+        <nav class="navbar bg-white navbar-expand-lg py-lg-0">
             <!-- <div class="container py-1 py-xl-3"> -->
             <div class="container">
-                <a href="./" class="navbar-brand">
+                <a href="../" class="navbar-brand">
                     <img src="../assets/images/brand-logo.svg" alt="Mainland Clinics" class="img-fluid">
                 </a>
                 <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,14 +66,16 @@
                                 <span class="visually-hidden">(current)</span>
                             </a>
                         </li>
-                        <li class="nav-item dropdown" id="myDropdown">
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item py-2 text-center" href="../views/clinical-services.php">Clinical Services</a>
+                                <a class="dropdown-item py-2 text-center" href="../views/clinical-services.php">Clinical
+                                    Services</a>
                                 <a class="dropdown-item py-2 text-center" href="../views/fitness-wellness-test.php">Fitness/Wellness Test</a>
                                 <a class="dropdown-item py-2 text-center" href="../views/telemedicine.php">Telemedicine</a>
                                 <a class="dropdown-item py-2 text-center" href="../views/pre-employment-test.php">Pre-employment Test</a>
-                                <a class="dropdown-item py-2 text-center" href="../views/food-handlers-test.php">Food Handlers Test</a>
+                                <a class="dropdown-item py-2 text-center" href="../views/food-handlers-test.php">Food
+                                    Handlers Test</a>
                             </div>
                         </li>
                         <li class="nav-item">

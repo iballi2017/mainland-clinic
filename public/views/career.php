@@ -18,7 +18,7 @@
 <section class="padding-block-800">
     <div class="container">
         <!-- filter select -->
-        <div class="custom-select rounded-250 mb-5" style="max-width: 200px">
+        <div class="custom-select rounded-250 mb-5" style="max-width: 200px; height: 36px;">
             <select class="form-select" aria-label="Default select example">
                 <option selected>Job Type</option>
                 <option value="1">One</option>

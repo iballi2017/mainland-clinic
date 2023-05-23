@@ -129,6 +129,9 @@ svg {
     --fs-hero-title: var(--fs-500);
     --fs-section-headline: var(--fs-300);
     --fs-section-title: var(--fs-100);
+    --size-400: 0.6rem;
+    --size-500: 1.1rem;
+    --size-600: 1.7rem;
     --fs-400: 1.3rem;
     --fs-500: 2.1rem;
     --fs-600: 2.7rem;
@@ -491,7 +494,7 @@ body {
   background-color: white;
   border-radius: 15px;
   overflow: hidden;
-  line-height: calc(var(--size-400) + var(--size-200));
+  line-height: 20px;
 }
 .review-card .review-footer {
   position: relative;
@@ -610,9 +613,14 @@ a.button {
 }
 
 .submit-btn {
-  height: 45px;
+  height: 39px;
   padding-right: 2.5em;
   padding-left: 2.5em;
+}
+@media (min-width: 50em) {
+  .submit-btn {
+    height: 45px;
+  }
 }
 
 /* Navigation */
@@ -713,6 +721,62 @@ a.button {
     display: block;
   }
 }
+#account-side-navigation ul {
+  line-height: 30px;
+}
+#account-side-navigation ul .nav-list {
+  margin-bottom: 0.5em;
+  padding-bottom: 0.53em;
+  border-bottom: 1px solid var(--clr-accent-50);
+}
+#account-side-navigation ul .nav-list .icon-content-wrap {
+  display: flex;
+}
+#account-side-navigation ul .nav-list .icon-content-wrap .nav-icon {
+  margin-top: 5px;
+}
+#account-side-navigation ul .nav-list:last-child {
+  border: none;
+  padding-top: 0.53em;
+}
+#account-side-navigation ul .nav-icon {
+  width: 20px;
+  margin-right: 0.5em;
+}
+#account-side-navigation .logout-btn {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fa5252;
+  border: 1px solid #fa5252;
+  border-radius: 5px;
+  height: 45px;
+  width: 100%;
+}
+#account-side-navigation .logout-btn:hover {
+  background-color: #fa5252;
+  color: #ffffff;
+}
+@media (max-width: 50em) {
+  #account-side-navigation {
+    border-radius: 0 !important;
+    border: 0 !important;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000000;
+  }
+  #account-side-navigation .fs-300 {
+    font-size: 1rem;
+  }
+  #account-side-navigation ul .nav-icon {
+    width: 18px;
+  }
+}
+
 .toolbar .navbar-brand {
   display: block;
   max-width: 124px;
@@ -787,8 +851,18 @@ input[type=number],
 input[type=email],
 input[type=search],
 select {
-  height: 45px;
+  height: 39px;
   font-size: var(--fs-100);
+}
+@media (min-width: 50em) {
+  input[type=text],
+input[type=password],
+input[type=number],
+input[type=email],
+input[type=search],
+select {
+    height: 45px;
+  }
 }
 
 .control-wrapper-merge-button {
@@ -866,7 +940,7 @@ select {
 
 .custom-select {
   border: 1px solid var(--clr-accent-50);
-  height: 36px;
+  height: 39px;
 }
 .custom-select select {
   border: none;
@@ -883,6 +957,11 @@ select {
 }
 .custom-select select:focus {
   border: none;
+}
+@media (min-width: 50em) {
+  .custom-select {
+    height: 45px;
+  }
 }
 
 .cust-file-display {
@@ -1014,9 +1093,8 @@ select {
 
 .services-card-grid {
   display: grid;
-  grid-gap: 1em;
+  grid-gap: 0.5em;
   grid-template-columns: repeat(12, 1fr);
-  margin-bottom: 3em;
 }
 .services-card-grid .item:nth-of-type(1) {
   grid-column: 1/7;
@@ -1044,6 +1122,7 @@ select {
 }
 @media (min-width: 50em) {
   .services-card-grid {
+    grid-gap: 1em;
     grid-template-columns: repeat(15, 1fr);
   }
   .services-card-grid .item:nth-of-type(1) {
