@@ -1,3 +1,5 @@
+@use "../_partials/mixins";
+
 // .btn{
 //   &:focus{
 //     outline: 0;
@@ -64,8 +66,11 @@ a.button {
   border-radius: 100vmax;
 }
 
-.submit-btn {
-  height: 45px;
+.submit-btn{
+  height: 39px;
   padding-right: 2.5em;
   padding-left: 2.5em;
+  @include mixins.minmq(50em){
+    height: 45px;
+  }
 }

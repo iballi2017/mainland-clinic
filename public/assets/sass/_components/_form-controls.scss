@@ -52,8 +52,11 @@ input[type="number"],
 input[type="email"],
 input[type="search"],
 select {
-  height: 45px;
+  height: 39px;
   font-size: var(--fs-100);
+  @include mixins.minmq(50em){
+    height: 45px;
+  }
 }
 
 .control-wrapper-merge-button {
@@ -121,7 +124,7 @@ select {
 
 .custom-select {
   border: 1px solid var(--clr-accent-50);
-  height: 36px;
+  height: 39px;
   select {
     border: none;
     height: 100%;
@@ -139,6 +142,9 @@ select {
     &:focus {
       border: none;
     }
+  }
+  @include mixins.minmq(50em){
+    height: 45px;
   }
 }
 
