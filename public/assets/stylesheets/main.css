@@ -721,29 +721,29 @@ a.button {
     display: block;
   }
 }
-#account-side-navigation ul {
+#side-navigation ul {
   line-height: 30px;
 }
-#account-side-navigation ul .nav-list {
+#side-navigation ul .nav-list {
   margin-bottom: 0.5em;
   padding-bottom: 0.53em;
   border-bottom: 1px solid var(--clr-accent-50);
 }
-#account-side-navigation ul .nav-list .icon-content-wrap {
+#side-navigation ul .nav-list .icon-content-wrap {
   display: flex;
 }
-#account-side-navigation ul .nav-list .icon-content-wrap .nav-icon {
+#side-navigation ul .nav-list .icon-content-wrap .nav-icon {
   margin-top: 5px;
 }
-#account-side-navigation ul .nav-list:last-child {
+#side-navigation ul .nav-list:last-child {
   border: none;
   padding-top: 0.53em;
 }
-#account-side-navigation ul .nav-icon {
+#side-navigation ul .nav-icon {
   width: 20px;
   margin-right: 0.5em;
 }
-#account-side-navigation .logout-btn {
+#side-navigation .logout-btn {
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
@@ -753,26 +753,29 @@ a.button {
   height: 45px;
   width: 100%;
 }
-#account-side-navigation .logout-btn:hover {
+#side-navigation .logout-btn:hover {
   background-color: #fa5252;
   color: #ffffff;
 }
 @media (max-width: 50em) {
-  #account-side-navigation {
+  #side-navigation {
+    width: 100%;
+    height: 100%;
     border-radius: 0 !important;
     border: 0 !important;
     background-color: #FFFFFF;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    left: -100%;
     z-index: 10000000;
   }
-  #account-side-navigation .fs-300 {
+  #side-navigation .fs-300 {
     font-size: 1rem;
   }
-  #account-side-navigation ul .nav-icon {
+  #side-navigation.show {
+    left: 0;
+  }
+  #side-navigation ul .nav-icon {
     width: 18px;
   }
 }

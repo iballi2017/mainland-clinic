@@ -20,14 +20,14 @@
 
 <section class="padding-block-600">
     <div class="container">
-        <button class="navbar-toggler p-0 mb-4" type="button" data-bs-toggle="collapse" data-bs-target="#account-side-navigation" aria-expanded="false" aria-label="Toggle side navigation">
+        <button class="navbar-toggler p-0 mb-4" type="button" data-bs-toggle="collapse" data-bs-target="#side-navigation" aria-expanded="false" aria-label="Toggle side navigation">
             <i data-feather="menu"></i>
         </button>
         <div class="border-accent-50 border rounded-250 p-3">
             <div class="row g-3">
                 <div class="col-12 col-lg-4">
-                    <nav class="border-accent-50 border rounded-250 p-3 collapse navbar-collapse" id="account-side-navigation">
-                        <button class="navbar-toggler p-0 mb-4" type="button" data-bs-toggle="collapse" data-bs-target="#account-side-navigation" aria-expanded="false" aria-label="Toggle side navigation">
+                    <nav class="border-accent-50 border rounded-250 p-3" id="side-navigation" data-visible=false>
+                        <button class="navbar-toggler p-0 mb-4" type="button" data-bs-toggle="collapse" data-bs-target="#side-navigation" aria-expanded="false" aria-label="Toggle side navigation">
                             <i data-feather="x"></i>
                         </button>
                         <ul role="list" class="mb-0 ps-0" aria-label="side navigation">

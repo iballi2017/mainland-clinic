@@ -3,10 +3,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
   const faders = document.querySelectorAll(".fade-in");
   const sliders = document.querySelectorAll(".slide-in");
 
-
   const appearOptions = {
     threshold: 0,
-    rootMargin: "0px 0px -100px 0px"
+    rootMargin: "0px 0px -100px 0px",
   };
   const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
     entries.forEach((entry) => {
@@ -20,10 +19,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
     appearOnScroll.observe(fader);
   });
 
-
-  sliders.forEach((slider)=>{
-    appearOnScroll.observe(slider)
-  })
+  sliders.forEach((slider) => {
+    appearOnScroll.observe(slider);
+  });
 
 
   //   // console.log("DOM fully loaded and parsed");
