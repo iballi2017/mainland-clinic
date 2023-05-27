@@ -81,7 +81,7 @@
                         <img src="../assets/images/icons/@-purple.svg" alt="" class="img-fluid">
                     </div>
                     <h6 class="title text-center">Email Address</h6>
-                    <p class="text-primary-700 fs-50 text-center">Clientservices@hacmedical.org</p>
+                    <p class="text-primary-700 fs-50 text-center"> info@mainlandclinics.com</p>
                 </div>
             </li>
         </ul>

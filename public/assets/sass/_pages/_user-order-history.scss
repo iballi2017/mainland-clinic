@@ -1,0 +1,49 @@
+#order-history {
+    .nav-tabs[role="tablist"] {
+        .nav-item .nav-link {
+            border: none;
+            color: #1b2c19;
+        }
+    }
+
+    .product-card {
+        .product-image-wrap {
+            max-width: 70px;
+        }
+        .prod-info {
+            :not(.tag) {
+                line-height: 27px;
+            }
+            .title {
+                // background-color: red;
+                // max-width: 100%;
+                // max-width: 30px;
+                white-space: ellipsis;
+                overflow: hidden;
+            }
+            .tag {
+                font-size: calc(var(--fs-50) - 1px);
+                &.pending,
+                &.completed,
+                &.cancelled {
+                    display: inline-block;
+                    // border-radius: 100vmax;
+                    border-radius: 5px;
+                    padding: 0.2em 0.8em;
+                    line-height: auto;
+                }
+                &.pending {
+                    background-color: #fadfbf;
+                }
+                &.completed {
+                    background-color: #6ec04c;
+                    color: #ffffff;
+                }
+                &.cancelled {
+                    background-color: #818181;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}

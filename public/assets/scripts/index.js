@@ -23,7 +23,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
     appearOnScroll.observe(slider);
   });
 
-
   //   // console.log("DOM fully loaded and parsed");
 
   //   const navToggle = document.querySelector(".mobile-nav-toggle");
@@ -36,4 +35,28 @@ window.addEventListener("DOMContentLoaded", (event) => {
   //         : navToggle.setAttribute("aria-expanded", true);
   //       primaryNav.toggleAttribute("data-visible");
   //     });
+
+  function myFunction() {
+    const w = window.outerWidth;
+    const screenWidthSize = 768;
+    const sideNavigation = document.getElementById("side-navigation");
+
+    let closeToggleBtn = sideNavigation.firstElementChild;
+    let openSidenavBtn = document.getElementById("openSidenavBtn");
+    if (!sideNavigation) return;
+    if (w > screenWidthSize) {
+      !sideNavigation.classList.contains("show")
+        ? sideNavigation.classList.add("show")
+        : null;
+    } else {
+      sideNavigation.classList.contains("show")
+        ? sideNavigation.classList.remove("show")
+        : null;
+
+      closeToggleBtn?.setAttribute("aria-expanded", false);
+      openSidenavBtn.setAttribute("aria-expanded", false);
+    }
+  }
+  addEventListener("resize", (event) => myFunction());
+
 });

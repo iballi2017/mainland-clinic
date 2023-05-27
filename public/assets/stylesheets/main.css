@@ -72,7 +72,6 @@ svg {
   --clr-accent-700: #c4c4c4;
   --clr-neutral-500: #ffffff;
   --clr-secondary-500: hsl(114, 28%, 14%);
-  --clr-secondary-500: hsl(114, 28%, 14%);
   --clr-alt-100: hsl(277, 93%, 29%);
   --clr-alt-200: hsl(223, 70%, 63%);
   --base-text-color-100: var(--clr-accent-700);
@@ -559,6 +558,11 @@ body {
   max-width: 19px;
 }
 
+.btn:focus, .btn:focus-visible, .btn:active {
+  outline: 0;
+  box-shadow: none;
+}
+
 button.navbar-toggler {
   border: none;
 }
@@ -721,6 +725,15 @@ a.button {
     display: block;
   }
 }
+.navbar-toggler[data-bs-target="#side-navigation"] {
+  display: none;
+}
+@media (max-width: 768px) {
+  .navbar-toggler[data-bs-target="#side-navigation"] {
+    display: block;
+  }
+}
+
 #side-navigation ul {
   line-height: 30px;
 }
@@ -757,17 +770,18 @@ a.button {
   background-color: #fa5252;
   color: #ffffff;
 }
-@media (max-width: 50em) {
+@media (max-width: 768px) {
   #side-navigation {
     width: 100%;
     height: 100%;
     border-radius: 0 !important;
     border: 0 !important;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     position: fixed;
     top: 0;
     left: -100%;
     z-index: 10000000;
+    transition: left 0.5s ease-in-out;
   }
   #side-navigation .fs-300 {
     font-size: 1rem;
@@ -776,7 +790,7 @@ a.button {
     left: 0;
   }
   #side-navigation ul .nav-icon {
-    width: 18px;
+    margin-top: 8px !important;
   }
 }
 
@@ -1152,9 +1166,15 @@ select {
 }
 
 .title-section-container {
-  padding-top: 1.3em;
-  padding-bottom: 5em;
+  padding-top: 1em;
+  padding-bottom: 2.5em;
   background-color: lightgrey;
+}
+@media (min-width: 50em) {
+  .title-section-container {
+    padding-top: 1.3em;
+    padding-bottom: 5em;
+  }
 }
 
 #file-list .file-item {
@@ -1229,6 +1249,40 @@ ul[data-type=sponsors] li {
     display: flex;
     flex-wrap: wrap;
   }
+}
+#order-history .nav-tabs[role=tablist] .nav-item .nav-link {
+  border: none;
+  color: #1b2c19;
+}
+#order-history .product-card .product-image-wrap {
+  max-width: 70px;
+}
+#order-history .product-card .prod-info :not(.tag) {
+  line-height: 27px;
+}
+#order-history .product-card .prod-info .title {
+  white-space: ellipsis;
+  overflow: hidden;
+}
+#order-history .product-card .prod-info .tag {
+  font-size: calc(var(--fs-50) - 1px);
+}
+#order-history .product-card .prod-info .tag.pending, #order-history .product-card .prod-info .tag.completed, #order-history .product-card .prod-info .tag.cancelled {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0.2em 0.8em;
+  line-height: auto;
+}
+#order-history .product-card .prod-info .tag.pending {
+  background-color: #fadfbf;
+}
+#order-history .product-card .prod-info .tag.completed {
+  background-color: #6ec04c;
+  color: #ffffff;
+}
+#order-history .product-card .prod-info .tag.cancelled {
+  background-color: #818181;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */

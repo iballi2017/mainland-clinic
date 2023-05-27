@@ -54,4 +54,26 @@ $(document).ready(function () {
   //   if ($("#myDropdown div:last-child").hasClass("show"))
   //     return $("#myDropdown div:last-child").removeClass("show");
   // });
+
+  /* Get Rating value */
+  var $rateYo;
+
+  if ($("#rateYo")) {
+    $rateYo = $("#rateYo").rateYo({
+      starWidth: "45px",
+      normalFill: "#D9D9D9",
+    });
+  }
+  $("#getRating").click(function () {
+    /* get rating */
+    var rating = $rateYo.rateYo("rating");
+
+    window.alert("Its " + rating + " Yo!");
+  });
+
+  $("#setRating").click(function () {
+    /* set rating */
+    var rating = getRandomRating();
+    $rateYo.rateYo("rating", rating);
+  });
 });

@@ -1,5 +1,10 @@
+@use "../_partials/mixins";
 .title-section-container{
-    padding-top: 1.3em;
-    padding-bottom: 5em;
+    padding-top: 1em;
+    padding-bottom: 2.5em;
     background-color: lightgrey;
+    @include mixins.minmq(50em){
+        padding-top: 1.3em;
+        padding-bottom: 5em;
+    }
 }

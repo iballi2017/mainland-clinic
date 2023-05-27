@@ -27,7 +27,7 @@
     <!-- HEADER -->
     <div class="top-bar fs-50 base-text-color-100 bg-secondary-500 py-3">
         <div class="container d-flex flex-wrap justify-content-between">
-            <div class="d-flex flex-wrap">
+            <div class="d-flex flex-wrap mb-2 mb-lg-0">
                 <span class="me-5">9, Tinubu Street, off Coker road, illupeju Lagos.</span>
                 <!-- <span class="mx-3"></span> -->
                 <span>clientservices@hacmedical.org</span>
