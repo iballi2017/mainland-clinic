@@ -521,6 +521,45 @@ body {
   color: #163d1a;
 }
 
+.product-item-wrap {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.product-item-wrap .card {
+  position: relative;
+}
+.product-item-wrap .card .img-wrap {
+  overflow: hidden;
+}
+.product-item-wrap .card .img-wrap img {
+  transition: transform 320ms ease-in;
+}
+.product-item-wrap .card .card-footer {
+  display: none;
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  top: calc(100% - 0.5em);
+  z-index: 100000;
+  border: 2px solid var(--clr-accent-50);
+  border-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.product-item-wrap:hover {
+  color: inherit;
+}
+.product-item-wrap:hover img {
+  transform: scale(1.1);
+  transition: transform 320ms ease-out;
+}
+.product-item-wrap:hover .card-footer {
+  display: block;
+}
+
 .container {
   --max-width: 1100px;
   --padding: 1rem;
@@ -615,6 +654,27 @@ a.button {
   .submit-btn {
     height: 45px;
   }
+}
+
+.add-to-cart,
+.add-to-wishlist {
+  height: 45px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.add-to-cart {
+  background: #c4c4c4;
+  border: 1px solid #c4c4c4;
+  color: #ffffff;
+}
+
+.add-to-wishlist {
+  background: #ffffff;
+  border: 1px solid #fa5252;
+  color: #fa5252;
 }
 
 /* Navigation */
@@ -941,12 +1001,25 @@ select {
   background-color: #ffffff;
 }
 
+.custom-input-group {
+  border: 1px solid var(--clr-accent-50);
+  height: 39px;
+}
+.custom-input-group .input-group {
+  height: 100% !important;
+}
+.custom-input-group input, .custom-input-group button {
+  height: 100% !important;
+  border: 0 !important;
+  width: 42px;
+}
+
 .custom-select {
   border: 1px solid var(--clr-accent-50);
   height: 39px;
 }
 .custom-select select {
-  border: none;
+  border: 0;
   height: 100%;
   font-size: var(--fs-50);
 }
@@ -1161,6 +1234,16 @@ select {
     padding-top: 1.3em;
     padding-bottom: 5em;
   }
+}
+
+.pagination .page-link {
+  color: var(--base-text-color);
+}
+.pagination .page-link:focus {
+  color: var(--base-text-color);
+  background-color: var(--clr-accent-500);
+  outline: 0;
+  box-shadow: unset;
 }
 
 #file-list .file-item {

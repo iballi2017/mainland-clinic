@@ -1,9 +1,9 @@
 @use "../_partials/mixins";
 
-.btn{
+.btn {
   &:focus,
   &:focus-visible,
-  &:active{
+  &:active {
     outline: 0;
     box-shadow: none;
     // border-color: unset;
@@ -69,11 +69,32 @@ a.button {
   border-radius: 100vmax;
 }
 
-.submit-btn{
+.submit-btn {
   height: 39px;
   padding-right: 2.5em;
   padding-left: 2.5em;
-  @include mixins.minmq(50em){
+  @include mixins.minmq(50em) {
     height: 45px;
   }
+}
+
+.add-to-cart,
+.add-to-wishlist {
+  height: 45px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.add-to-cart {
+  background: #c4c4c4;
+  border: 1px solid #c4c4c4;
+  color: #ffffff;
+}
+
+.add-to-wishlist {
+  background: #ffffff;
+  border: 1px solid #fa5252;
+  color: #fa5252;
 }

@@ -1,0 +1,11 @@
+.pagination {
+  .page-link {
+    color: var(--base-text-color);
+    &:focus {
+      color: var(--base-text-color);
+      background-color: var(--clr-accent-500);
+      outline: 0;
+      box-shadow: unset;
+    }
+  }
+}

@@ -126,11 +126,24 @@ select {
   }
 }
 
+.custom-input-group{
+  border: 1px solid var(--clr-accent-50);
+  height: 39px;
+  .input-group{
+    height: 100% !important;
+  }
+  input, button{
+    height: 100% !important;
+    border: 0 !important;
+    width: 42px;
+  }
+}
+
 .custom-select {
   border: 1px solid var(--clr-accent-50);
   height: 39px;
   select {
-    border: none;
+    border: 0;
     height: 100%;
     font-size: var(--fs-50);
     &.form-select {
