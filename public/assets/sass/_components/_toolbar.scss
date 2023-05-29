@@ -21,15 +21,13 @@
 
   .dropdown-menu a {
     color: inherit;
-    &:hover{
-      border-radius: var(--size-250) !important;
-    }
+    border-radius: var(--size-250) !important;
     &:last-child {
       border: 1px solid #ea526f;
       color: #ea526f;
-      &:hover{
+      &:hover {
         background-color: #ea526f !important;
-        color: #FFFFFF;
+        color: #ffffff;
       }
     }
   }

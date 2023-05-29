@@ -52,7 +52,7 @@ input[type="number"],
 input[type="email"],
 input[type="search"],
 select {
-  height: 39px;
+  height: 40px;
   font-size: var(--fs-100);
   @include mixins.minmq(50em){
     height: 45px;
@@ -65,6 +65,7 @@ select {
   height: var(--size-600);
   border-radius: var(--size-250);
   padding: 0.5em 0.9em 0.5em 0;
+  height: 40px;
   input {
     height: 100%;
     background-color: unset;
@@ -81,6 +82,9 @@ select {
     background: unset;
     border: 0;
   }
+  // @include mixins.maxmq(50em) {
+  //   height: 40px;
+  // }
 }
 
 .input-group.single-control {
