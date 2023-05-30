@@ -35,7 +35,26 @@
                             </thead>ad> -->
                             <tr>
                                 <th scope="col" colspan="5">
-                                    <p>(No reviews yet)</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex align-items-center me-4">
+                                            <div class="star-wrap">
+                                                <img src="../assets/images/icons/star-yellow.svg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="star-wrap">
+                                                <img src="../assets/images/icons/star-yellow.svg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="star-wrap">
+                                                <img src="../assets/images/icons/star-yellow.svg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="star-wrap">
+                                                <img src="../assets/images/icons/star-yellow.svg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="star-wrap">
+                                                <img src="../assets/images/icons/star-yellow.svg" alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <p class="mb-0 fs-50">(No reviews yet)</p>
+                                    </div>
                                 </th>
                             </tr>
                             </thead>
@@ -67,7 +86,7 @@
                                 <tr>
                                     <th scope="row" colspan="5">
                                         <div class="">
-                                            Share with friends: 
+                                            Share with friends:
                                         </div>
                                     </th>
                                 </tr>
