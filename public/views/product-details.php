@@ -24,55 +24,48 @@
                     <div class="col-md-5">Image</div>
                     <div class="col-md-7">
                         <h2 class="fw-semi-bold fs-400">Accu chek Glucometer strip</h2>
+                        <p>(No reviews yet)</p>
                         <table class="table">
-                            <!-- <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
-                                </tr>
-                            </thead>ad> -->
-                            <tr>
-                                <th scope="col" colspan="5">
-                                    <p>(No reviews yet)</p>
-                                </th>
-                            </tr>
+                            <thead>
+                                <th scope="col" style="width: 100px"></th>
+                                <th scope="col"></th>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th scope="row">Price:</th>
-                                    <td colspan="4">
+                                    <td>
                                         <span>₦368,400.00</span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Quality:</th>
-                                    <td colspan="4">
-                                        <span>Qty</span>
+                                    <td>
+                                        <div>
+                                            <div class="qty-ctrl">
+                                                <div>2</div>
+                                                <div>
+                                                    <button class="btn-sm">+</button>
+                                                </div>
+                                                <div>
+                                                    <button class="btn-sm">-</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" colspan="5">
-                                        <div class="row g-3">
-                                            <div class="col-md-6">
-                                                <button class="btn button text-white w-100 h-100">Add to cart</button>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <button class="btn w-100 border-danger text-danger fw-semi-bold">Add to wishlist</button>
-                                            </div>
-                                        </div>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th scope="row" colspan="5">
-                                        <div class="">
-                                            Share with friends: 
-                                        </div>
-                                    </th>
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <button class="btn button text-white w-100 h-100">Add to cart</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn w-100 border-danger text-danger fw-semi-bold">Add to wishlist</button>
+                            </div>
+                        </div>
+                        <div class="">
+                            Share with friends:
+                        </div>
                     </div>
                 </div>
             </div>
