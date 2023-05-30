@@ -46,14 +46,15 @@
         <h2 class="visually-hidden">Product listing</h2>
         <div class="row g-3 mb-3">
             <div class="col-6 col-md-3">
-                <a href="#" class="product-item-wrap">
+                <div class="product-item-wrap">
                     <div class="card rounded-250 border-accent-50">
                         <div class="img-wrap">
                             <img src="../assets/images/products/product-sample-1.png" class="card-img-top" alt="...">
                         </div>
 
                         <div class="card-body">
-                            <p class="fs-150">Accu chek Glucometer strip
+                            <p class="fs-150">
+                                <a href="./product-details.php?title=Accu chek Glucometer strip" title="Accu chek Glucometer strip" class="text-decoration-none base-text-color-500">Accu chek Glucometer strip</a>
                                 <br />
                                 <span class="fs-300 fw-semi-bold">₦2,400.00</span>
                             </p>
@@ -66,17 +67,20 @@
                             <button class="btn add-to-wishlist | w-100">Add to wishlist</button>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
             <div class="col-6 col-md-3">
-                <a href="#" class="product-item-wrap">
+                <div class="product-item-wrap">
                     <div class="card rounded-250 border-accent-50">
                         <div class="img-wrap">
                             <img src="../assets/images/products/product-sample-1.png" class="card-img-top" alt="...">
                         </div>
 
                         <div class="card-body">
-                            <p class="fs-150">Accu chek Glucometer strip
+                            <p class="fs-150 product-title">
+                                <a href="./product-details.php?title=Lorem ipsum dolor sit, amet consectetur adipisicing." title="Lorem ipsum dolor sit, amet consectetur adipisicing." class="text-decoration-none base-text-color-500">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing.
+                                </a>
                                 <br />
                                 <span class="fs-300 fw-semi-bold">₦2,400.00</span>
                             </p>
@@ -89,76 +93,7 @@
                             <button class="btn add-to-wishlist | w-100">Add to wishlist</button>
                         </div>
                     </div>
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="#" class="product-item-wrap">
-                    <div class="card rounded-250 border-accent-50">
-                        <div class="img-wrap">
-                            <img src="../assets/images/products/product-sample-1.png" class="card-img-top" alt="...">
-                        </div>
-
-                        <div class="card-body">
-                            <p class="fs-150">Accu chek Glucometer strip
-                                <br />
-                                <span class="fs-300 fw-semi-bold">₦2,400.00</span>
-                            </p>
-
-                        </div>
-
-                        <div class="card-footer | bg-white">
-                            <button class="btn add-to-cart | w-100">Add to cart</button>
-                            <span class="my-1 d-block"></span>
-                            <button class="btn add-to-wishlist | w-100">Add to wishlist</button>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="#" class="product-item-wrap">
-                    <div class="card rounded-250 border-accent-50">
-                        <div class="img-wrap">
-                            <img src="../assets/images/products/product-sample-1.png" class="card-img-top" alt="...">
-                        </div>
-
-                        <div class="card-body">
-                            <p class="fs-150">Accu chek Glucometer strip
-                                <br />
-                                <span class="fs-300 fw-semi-bold">₦2,400.00</span>
-                            </p>
-
-                        </div>
-
-                        <div class="card-footer | bg-white">
-                            <button class="btn add-to-cart | w-100">Add to cart</button>
-                            <span class="my-1 d-block"></span>
-                            <button class="btn add-to-wishlist | w-100">Add to wishlist</button>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="#" class="product-item-wrap">
-                    <div class="card rounded-250 border-accent-50">
-                        <div class="img-wrap">
-                            <img src="../assets/images/products/product-sample-1.png" class="card-img-top" alt="...">
-                        </div>
-
-                        <div class="card-body">
-                            <p class="fs-150">Accu chek Glucometer strip
-                                <br />
-                                <span class="fs-300 fw-semi-bold">₦2,400.00</span>
-                            </p>
-
-                        </div>
-
-                        <div class="card-footer | bg-white">
-                            <button class="btn add-to-cart | w-100">Add to cart</button>
-                            <span class="my-1 d-block"></span>
-                            <button class="btn add-to-wishlist | w-100">Add to wishlist</button>
-                        </div>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
 
