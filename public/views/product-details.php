@@ -23,16 +23,27 @@
                 <div class="row">
                     <div class="col-md-5">Image</div>
                     <div class="col-md-7">
-                        <h2 class="fw-semi-bold fs-400">Accu chek Glucometer strip</h2>
-                        <p>(No reviews yet)</p>
                         <table class="table">
                             <thead>
-                                <th scope="col" style="width: 100px"></th>
-                                <th scope="col"></th>
+                                <th scope="col" colspan="2" class="border-0">
+                                    <h2 class="fw-semi-bold fs-400">Accu chek Glucometer strip</h2>
+                                </th>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">Price:</th>
+                                    <th scope="row" colspan="2">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <div>
+                                                <img src="../assets/images/icons/star-yellow" alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <p class="mb-0">(No reviews yet)</p>
+                                    </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th scope="row" style="width: 100px">Price:</th>
                                     <td>
                                         <span>₦368,400.00</span>
                                     </td>
