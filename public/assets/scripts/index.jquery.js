@@ -76,4 +76,20 @@ $(document).ready(function () {
     var rating = getRandomRating();
     $rateYo.rateYo("rating", rating);
   });
+  /** */
+
+  /**Product details image preview toggle */
+  var x = $("#product-images");
+  if (!x) return;
+  x.children().click(function (e) {
+    var q = $(e.target).attr("src");
+    addImag(q);
+  });
+
+  function addImag(data) {
+    var a = $("#preview").children().children("img");
+    console.log("a: ", a);
+    a.attr("src", data);
+  }
+  /** */
 });

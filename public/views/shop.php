@@ -49,7 +49,7 @@
                 <div class="product-item-wrap">
                     <div class="card rounded-250 border-accent-50">
                         <div class="img-wrap">
-                            <img src="../assets/images/products/product-sample-1.png" class="card-img-top" alt="...">
+                            <img src="../assets/images/products/surgical-tables.png" class="card-img-top" alt="Surgical tables">
                         </div>
 
                         <div class="card-body">

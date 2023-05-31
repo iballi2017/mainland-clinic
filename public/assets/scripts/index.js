@@ -41,6 +41,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
     const screenWidthSize = 768;
     const sideNavigation = document.getElementById("side-navigation");
 
+    if (!sideNavigation) return;
+    
     let closeToggleBtn = sideNavigation.firstElementChild;
     let openSidenavBtn = document.getElementById("openSidenavBtn");
     if (!sideNavigation) return;
@@ -58,5 +60,4 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
   }
   addEventListener("resize", (event) => myFunction());
-
 });

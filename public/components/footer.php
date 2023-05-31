@@ -84,6 +84,8 @@
 </script>
 <!-- OwlCarousel 2.3.4 -->
 <script src="../assets/lib/owlcarousel/js/owl.carousel.min.js"></script>
+<!-- RateYo -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 <!-- Custom JS -->
 <script src="../assets/scripts/index.jquery.js"></script>
 <script src="../assets/scripts/index.js"></script>
