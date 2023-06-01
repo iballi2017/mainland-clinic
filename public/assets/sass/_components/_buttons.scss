@@ -99,3 +99,11 @@ a.button {
   border: 1px solid #fa5252;
   color: #fa5252;
 }
+
+button {
+  &[aria-label="remove item table item"]{
+    border: none;
+    //   width: 25px;
+    max-width: 20px;
+  }
+}

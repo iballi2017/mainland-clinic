@@ -74,13 +74,13 @@
                     <ul class="list-style-none mb-0 ps-0" id="file-list">
                         <li class="file-item">
                             <span>Akinolu Mogaji Cover letter</span>
-                            <button type="button">
+                            <button type="button" aria-label="remove item table item">
                                 <img src="../assets/images/icons/times-dark-box.svg" alt="">
                             </button>
                         </li>
                         <li class="file-item">
                             <span>Akinolu Mogaji CV/Resume</span>
-                            <button type="button">
+                            <button type="button" aria-label="remove item table item">
                                 <img src="../assets/images/icons/times-dark-box.svg" alt="">
                             </button>
                         </li>

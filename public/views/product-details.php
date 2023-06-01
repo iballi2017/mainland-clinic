@@ -87,12 +87,12 @@
                                     <td>
                                         <div>
                                             <div class="qty-ctrl">
-                                                <div>2</div>
+                                                <div class="qty-val">1</div>
                                                 <div>
-                                                    <button class="btn-sm">+</button>
+                                                    <button class="btn-sm qty-add">+</button>
                                                 </div>
                                                 <div>
-                                                    <button class="btn-sm">-</button>
+                                                    <button class="btn-sm qty-remove">-</button>
                                                 </div>
                                             </div>
                                         </div>

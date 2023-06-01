@@ -92,4 +92,24 @@ $(document).ready(function () {
     a.attr("src", data);
   }
   /** */
+
+  /**Product item quantity count control */
+
+  $(".qty-add").click(function (e) {
+    var qty = $(e.target).parent().siblings(".qty-val");
+    var qtyVal = qty.html();
+    qtyVal++;
+    $(e.target).parent().siblings(".qty-val").html(qtyVal);
+  });
+
+  $(".qty-remove").click(function (e) {
+    var qty = $(e.target).parent().siblings(".qty-val");
+    var qtyVal = qty.html();
+    qtyVal--;
+    if (qtyVal > 0) {
+      $(e.target).parent().siblings(".qty-val").html(qtyVal);
+    } else {
+      return;
+    }
+  });
 });

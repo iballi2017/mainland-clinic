@@ -22,6 +22,9 @@
 .text-secondary-500 {
   color: var(--clr-secondary-500);
 }
+.text-accent-50 {
+  color: var(--clr-accent-50);
+}
 .text-accent-300 {
   color: var(--clr-accent-300);
 }
@@ -141,6 +144,10 @@
 
 .border-accent-50 {
   border-color: var(--clr-accent-50) !important;
+}
+
+.border-primary-500 {
+  border-color: var(--clr-primary-500) !important;
 }
 
 .rounded-250{

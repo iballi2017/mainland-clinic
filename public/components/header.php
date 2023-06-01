@@ -62,7 +62,7 @@
                     </button>
                     <div class="d-lg-none d-flex align-items-center">
                         <span class="spacer"></span>
-                        <a href="#" class="shopping-cart-wrap | position-relative">
+                        <a href="../views/shopping-cart.php" class="shopping-cart-wrap | position-relative">
                             <img src="../assets/images/icons/shopping-cart.svg" alt="" class="img-fluid">
                             <span class="counter | position-absolute top-0 start-100 translate-middle badge rounded-pill">2</span>
                         </a>
@@ -102,7 +102,7 @@
                     <div class="d-flex align-items-center">
                         <button class="button cta | d-none d-xl-block">Book an appointment</button>
                         <span class="spacer"></span>
-                        <a href="#" class="shopping-cart-wrap | position-relative d-none d-md-block">
+                        <a href="../views/shopping-cart.php" class="shopping-cart-wrap | position-relative d-none d-md-block">
                             <img src="../assets/images/icons/shopping-cart.svg" alt="" class="img-fluid">
                             <span class="counter | position-absolute top-0 start-100 translate-middle badge rounded-pill">2</span>
                         </a>
