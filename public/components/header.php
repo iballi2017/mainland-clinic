@@ -54,11 +54,20 @@
                 <a href="../" class="navbar-brand">
                     <img src="../assets/images/brand-logo.svg" alt="Mainland Clinics" class="img-fluid">
                 </a>
-                <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                    <!-- <span class="navbar-toggler-icon"></span> -->
-                    <i data-feather="menu"></i>
-                    <i data-feather="x"></i>
-                </button>
+                <div class="d-flex align-items-center">
+                    <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <i data-feather="menu"></i>
+                        <i data-feather="x"></i>
+                    </button>
+                    <div class="d-lg-none d-flex align-items-center">
+                        <span class="spacer"></span>
+                        <a href="#" class="shopping-cart-wrap | position-relative">
+                            <img src="../assets/images/icons/shopping-cart.svg" alt="" class="img-fluid">
+                            <span class="counter | position-absolute top-0 start-100 translate-middle badge rounded-pill">2</span>
+                        </a>
+                    </div>
+                </div>
                 <nav class="collapse navbar-collapse" id="navbarColor02">
                     <ul role="list" class="navbar-nav ms-auto" aria-label="primary">
                         <li class="nav-item">
@@ -89,12 +98,15 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="d-xl-flex d-none align-items-center">
-                    <button class="button cta">Book an appointment</button>
-                    <span class="spacer"></span>
-                    <a href="#" class="shopping-cart-wrap">
-                        <img src="../assets/images/icons/shopping-cart.svg" alt="" class="img-fluid">
-                    </a>
+                <div class="d-lg-flex d-none">
+                    <div class="d-flex align-items-center">
+                        <button class="button cta | d-none d-xl-block">Book an appointment</button>
+                        <span class="spacer"></span>
+                        <a href="#" class="shopping-cart-wrap | position-relative d-none d-md-block">
+                            <img src="../assets/images/icons/shopping-cart.svg" alt="" class="img-fluid">
+                            <span class="counter | position-absolute top-0 start-100 translate-middle badge rounded-pill">2</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>

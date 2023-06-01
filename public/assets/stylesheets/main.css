@@ -673,6 +673,16 @@ body {
   display: block;
   max-width: 19px;
 }
+.shopping-cart-wrap .counter {
+  background: #c7f38e;
+  border-radius: 100px;
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--clr-primary-700);
+}
+.shopping-cart-wrap .counter.translate-middle {
+  transform: translate(-40%, -100%) !important;
+}
 
 .btn:focus, .btn:focus-visible, .btn:active {
   outline: 0;
