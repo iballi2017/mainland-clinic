@@ -21,7 +21,7 @@
         <div class="d-flex align-items-center justify-content-between mt-4">
 
             <!-- filter select -->
-            <div class="custom-select rounded-250 mb-5" style="max-width: 200px; height: 36px;">
+            <div class="custom-select rounded-250 mb-5 me-2" style="max-width: 200px; height: 36px;">
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Sort by</option>
                     <option value="1">One</option>
@@ -46,14 +46,14 @@
         <h2 class="visually-hidden">Product listing</h2>
         <div class="row g-3 mb-3">
             <div class="col-6 col-md-3">
-                <div class="product-item-wrap">
+                <div class="product-item-wrap out-of-stock">
                     <div class="card rounded-250 border-accent-50">
                         <div class="img-wrap">
                             <img src="../assets/images/products/surgical-tables.png" class="card-img-top" alt="Surgical tables">
                         </div>
 
                         <div class="card-body">
-                            <p class="fs-150">
+                            <p class="fs-150 product-title">
                                 <a href="./product-details.php?title=Accu chek Glucometer strip" title="Accu chek Glucometer strip" class="text-decoration-none base-text-color-500">Accu chek Glucometer strip</a>
                                 <br />
                                 <span class="fs-300 fw-semi-bold">₦2,400.00</span>
@@ -100,13 +100,22 @@
 
         <!-- Pagination -->
         <!-- <div class="text-end"> -->
-        <nav aria-label="Page navigation" role="list">
-            <ul class="pagination justify-content-end">
-                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <nav class="my-5" aria-label="Page navigation" role="list">
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="#">
+                        <!-- <i data-feather="triangle"></i> -->
+                        <svg style="transform: rotate(-90deg);" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-triangle">
+                            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                        </svg>
+                        <!-- <img src="../assets/images/" alt="" class="img-fluid"> -->
+                    </a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                 <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                <li class="page-item"><a class="page-link" href="#">
+                        <svg style="transform: rotate(90deg);" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-triangle">
+                            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                        </svg></a></li>
             </ul>
         </nav>
         <!-- </div> -->

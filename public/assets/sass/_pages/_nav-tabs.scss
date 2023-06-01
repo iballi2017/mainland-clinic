@@ -1,0 +1,10 @@
+.nav-tabs[role="tablist"] {
+  .nav-item .nav-link {
+    border: none;
+    color: #1b2c19;
+    &.active::after {
+      width: 55%;
+      margin: 0 auto;
+    }
+  }
+}

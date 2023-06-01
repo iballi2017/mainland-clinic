@@ -1,11 +1,43 @@
+:root {
+  --another-primary-color-shade: #17a110;
+}
 .pagination {
+
   .page-link {
     color: var(--base-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid var(--clr-accent-50);
     &:focus {
       color: var(--base-text-color);
       background-color: var(--clr-accent-500);
       outline: 0;
       box-shadow: unset;
+    }
+  }
+  .page-item {
+    &:first-child,
+    &:last-child {
+      .page-link {
+        height: 100%;
+        background-color: var(--another-primary-color-shade);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+
+        &:hover {
+          background-color: var(--clr-primary-500);
+        }
+      }
+    }  &.active {
+      .page-link {
+        color: var(--another-primary-color-shade);
+        background-color: unset !important;
+        font-weight: var(--fw-bold);
+      }
     }
   }
 }

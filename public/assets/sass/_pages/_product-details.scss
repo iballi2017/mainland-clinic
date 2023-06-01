@@ -1,0 +1,25 @@
+
+.td-inner{
+    height: 8px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-size:  var(--fs-50);
+    font-weight: var(--fw-regular);
+}
+
+.progress {
+  height: 8px;
+  .progress-bar {
+    background-color: #f2cb56;
+  }
+}
+
+.customer-comment-list{
+  li{
+    border-bottom: 1px solid var(--clr-accent-50);
+    &:last-child{
+      border-bottom: 0;
+    }
+  }
+}

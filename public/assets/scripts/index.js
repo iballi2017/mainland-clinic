@@ -60,4 +60,5 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
   }
   addEventListener("resize", (event) => myFunction());
+  
 });
