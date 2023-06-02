@@ -1691,6 +1691,10 @@ table[aria-label="checkout information"] th:not(:first-child) .cell-inner,
 table[aria-label="checkout information"] td:not(:first-child) .cell-inner {
   justify-content: flex-end;
 }
+table[aria-label="checkout information"] tbody tr:last-child th,
+table[aria-label="checkout information"] tbody tr:last-child td {
+  border-bottom: 0;
+}
 table [aria-label="list of checkout items"] tr th,
 table [aria-label="list of checkout items"] tr td {
   padding-left: 0.9em;
@@ -1703,26 +1707,6 @@ table [aria-label="list of checkout items"] tr:not(:first-child) td {
 table [aria-label="list of checkout items"] tr:not(:last-child) th,
 table [aria-label="list of checkout items"] tr:not(:last-child) td {
   padding-bottom: 0;
-}
-table[aria-label="checkout form"] tr th:first-child,
-table[aria-label="checkout form"] tr td:first-child {
-  padding-left: 1.5em;
-}
-table[aria-label="checkout form"] tr th:last-child,
-table[aria-label="checkout form"] tr td:last-child {
-  padding-right: 1.5em;
-}
-table[aria-label="checkout form"] tbody tr th,
-table[aria-label="checkout form"] tbody tr td {
-  border-bottom: 0;
-}
-table[aria-label="checkout form"] tbody tr:first-child th,
-table[aria-label="checkout form"] tbody tr:first-child td {
-  padding-top: 1.5em;
-}
-table[aria-label="checkout form"] tbody tr:last-child th,
-table[aria-label="checkout form"] tbody tr:last-child td {
-  padding-bottom: 1.5em;
 }
 
 .payment-card {

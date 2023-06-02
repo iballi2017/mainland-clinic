@@ -19,7 +19,7 @@
 
 <section class="padding-block-500">
     <div class="container">
-        <div class="border border-accent-50 rounded">
+        <div class="border border-accent-50 rounded table-responsive">
             <table class="table mb-0" aria-label="checkout information">
                 <thead>
                     <tr>
@@ -123,62 +123,52 @@
 <section class="padding-block-500">
     <div class="container">
         <form action="">
+
             <div class="border border-accent-50 rounded pb-3">
-                <table class="table mb-0" aria-label="checkout form">
-                    <thead>
-                        <tr>
-                            <th scope="col" colspan="3">
-                                <span class="fw-semi-bold fs-300">Billing Details</span>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">
+                <fieldset>
+                    <legend class="fw-semi-bold fs-300 mb-3 border-bottom px-3 py-2">Billing Details</legend>
+                    <div class="px-4 py-3">
+                        <div class="row g-2 g-lg-3 mb-3">
+                            <div class="col-md-6">
                                 <label for="FirstName" class="form-label">First Name</label>
-                                <input type="text" id="FirstName" class="form-control">
-                            </th>
-                            <td>
-                                <label for="FirstName" class="form-label">First Name</label>
-                                <input type="text" id="FirstName" class="form-control">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" colspan="2">
-                                <label for="EmailAddress" class="form-label">Email Address</label>
-                                <input type="email" id="EmailAddress" class="form-control">
-                            </th>
-                        </tr>
-                        <tr>
-                            <th scope="row" colspan="2">
-                                <label for="PhoneNumber" class="form-label">Phone Number</label>
-                                <input type="text" id="PhoneNumber" class="form-control">
-                            </th>
-                        </tr>
-                        <tr>
-                            <th scope="row" colspan="2">
-                                <label for="Address" class="form-label">Address</label>
-                                <input type="text" id="Address" class="form-control">
-                            </th>
-                        </tr>
-                        <tr>
-                            <th scope="row">
+                                <input type="text" class="form-control" id="FirstName">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="LastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="LastName">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="PhoneNumber" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="PhoneNumber">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="Address">
+                        </div>
+
+                        <div class="row g-2 g-lg-3">
+                            <div class="col-md-6">
                                 <label for="Town/City" class="form-label">Town/City</label>
                                 <input type="text" id="Town/City" class="form-control">
-                            </th>
-                            <td>
+                            </div>
+                            <div class="col-md-6">
                                 <label for="State" class="form-label">State</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Select state</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                                <div class="custom-select rounded-250">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Select state</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
             </div>
+
+
             <aside class="fs-150 p-4">
                 Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.
             </aside>
