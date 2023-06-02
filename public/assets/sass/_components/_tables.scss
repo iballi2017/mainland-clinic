@@ -1,4 +1,4 @@
-.shoping-cart-table {
+table[aria-label="shopping cart table"] {
   thead {
     th {
       font-weight: 600;
@@ -70,7 +70,7 @@
   }
 }
 
-.shopping-cart-summary {
+table[aria-label="shopping cart summary"] {
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
@@ -125,6 +125,96 @@
         th {
           //   background-color: blue;
           padding-top: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+table {
+  &[aria-label="checkout information"] {
+    th,
+    td {
+      padding: 0.9em;
+      .cell-inner {
+        height: 100%;
+        min-height: 30px;
+        display: flex;
+        align-items: center;
+
+        &.img-wrap {
+          width: 60px;
+        }
+      }
+
+      &:first-child {
+        padding-left: 1.5em;
+      }
+
+      &:last-child {
+        padding-right: 1.5em;
+      }
+
+      &:not(:first-child) {
+        .cell-inner {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+
+  [aria-label="list of checkout items"] {
+    tr {
+      th,
+      td {
+        padding-left: 0.9em;
+        padding-right: 0.9em;
+      }
+      &:not(:first-child) {
+        th,
+        td {
+          padding-top: 0.3em;
+        }
+      }
+      &:not(:last-child) {
+        th,
+        td {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &[aria-label="checkout form"] {
+    tr {
+      th,
+      td {
+        &:first-child {
+          padding-left: 1.5em;
+        }
+  
+        &:last-child {
+          padding-right: 1.5em;
+        }
+      }
+    }
+    tbody {
+      tr {
+        th,
+        td {
+          border-bottom: 0;
+        }
+        &:first-child {
+          th,
+          td {
+            padding-top: 1.5em;
+          }
+        }
+        &:last-child {
+          th,
+          td {
+            padding-bottom: 1.5em;
+          }
         }
       }
     }

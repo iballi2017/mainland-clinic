@@ -321,6 +321,14 @@ svg {
 }
 
 /* Padding */
+.padding-block-400 {
+  padding-block: var(--size-400);
+}
+
+.padding-block-500 {
+  padding-block: var(--size-500);
+}
+
 .padding-block-600 {
   padding-block: var(--size-600);
 }
@@ -1497,61 +1505,61 @@ select {
   cursor: pointer;
 }
 
-.shoping-cart-table thead th {
+table[aria-label="shopping cart table"] thead th {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   color: #5b5b5b;
 }
-.shoping-cart-table thead th,
-.shoping-cart-table thead td,
-.shoping-cart-table tbody th,
-.shoping-cart-table tbody td {
+table[aria-label="shopping cart table"] thead th,
+table[aria-label="shopping cart table"] thead td,
+table[aria-label="shopping cart table"] tbody th,
+table[aria-label="shopping cart table"] tbody td {
   padding: 0.8em !important;
 }
-.shoping-cart-table tbody tr th,
-.shoping-cart-table tbody tr td {
+table[aria-label="shopping cart table"] tbody tr th,
+table[aria-label="shopping cart table"] tbody tr td {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #5b5b5b;
 }
-.shoping-cart-table tbody tr th .cell-inner,
-.shoping-cart-table tbody tr td .cell-inner {
+table[aria-label="shopping cart table"] tbody tr th .cell-inner,
+table[aria-label="shopping cart table"] tbody tr td .cell-inner {
   height: 100%;
   min-height: 60px;
   display: flex;
   align-items: center;
 }
-.shoping-cart-table tbody tr th .cell-inner.img-wrap,
-.shoping-cart-table tbody tr td .cell-inner.img-wrap {
+table[aria-label="shopping cart table"] tbody tr th .cell-inner.img-wrap,
+table[aria-label="shopping cart table"] tbody tr td .cell-inner.img-wrap {
   width: 60px;
 }
-.shoping-cart-table tbody tr:last-child th,
-.shoping-cart-table tbody tr:last-child td {
+table[aria-label="shopping cart table"] tbody tr:last-child th,
+table[aria-label="shopping cart table"] tbody tr:last-child td {
   border-bottom: 0;
 }
-.shopping-cart-summary {
+table[aria-label="shopping cart summary"] {
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
   color: #5b5b5b;
 }
-.shopping-cart-summary .title {
+table[aria-label="shopping cart summary"] .title {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
 }
-.shopping-cart-summary thead th,
-.shopping-cart-summary thead td,
-.shopping-cart-summary tbody th,
-.shopping-cart-summary tbody td {
+table[aria-label="shopping cart summary"] thead th,
+table[aria-label="shopping cart summary"] thead td,
+table[aria-label="shopping cart summary"] tbody th,
+table[aria-label="shopping cart summary"] tbody td {
   padding: 0.8em !important;
 }
-.shopping-cart-summary thead th .btn,
-.shopping-cart-summary thead td .btn,
-.shopping-cart-summary tbody th .btn,
-.shopping-cart-summary tbody td .btn {
+table[aria-label="shopping cart summary"] thead th .btn,
+table[aria-label="shopping cart summary"] thead td .btn,
+table[aria-label="shopping cart summary"] tbody th .btn,
+table[aria-label="shopping cart summary"] tbody td .btn {
   width: 100%;
   background: #16243d;
   padding: 0.8em 0.5em;
@@ -1561,19 +1569,80 @@ select {
   line-height: 20px;
   color: #ffffff;
 }
-.shopping-cart-summary thead tr th {
+table[aria-label="shopping cart summary"] thead tr th {
   border-bottom: 1px solid var(--clr-accent-50);
 }
-.shopping-cart-summary tbody th,
-.shopping-cart-summary tbody td {
+table[aria-label="shopping cart summary"] tbody th,
+table[aria-label="shopping cart summary"] tbody td {
   padding: 1.3em 0.8em !important;
 }
-.shopping-cart-summary tbody tr:nth-of-type(1) th,
-.shopping-cart-summary tbody tr:nth-of-type(1) td {
+table[aria-label="shopping cart summary"] tbody tr:nth-of-type(1) th,
+table[aria-label="shopping cart summary"] tbody tr:nth-of-type(1) td {
   border-bottom: 0;
 }
-.shopping-cart-summary tbody tr:nth-of-type(2) th {
+table[aria-label="shopping cart summary"] tbody tr:nth-of-type(2) th {
   padding-top: 0 !important;
+}
+
+table[aria-label="checkout information"] th,
+table[aria-label="checkout information"] td {
+  padding: 0.9em;
+}
+table[aria-label="checkout information"] th .cell-inner,
+table[aria-label="checkout information"] td .cell-inner {
+  height: 100%;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+}
+table[aria-label="checkout information"] th .cell-inner.img-wrap,
+table[aria-label="checkout information"] td .cell-inner.img-wrap {
+  width: 60px;
+}
+table[aria-label="checkout information"] th:first-child,
+table[aria-label="checkout information"] td:first-child {
+  padding-left: 1.5em;
+}
+table[aria-label="checkout information"] th:last-child,
+table[aria-label="checkout information"] td:last-child {
+  padding-right: 1.5em;
+}
+table[aria-label="checkout information"] th:not(:first-child) .cell-inner,
+table[aria-label="checkout information"] td:not(:first-child) .cell-inner {
+  justify-content: flex-end;
+}
+table [aria-label="list of checkout items"] tr th,
+table [aria-label="list of checkout items"] tr td {
+  padding-left: 0.9em;
+  padding-right: 0.9em;
+}
+table [aria-label="list of checkout items"] tr:not(:first-child) th,
+table [aria-label="list of checkout items"] tr:not(:first-child) td {
+  padding-top: 0.3em;
+}
+table [aria-label="list of checkout items"] tr:not(:last-child) th,
+table [aria-label="list of checkout items"] tr:not(:last-child) td {
+  padding-bottom: 0;
+}
+table[aria-label="checkout form"] tr th:first-child,
+table[aria-label="checkout form"] tr td:first-child {
+  padding-left: 1.5em;
+}
+table[aria-label="checkout form"] tr th:last-child,
+table[aria-label="checkout form"] tr td:last-child {
+  padding-right: 1.5em;
+}
+table[aria-label="checkout form"] tbody tr th,
+table[aria-label="checkout form"] tbody tr td {
+  border-bottom: 0;
+}
+table[aria-label="checkout form"] tbody tr:first-child th,
+table[aria-label="checkout form"] tbody tr:first-child td {
+  padding-top: 1.5em;
+}
+table[aria-label="checkout form"] tbody tr:last-child th,
+table[aria-label="checkout form"] tbody tr:last-child td {
+  padding-bottom: 1.5em;
 }
 
 .intro-content {
