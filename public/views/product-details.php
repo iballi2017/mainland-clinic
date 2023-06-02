@@ -7,7 +7,7 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../" class="base-text-color-500 text-decoration-none">Home</a></li>
-                <li class="breadcrumb-item">Shop</li>
+                <li class="breadcrumb-item"><a href="./shop.php" class="base-text-color-500 text-decoration-none">Shop</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Accu chek Glucometer strip</li>
             </ol>
         </nav>
