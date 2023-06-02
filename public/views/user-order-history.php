@@ -9,7 +9,7 @@
                 <li class="breadcrumb-item">
                     <a href="../" class="base-text-color-500 text-decoration-none">Home</a>
                 </li>
-                <li class="breadcrumb-item" aria-current="page">
+                <li class="breadcrumb-item">
                     My Account
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">

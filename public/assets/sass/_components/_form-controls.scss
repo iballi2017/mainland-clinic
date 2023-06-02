@@ -31,6 +31,7 @@ input[type="password"],
 input[type="number"],
 input[type="email"],
 input[type="search"],
+input[type="tel"],
 textarea,
 select {
   &.form-control,
@@ -43,21 +44,28 @@ select {
       box-shadow: none;
       border: 1px solid var(--clr-primary-500);
     }
+    //
+    height: 40px;
+    font-size: var(--fs-100);
+    @include mixins.minmq(50em) {
+      height: 45px;
+    }
   }
 }
 
-input[type="text"],
-input[type="password"],
-input[type="number"],
-input[type="email"],
-input[type="search"],
-select {
-  height: 40px;
-  font-size: var(--fs-100);
-  @include mixins.minmq(50em){
-    height: 45px;
-  }
-}
+// input[type="text"],
+// input[type="password"],
+// input[type="number"],
+// input[type="email"],
+// input[type="search"],
+// input[type="tel"],
+// select {
+//   height: 40px;
+//   font-size: var(--fs-100);
+//   @include mixins.minmq(50em){
+//     height: 45px;
+//   }
+// }
 
 .control-wrapper-merge-button {
   display: flex;
@@ -126,13 +134,14 @@ select {
   }
 }
 
-.custom-input-group{
+.custom-input-group {
   border: 1px solid var(--clr-accent-50);
   height: 39px;
-  .input-group{
+  .input-group {
     height: 100% !important;
   }
-  input, button{
+  input,
+  button {
     height: 100% !important;
     border: 0 !important;
     width: 42px;
@@ -160,7 +169,7 @@ select {
       border: none;
     }
   }
-  @include mixins.minmq(50em){
+  @include mixins.minmq(50em) {
     height: 45px;
   }
 }
@@ -192,7 +201,7 @@ select {
       }
     }
     &:first-child {
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
     &:last-child {
       width: 100%;
@@ -222,6 +231,47 @@ select {
         padding: 3em;
       }
     }
+  }
+}
+
+.custom-cvv-control,
+.custom-date-control,
+.custom-card-number-control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  border: 1px solid var(--clr-accent-50);
+  border-radius: var(--size-250);
+  height: 40px;
+  font-size: var(--fs-100);
+  @include mixins.minmq(50em) {
+    height: 45px;
+  }
+  &::before {
+    margin-left: 0.5em;
+  }
+  input {
+    display: block;
+    height: 100%;
+  }
+}
+
+.custom-cvv-control {
+  &::before {
+    content: url(../../assets/images/icons/ph_credit-card-light.svg);
+  }
+}
+
+.custom-date-control {
+  &::before {
+    content: url(../../assets/images/icons/material-symbols_calendar-month-outline-sharp.svg);
+  }
+}
+
+.custom-card-number-control{
+  &::before {
+    content: url(../../assets/images/icons/ic_baseline-credit-card.svg);
   }
 }
 

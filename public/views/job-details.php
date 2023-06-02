@@ -7,7 +7,7 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../" class="base-text-color-500 text-decoration-none">Home</a></li>
-                <li class="breadcrumb-item" aria-current="page">Career</li>
+                <li class="breadcrumb-item"><a href="./career.php" class="base-text-color-500 text-decoration-none">Career</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Medical Doctors</li>
             </ol>
         </nav>

@@ -71,11 +71,11 @@ a.button {
 }
 
 .submit-btn {
-  height: 39px;
+  min-height: 39px;
   padding-right: 2.5em;
   padding-left: 2.5em;
   @include mixins.minmq(50em) {
-    height: 45px;
+    min-height: 45px;
   }
 }
 

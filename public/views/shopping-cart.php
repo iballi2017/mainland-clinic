@@ -21,7 +21,7 @@
 
         <div class="border rounded border-accent-50 mb-4">
             <div class="table-responsive">
-                <table class="shoping-cart-table table mb-0">
+                <table class="table mb-0" aria-label="shopping cart table">
                     <thead>
                         <tr>
                             <!-- <th scope="col"></th> -->
@@ -46,12 +46,12 @@
                             </td>
                             <td>
                                 <div class="cell-inner">
-                                    ₦283,800.00
+                                    ₦<span class="item-price">283800</span>
                                 </div>
                             </td>
                             <td>
                                 <div class="cell-inner">
-                                    <div>
+                                    <!-- <div> -->
                                         <div class="qty-ctrl">
                                             <div class="qty-val">1</div>
                                             <div>
@@ -61,7 +61,7 @@
                                                 <button class="btn-sm qty-remove">-</button>
                                             </div>
                                         </div>
-                                    </div>
+                                    <!-- </div> -->
                                 </div>
                             </td>
                             <td>
@@ -95,7 +95,7 @@
                             </td>
                             <td>
                                 <div class="cell-inner">
-                                    <div>
+                                    <!-- <div> -->
                                         <div class="qty-ctrl">
                                             <div class="qty-val">1</div>
                                             <div>
@@ -105,7 +105,7 @@
                                                 <button class="btn-sm qty-remove">-</button>
                                             </div>
                                         </div>
-                                    </div>
+                                    <!-- </div> -->
                                 </div>
                             </td>
                             <td>
@@ -126,7 +126,7 @@
         </div>
         <!--  -->
         <div class="border rounded border-accent-50 ms-auto" style="max-width: 300px">
-            <table class="table shopping-cart-summary | mb-0">
+            <table class="table | mb-0" aria-label="shopping cart summary">
                 <thead>
                     <tr>
                         <th scope="col" colspan="2" class="text-center title">CART SUMMARY</th>
@@ -139,7 +139,7 @@
                     </tr>
                     <tr>
                         <th scope="row" colspan="2">
-                            <button class="btn">Checkout ₦368,400.00</button>
+                            <a href="./checkout.php" class="btn">Checkout ₦368,400.00</a>
                         </th>
                     </tr>
                 </tbody>

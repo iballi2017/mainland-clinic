@@ -1,0 +1,17 @@
+.payment-card {
+    max-width: 462px;
+    margin: 0 auto;
+    .logo {
+        display: block;
+        max-width: 124px;
+    }
+
+    h1 {
+        background: #1b2c19;
+        border: 1px solid #c4c4c4;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HAC | Card payment</title>
+        <link rel="stylesheet" href="../../assets/stylesheets/bootstrap-5.2.3/bootstrap.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../../assets/stylesheets/main.css">
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"
+            integrity="sha512-KaIyHb30iXTXfGyI9cyKFUIRSSuekJt6/vqXtyQKhQP6ozZEGY8nOtRS6fExqE4+RbYHus2yGyYg1BrqxzV6YA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="payment-card shadow-sm mt-5">
+                <div class="d-flex align-items-center justify-content-between px-3 py-4 border-bottom border-accent-50">
+                    <a href="../../" class="logo">
+                        <img src="../../assets/images/brand-logo.svg" alt="" class="img-fluid">
+                    </a>
+                    <div>
+                        <button type="button" aria-label="remove item table item" onClick="window.history.back()">
+                            <img src="../../assets/images/icons/times-danger-box.svg" alt="" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between py-2 px-3 fw-semi-bold">
+                    <p class="mb-0">Price</p>
+                    <p class="mb-0 fs-300">₦368,400.00</p>
+                </div>
+                <h1 class="d-flex align-items-center px-3 py-3 mb-0">
+                    <button class="btn btn-sm ps-0">
+                        <img src="../../assets/images/icons/arrow-left-white.svg" alt="" class="img-fluid">
+                    </button>
+                    <span>Enter card details</span>
+                </h1>
+                <form action="" class="px-3 py-4">
+                    <div class="mb-3">
+                        <label for="CardNumber" class="form-label">Card Number</label>
+                        <div class="custom-card-number-control">
+                            <input
+                                id="CardNumber"
+                                type="tel"
+                                class="border-0"
+                                inputmode="numeric"
+                                pattern="[0-9\s]{13,19}"
+                                autocomplete="cc-number"
+                                maxlength="19"
+                                placeholder="0000 0000 0000 0000"
+                            >
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <label for="CVV" class="form-label">CVV</label>
+                            <div class="custom-cvv-control">
+                                <input
+                                    type="tel"
+                                    id="CVV"
+                                    placeholder="123"
+                                    class="border-0"
+                                >
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label for="Date" class="form-label">Date</label>
+                            <div class="custom-date-control">
+                                <input
+                                    type="tel"
+                                    class="input-date border-0"
+                                    placeholder="MM/YYYY"
+                                    id="Date"
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-grid">
+                        <button class="button submit-btn">Pay now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            // credit card
+                var cleaveCreditCard = new Cleave('#CardNumber', {
+                    creditCard: true
+                });
+
+                // document.querySelector('.button-credit-card').addEventListener('click', function() {
+                //     alert(cleaveCreditCard.getRawValue());
+                // });
+
+                // date
+                var cleaveDate = new Cleave('.input-date', {
+                    date: true,
+                    datePattern: ['m', 'Y']
+                });
+        </script>
+    </body>
+</html>

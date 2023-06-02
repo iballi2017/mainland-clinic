@@ -88,7 +88,7 @@ $(document).ready(function () {
 
   function addImag(data) {
     var a = $("#preview").children().children("img");
-    console.log("a: ", a);
+    // console.log("a: ", a);
     a.attr("src", data);
   }
   /** */
