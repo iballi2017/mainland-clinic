@@ -67,9 +67,17 @@ a.button {
   display: inline-block;
 }
 .cta {
+  display: block;
   border-radius: 100vmax;
 }
 
+button,
+a {
+  &.cta {
+    display: block;
+    border-radius: 100vmax;
+  }
+}
 .submit-btn {
   min-height: 39px;
   padding-right: 2.5em;
@@ -101,7 +109,7 @@ a.button {
 }
 
 button {
-  &[aria-label="remove item table item"]{
+  &[aria-label="remove item table item"] {
     border: none;
     //   width: 25px;
     max-width: 20px;
