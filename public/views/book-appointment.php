@@ -17,6 +17,8 @@
 
 <section class="padding-block-600">
     <div class="container">
+<button id="my-prev-button">Prev</button>
+<button id="my-next-button">Next</button>
         <div id='calendar-container'>
             <div id='calendar'></div>
         </div>

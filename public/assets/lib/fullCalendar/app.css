@@ -3,11 +3,11 @@
   margin: 0 auto; */
 }
 
-.fc-h-event {
+/* .fc-h-event {
   background-color: var(--clr-primary-500);
   border: 1px solid var(--clr-primary-500);
   display: block;
-}
+} */
 
 .fc-event {
   color: inherit;
@@ -32,11 +32,11 @@
   margin: 0px 4px;
   width: 0px;
 }
-.fc .fc-button-primary {
+/* .fc .fc-button-primary {
   background-color: #17a110;
   border-color: var(--fc-button-border-color);
   color: var(--fc-button-text-color);
-}
+} */
 @media only screen and (min-width: 50em) {
   .fc-button-group button {
     border-radius: 50% !important;
@@ -103,7 +103,7 @@
   }
   .fc-daygrid-day-frame {
     border: 1px solid #c4c4c4;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
 
   .fc-scrollgrid-sync-inner {
