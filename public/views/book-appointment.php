@@ -17,7 +17,12 @@
 
 <section class="padding-block-600">
     <div class="container">
-        <div id="calendar"></div>
+        <!-- <div id="calendar"></div> -->
+
+
+        <div id='calendar-container'>
+            <div id='calendar'></div>
+        </div>
     </div>
 </section>
 

@@ -762,6 +762,11 @@ a.button:hover,
 a.button:focus-visible {
   background-color: var(--clr-primary-600);
 }
+.button:disabled,
+a.button:disabled {
+  background: #c4c4c4;
+  border: 1px solid #c4c4c4;
+}
 
 .button[data-type=inverted] {
   background-color: var(--clr-neutral-500);
@@ -1742,6 +1747,66 @@ table [aria-label="list of checkout items"] tr:not(:last-child) td {
 
 #calendarTable_1 {
   display: block;
+}
+
+.modal-header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--bs-modal-header-padding);
+  border-bottom: var(--bs-modal-header-border-width) solid var(--clr-accent-50);
+  border-top-left-radius: var(--bs-modal-inner-border-radius);
+  border-top-right-radius: var(--bs-modal-inner-border-radius);
+}
+
+.appointment-types li:first-child {
+  margin-top: 1.5em;
+}
+.appointment-types li:not(.appointment-types li:last-child) {
+  margin-bottom: 1.5em;
+}
+.appointment-types li:last-child {
+  margin-bottom: 2em;
+}
+
+.book-radio {
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+}
+.book-radio input[type=radio] {
+  visibility: hidden;
+  position: absolute;
+}
+.book-radio input[type=radio] + label {
+  padding: 1.1em 1.4em;
+  display: flex;
+  align-items: center;
+  transition: all 320ms ease-in-out;
+  cursor: pointer;
+}
+.book-radio input[type=radio] + label .fake-btn {
+  display: block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 0.7em;
+  background-color: var(--clr-accent-600);
+  border: 5px solid white;
+  outline: 3px solid var(--clr-accent-600);
+  transition: all 320ms ease-in-out;
+}
+.book-radio input[type=radio]:checked + label {
+  background: #c7f38e;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  color: #208d05;
+}
+.book-radio input[type=radio]:checked + label .fake-btn {
+  background-color: #208d05;
+  border: 5px solid #c7f38e;
+  outline: 3px solid #208d05;
 }
 
 .intro-content {

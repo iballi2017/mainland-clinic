@@ -197,8 +197,24 @@ window.addEventListener("DOMContentLoaded", (event) => {
       return date;
     }
 
-    let content = getDatesBetween("2020/01/01", "2027/01/01");
-    document.getElementById("calendar").innerHTML = content;
+    /**Today's date YYY/MM/DD formatting */
+    var m = new Date();
+    var dateString =
+      m.getUTCFullYear() +
+      "/" +
+      ("0" + (m.getUTCMonth() + 1)).slice(-2) +
+      "/" +
+      ("0" + m.getUTCDate()).slice(-2);
+    /** */
+
+    // let content = getDatesBetween("2020/01/01", "2027/01/01");
+    let content = getDatesBetween(dateString, "2027/01/01");
+    // document.getElementById("calendar").innerHTML = content;
+
+    /**Place initial title */
+    let allTables = document.getElementsByClassName("calendarDiv");
+    console.log("first carlendar: ", allTables[0]);
+    placeCalendarTitle(allTables, calendarShow);
   }
 
   /** */
@@ -226,6 +242,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   function placeCalendarTitle(allTables, calendarShow) {
     let x = allTables[calendarShow - 1];
     console.log("x: ", x);
+    if (!x) return;
     document.getElementById("calendarTitle").innerHTML =
       x.firstElementChild.textContent;
     return;
@@ -258,4 +275,33 @@ window.addEventListener("DOMContentLoaded", (event) => {
     calendarNextBtn.addEventListener("click", callNext);
     calendarPrevBtn.addEventListener("click", callPrev);
   }
+
+  /**Appointment Selection */
+
+  var appointmentSelectionBtn = document.getElementById(
+    "appointmentSelectionBtn"
+  );
+
+  if (appointmentSelectionBtn) {
+    appointmentSelectionBtn.addEventListener("click", () => {
+      let appointment = document.querySelector(
+        'input[name="Appointment"]:checked'
+      );
+      if (!appointment) return;
+      console.log("appointment: ", appointment.value);
+      window.location.href = `http://localhost/projects/mainland-clinic/public/views/book-appointment.php?title=${appointment.value}`;
+    });
+  }
+
+  let appointmentControls = document.querySelectorAll(
+    'input[name="Appointment"]'
+  );
+  for (let i = 0; i < appointmentControls.length; i++) {
+    const element = appointmentControls[i];
+    element.addEventListener("click", (e) => {
+      if (e.target.checked) appointmentSelectionBtn.removeAttribute("disabled");
+    });
+  }
+
+  /** */
 });

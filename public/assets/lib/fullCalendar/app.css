@@ -1,0 +1,113 @@
+#calendar {
+  /* max-width: 1100px;
+  margin: 0 auto; */
+}
+
+.fc-h-event {
+  background-color: var(--clr-primary-500);
+  border: 1px solid var(--clr-primary-500);
+  display: block;
+}
+
+.fc-event {
+  color: inherit;
+}
+.fc .fc-daygrid-day-number {
+  color: inherit;
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1b2c19;
+}
+
+.fc-daygrid-event-dot {
+  border: calc(var(--fc-daygrid-event-dot-width) / 2) solid
+    var(--clr-primary-500);
+  border-radius: calc(var(--fc-daygrid-event-dot-width) / 2);
+  box-sizing: content-box;
+  height: 0px;
+  margin: 0px 4px;
+  width: 0px;
+}
+.fc .fc-button-primary {
+  background-color: #17a110;
+  border-color: var(--fc-button-border-color);
+  color: var(--fc-button-text-color);
+}
+@media only screen and (min-width: 50em) {
+  .fc-button-group button {
+    border-radius: 50% !important;
+    width: 40px;
+    height: 40px;
+  }
+
+  .fc .fc-button-group > .fc-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  .fc-button-group button:first-child {
+    margin-right: 0.5em;
+  }
+  .fc .fc-toolbar-title {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 33px;
+    color: #1b2c19;
+  }
+
+  .fc .fc-daygrid-day-top {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .fc-col-header-cell {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 33px;
+    color: #1b2c19;
+  }
+
+  .fc-col-header-cell a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .fc-theme-standard td,
+  .fc-theme-standard th {
+    /* border: none; */
+    /* border-color: blueviolet; */
+  }
+
+  .fc-theme-standard tbody td {
+    border: none;
+    /* border-color: blueviolet;
+    border-top: 1px solid red; */
+  }
+
+  .fc .fc-scrollgrid-section-liquid > td {
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+    /* border: none;
+    padding: 0; */
+  }
+
+  .fc-theme-standard td {
+    padding: 0.3em;
+  }
+  .fc-daygrid-day-frame {
+    border: 1px solid #c4c4c4;
+    cursor: pointer;
+  }
+
+  .fc-scrollgrid-sync-inner {
+  }
+}

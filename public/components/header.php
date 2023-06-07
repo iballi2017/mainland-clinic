@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="../assets/lib/owlcarousel/css/owl.theme.default.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/stylesheets/main.css">
+    <!-- FullCalendar -->
+    <script src="../assets/lib/fullCalendar/index.global.js"></script>
+    <script src="../assets/lib/fullCalendar/app.js"></script>
+    <link rel="stylesheet" href="../assets/lib/fullCalendar/app.css">
 </head>
 
 <body>
@@ -100,8 +104,8 @@
                 </nav>
                 <div class="d-lg-flex d-none">
                     <div class="d-flex align-items-center">
-                        <!-- <button class="button cta | d-none d-xl-block">Book an appointment</button> -->
-                        <a href="../views/book-appointment.php" class="button cta | d-none d-xl-block">Book an appointment</a>
+                        <button class="button cta | d-none d-xl-block" data-bs-toggle="modal" data-bs-target="#exampleModal">Book an appointment</button>
+                        <!-- <a href="../views/book-appointment.php" class="button cta | d-none d-xl-block">Book an appointment</a> -->
                         <span class="spacer"></span>
                         <a href="../views/shopping-cart.php" class="shopping-cart-wrap | position-relative d-none d-md-block">
                             <img src="../assets/images/icons/shopping-cart.svg" alt="" class="img-fluid">

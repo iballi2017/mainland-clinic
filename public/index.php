@@ -1,209 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HAC | Home</title>
-        <!-- Font family -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-        <!-- Bootstrap CSS @5.2.3 -->
-        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAC | Home</title>
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS @5.2.3 -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
-        <link rel="stylesheet" href="./assets/stylesheets/bootstrap-5.2.3/bootstrap.min.css">
-        <!-- Animate.CSS 4.1.1 -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        <!-- OwlCarousel 2.3.4 -->
-        <link rel="stylesheet" href="./assets/lib/owlcarousel/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="./assets/lib/owlcarousel/css/owl.theme.default.min.css">
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="./assets/stylesheets/main.css">
-    </head>
-    <body>
-        <!-- HEADER -->
-        <div class="top-bar fs-50 base-text-color-100 bg-secondary-500 py-3">
-            <div class="container d-flex flex-wrap justify-content-between">
-                <div class="d-flex flex-wrap mb-2 mb-lg-0">
-                    <span class="me-5">9, Tinubu Street, off Coker road, illupeju Lagos.</span>
-                    <!-- <span class="mx-3"></span> -->
-                    <span>info@mainlandclinics.com</span>
+    <link rel="stylesheet" href="./assets/stylesheets/bootstrap-5.2.3/bootstrap.min.css">
+    <!-- Animate.CSS 4.1.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- OwlCarousel 2.3.4 -->
+    <link rel="stylesheet" href="./assets/lib/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/lib/owlcarousel/css/owl.theme.default.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/stylesheets/main.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="top-bar fs-50 base-text-color-100 bg-secondary-500 py-3">
+        <div class="container d-flex flex-wrap justify-content-between">
+            <div class="d-flex flex-wrap mb-2 mb-lg-0">
+                <span class="me-5">9, Tinubu Street, off Coker road, illupeju Lagos.</span>
+                <!-- <span class="mx-3"></span> -->
+                <span>info@mainlandclinics.com</span>
+            </div>
+            <div>
+                <a href="./views/auth.html" class="base-text-color-100 text-decoration-none">login</a> |
+                <a href="./views/signup.html" class="base-text-color-100 text-decoration-none">Sign Up</a>
+                <div class="dropdown">
+                    <span class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true"
+                        aria-expanded="false">My Account</span>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item py-2" href="#">My profile</a>
+                        <a class="dropdown-item py-2" href="#">Appointment history</a>
+                        <a class="dropdown-item py-2" href="#">My Order history</a>
+                        <a class="dropdown-item py-2" href="#">Wishlist</a>
+                        <a class="dropdown-item py-2" href="#">Log out</a>
+                    </div>
                 </div>
-                <div>
-                    <a href="./views/auth.html" class="base-text-color-100 text-decoration-none">login</a> |
-                    <a href="./views/signup.html" class="base-text-color-100 text-decoration-none">Sign Up</a>
-                    <div class="dropdown">
-                        <span
-                            class="dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            role="button"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                        >My Account</span>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item py-2" href="#">My profile</a>
-                            <a class="dropdown-item py-2" href="#">Appointment history</a>
-                            <a class="dropdown-item py-2" href="#">My Order history</a>
-                            <a class="dropdown-item py-2" href="#">Wishlist</a>
-                            <a class="dropdown-item py-2" href="#">Log out</a>
+            </div>
+        </div>
+    </div>
+    <header class="toolbar sticky-top">
+        <nav class="navbar bg-white navbar-expand-lg py-lg-0">
+            <!-- <div class="container py-1 py-xl-3"> -->
+            <div class="container">
+                <a href="./" class="navbar-brand">
+                    <img src="./assets/images/brand-logo.svg" alt="Mainland Clinics" class="img-fluid">
+                </a>
+                <div class="d-flex align-items-center">
+                    <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <i data-feather="menu"></i>
+                        <i data-feather="x"></i>
+                    </button>
+                    <div class="d-lg-none d-flex align-items-center">
+                        <span class="spacer"></span>
+                        <a href="./views/shopping-cart.php" class="shopping-cart-wrap | position-relative">
+                            <img src="./assets/images/icons/shopping-cart.svg" alt="" class="img-fluid">
+                            <span
+                                class="counter | position-absolute top-0 start-100 translate-middle badge rounded-pill">2</span>
+                        </a>
+                    </div>
+                </div>
+                <nav class="collapse navbar-collapse" id="navbarColor02">
+                    <ul role="list" class="navbar-nav ms-auto" aria-label="primary">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./views/about-us.php">
+                                About us
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Services</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item py-2 text-center" href="./views/clinical-services.php">
+                                    Clinical
+                                    Services
+                                </a>
+                                <a class="dropdown-item py-2 text-center"
+                                    href="./views/fitness-wellness-test.php">Fitness/Wellness Test</a>
+                                <a class="dropdown-item py-2 text-center"
+                                    href="./views/telemedicine.php">Telemedicine</a>
+                                <a class="dropdown-item py-2 text-center"
+                                    href="./views/pre-employment-test.php">Pre-employment Test</a>
+                                <a class="dropdown-item py-2 text-center" href="./views/food-handlers-test.php">
+                                    Food
+                                    Handlers Test
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./views/contact-us.php">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./views/career.php">Career</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./views/shop.php">Shop</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="d-lg-flex d-none">
+                    <div class="d-flex align-items-center">
+                        <button class="button cta | d-none d-xl-block" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Book an appointment</button>
+                        <!-- <a href="./views/book-appointment.php" class="button cta | d-none d-xl-block">Book an appointment</a> -->
+                        <span class="spacer"></span>
+                        <a href="./views/shopping-cart.php"
+                            class="shopping-cart-wrap | position-relative d-none d-md-block">
+                            <img src="./assets/images/icons/shopping-cart.svg" alt="" class="img-fluid">
+                            <span
+                                class="counter | position-absolute top-0 start-100 translate-middle badge rounded-pill">2</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- Hero sliders -->
+        <!-- OwlCarousel for Hero -->
+        <div class="hero-owl-slider | owl-carousel owl-theme">
+            <div class="hero-item position-relative">
+                <img src="./assets/images/hero-banner-3.jpg" class="d-block w-100" alt="Your Health, Our Priority">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8 p-4" style="background: rgba(0, 0, 0, .4);">
+                                <h1 class="fs-hero-title text-white animated animate__slideInDown">
+                                    Healthy Starts Here
+                                </h1>
+                                <p class="fs-400 text-white mb-4 pb-2 animated animate__fadeIn">
+                                    Experience Quality
+                                    Healthcare and Wellness Support at Our State-of-the-Art Clinic
+                                </p>
+                                <a href="" class="button py-md-3 px-md-5 me-3 animated animate__slideInLeft">
+                                    Read
+                                    More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-item position-relative">
+                <img src="./assets/images/hero-banner-2.jpg" class="d-block w-100" alt="Experience Better Health">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8 p-4" style="background: rgba(0, 0, 0, .4);">
+                                <h1 class="fs-hero-title text-white animated animate__slideInDown">
+                                    Experience Better
+                                    Health
+                                </h1>
+                                <p class="fs-400 text-white mb-4 pb-2 animated animate__fadeIn">
+                                    Trust Our Expert Team
+                                    of Healthcare Professionals to Provide Quality Medical Care and Support for Your
+                                    Health Needs
+                                </p>
+                                <a href="" class="button py-md-3 px-md-5 me-3 animated animate__slideInLeft">
+                                    Read
+                                    More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-item position-relative">
+                <img src="./assets/images/hero-banner-1.jpg" class="d-block w-100" alt="Your Health, Our Priority">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8 p-4" style="background: rgba(0, 0, 0, .4);">
+                                <h1 class="fs-hero-title text-white animated animate__slideInDown">
+                                    Your Health, Our
+                                    Priority
+                                </h1>
+                                <p class="fs-400 text-white mb-4 pb-2 animated animate__fadeIn">
+                                    Experience
+                                    Compassionate Care and Comprehensive Medical Services at Our Healthcare Facility
+                                </p>
+                                <a href="" class="button py-md-3 px-md-5 me-3 animated animate__slideInLeft">
+                                    Read
+                                    More
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <header class="toolbar sticky-top">
-            <nav class="navbar bg-white navbar-expand-lg py-lg-0">
-                <!-- <div class="container py-1 py-xl-3"> -->
-                <div class="container">
-                    <a href="./" class="navbar-brand">
-                        <img src="./assets/images/brand-logo.svg" alt="Mainland Clinics" class="img-fluid">
-                    </a>
-                    <div class="d-flex align-items-center">
-                        <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                            <!-- <span class="navbar-toggler-icon"></span> -->
-                            <i data-feather="menu"></i>
-                            <i data-feather="x"></i>
-                        </button>
-                        <div class="d-lg-none d-flex align-items-center">
-                            <span class="spacer"></span>
-                            <a href="./views/shopping-cart.php" class="shopping-cart-wrap | position-relative">
-                                <img src="./assets/images/icons/shopping-cart.svg" alt="" class="img-fluid">
-                                <span class="counter | position-absolute top-0 start-100 translate-middle badge rounded-pill">2</span>
-                            </a>
-                        </div>
-                    </div>
-                    <nav class="collapse navbar-collapse" id="navbarColor02">
-                        <ul role="list" class="navbar-nav ms-auto" aria-label="primary">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="./views/about-us.php">
-                                    About us
-                                    <span class="visually-hidden">(current)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    data-bs-toggle="dropdown"
-                                    href="#"
-                                    role="button"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                >Services</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item py-2 text-center" href="./views/clinical-services.php">
-                                        Clinical
-                                    Services
-                                    </a>
-                                    <a class="dropdown-item py-2 text-center" href="./views/fitness-wellness-test.php">Fitness/Wellness Test</a>
-                                    <a class="dropdown-item py-2 text-center" href="./views/telemedicine.php">Telemedicine</a>
-                                    <a class="dropdown-item py-2 text-center" href="./views/pre-employment-test.php">Pre-employment Test</a>
-                                    <a class="dropdown-item py-2 text-center" href="./views/food-handlers-test.php">
-                                        Food
-                                    Handlers Test
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./views/contact-us.php">Contact us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./views/career.php">Career</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./views/shop.php">Shop</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="d-lg-flex d-none">
-                        <div class="d-flex align-items-center">
-                            <!-- <button class="button cta | d-none d-xl-block">Book an appointment</button> -->
-                            <a href="./views/book-appointment.php" class="button cta | d-none d-xl-block">Book an appointment</a>
-                            <span class="spacer"></span>
-                            <a href="./views/shopping-cart.php" class="shopping-cart-wrap | position-relative d-none d-md-block">
-                                <img src="./assets/images/icons/shopping-cart.svg" alt="" class="img-fluid">
-                                <span class="counter | position-absolute top-0 start-100 translate-middle badge rounded-pill">2</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <!-- MAIN -->
-        <main>
-            <!-- Hero sliders -->
-            <!-- OwlCarousel for Hero -->
-            <div class="hero-owl-slider | owl-carousel owl-theme">
-                <div class="hero-item position-relative">
-                    <img src="./assets/images/hero-banner-3.jpg" class="d-block w-100" alt="Your Health, Our Priority">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-sm-10 col-lg-8 p-4" style="background: rgba(0, 0, 0, .4);">
-                                    <h1 class="fs-hero-title text-white animated animate__slideInDown">
-                                        Healthy Starts Here
-                                    </h1>
-                                    <p class="fs-400 text-white mb-4 pb-2 animated animate__fadeIn">
-                                        Experience Quality
-                                    Healthcare and Wellness Support at Our State-of-the-Art Clinic
-                                    </p>
-                                    <a href="" class="button py-md-3 px-md-5 me-3 animated animate__slideInLeft">
-                                        Read
-                                    More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-item position-relative">
-                    <img src="./assets/images/hero-banner-2.jpg" class="d-block w-100" alt="Experience Better Health">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-sm-10 col-lg-8 p-4" style="background: rgba(0, 0, 0, .4);">
-                                    <h1 class="fs-hero-title text-white animated animate__slideInDown">
-                                        Experience Better
-                                    Health
-                                    </h1>
-                                    <p class="fs-400 text-white mb-4 pb-2 animated animate__fadeIn">
-                                        Trust Our Expert Team
-                                    of Healthcare Professionals to Provide Quality Medical Care and Support for Your
-                                    Health Needs
-                                    </p>
-                                    <a href="" class="button py-md-3 px-md-5 me-3 animated animate__slideInLeft">
-                                        Read
-                                    More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-item position-relative">
-                    <img src="./assets/images/hero-banner-1.jpg" class="d-block w-100" alt="Your Health, Our Priority">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-sm-10 col-lg-8 p-4" style="background: rgba(0, 0, 0, .4);">
-                                    <h1 class="fs-hero-title text-white animated animate__slideInDown">
-                                        Your Health, Our
-                                    Priority
-                                    </h1>
-                                    <p class="fs-400 text-white mb-4 pb-2 animated animate__fadeIn">
-                                        Experience
-                                    Compassionate Care and Comprehensive Medical Services at Our Healthcare Facility
-                                    </p>
-                                    <a href="" class="button py-md-3 px-md-5 me-3 animated animate__slideInLeft">
-                                        Read
-                                    More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <!-- About us -->
         <section class="padding-block-800">
@@ -211,7 +213,8 @@
                 <div class="row g-xl-5">
                     <div class="col-12 col-md-5">
                         <div class="rounded-2 overflow-hidden mb-3 fade-in">
-                            <img src="./assets/images/featured-image-1.png" alt="Take control of your health" class="img-fluid">
+                            <img src="./assets/images/featured-image-1.png" alt="Take control of your health"
+                                class="img-fluid">
                         </div>
                     </div>
                     <div class="col-12 col-md-7">
@@ -247,7 +250,8 @@
                     </div>
                     <div class="item">
                         <div class="feature-card">
-                            <img src="./assets/images/feature-card-image-2.png" alt="Clinical Service" class="img-fluid">
+                            <img src="./assets/images/feature-card-image-2.png" alt="Clinical Service"
+                                class="img-fluid">
                             <div class="title">
                                 <span>Clinical Service</span>
                             </div>
@@ -255,7 +259,8 @@
                     </div>
                     <div class="item">
                         <div class="feature-card">
-                            <img src="./assets/images/feature-card-image-3.png" alt="Clinical Service" class="img-fluid">
+                            <img src="./assets/images/feature-card-image-3.png" alt="Clinical Service"
+                                class="img-fluid">
                             <div class="title">
                                 <span>Food Handlers Test</span>
                             </div>
@@ -263,7 +268,8 @@
                     </div>
                     <div class="item">
                         <div class="feature-card">
-                            <img src="./assets/images/feature-card-image-1.png" alt="Clinical Service" class="img-fluid">
+                            <img src="./assets/images/feature-card-image-1.png" alt="Clinical Service"
+                                class="img-fluid">
                             <div class="title">
                                 <span>Pre-employment Test</span>
                             </div>
@@ -271,7 +277,8 @@
                     </div>
                     <div class="item">
                         <div class="feature-card">
-                            <img src="./assets/images/feature-card-image-4.png" alt="Clinical Service" class="img-fluid">
+                            <img src="./assets/images/feature-card-image-4.png" alt="Clinical Service"
+                                class="img-fluid">
                             <div class="title">
                                 <span>Fitness/Wellness Test</span>
                             </div>
@@ -279,7 +286,8 @@
                     </div>
                     <div class="item">
                         <div class="feature-card">
-                            <img src="./assets/images/feature-card-image-5.png" alt="Clinical Service" class="img-fluid">
+                            <img src="./assets/images/feature-card-image-5.png" alt="Clinical Service"
+                                class="img-fluid">
                             <div class="title">
                                 <span>Telemedicine</span>
                             </div>
@@ -339,7 +347,8 @@
                         <div class="review-footer bg-primary-500 text-white fw-regular p-4">
                             <div class="foot-text fs-150">Contractor</div>
                             <div class="foot-image">
-                                <img data-src="./assets/images/avartar-sample-2.jpg" alt="Reviewer image" class="img-fluid owl-lazy">
+                                <img data-src="./assets/images/avartar-sample-2.jpg" alt="Reviewer image"
+                                    class="img-fluid owl-lazy">
                             </div>
                         </div>
                     </div>
@@ -355,7 +364,8 @@
                         <div class="review-footer bg-primary-500 text-white fw-regular p-4">
                             <div class="foot-text fs-150">Contractor</div>
                             <div class="foot-image">
-                                <img data-src="./assets/images/avartar-sample.jpg" alt="Reviewer image" class="img-fluid owl-lazy">
+                                <img data-src="./assets/images/avartar-sample.jpg" alt="Reviewer image"
+                                    class="img-fluid owl-lazy">
                             </div>
                         </div>
                     </div>
@@ -371,7 +381,8 @@
                         <div class="review-footer bg-primary-500 text-white fw-regular p-4">
                             <div class="foot-text fs-150">Contractor</div>
                             <div class="foot-image">
-                                <img data-src="./assets/images/avartar-sample-2.jpg" alt="Reviewer image" class="img-fluid owl-lazy">
+                                <img data-src="./assets/images/avartar-sample-2.jpg" alt="Reviewer image"
+                                    class="img-fluid owl-lazy">
                             </div>
                         </div>
                     </div>
@@ -387,7 +398,8 @@
                         <div class="review-footer bg-primary-500 text-white fw-regular p-4">
                             <div class="foot-text fs-150">Contractor</div>
                             <div class="foot-image">
-                                <img data-src="./assets/images/avartar-sample.jpg" alt="Reviewer image" class="img-fluid owl-lazy">
+                                <img data-src="./assets/images/avartar-sample.jpg" alt="Reviewer image"
+                                    class="img-fluid owl-lazy">
                             </div>
                         </div>
                     </div>
@@ -405,57 +417,68 @@
                         <ul role="list" data-type="sponsors" class="ps-0 fade-in">
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-01.svg" alt="" class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-01.svg" alt=""
+                                        class="img-fluid rounded">
                                 </div>
                             </li>
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-02.svg" alt="" class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-02.svg" alt=""
+                                        class="img-fluid rounded">
                                 </div>
                             </li>
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-03.svg" alt="" class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-03.svg" alt=""
+                                        class="img-fluid rounded">
                                 </div>
                             </li>
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-04.svg" alt="" class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-04.svg" alt=""
+                                        class="img-fluid rounded">
                                 </div>
                             </li>
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-05.svg" alt="" class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-05.svg" alt=""
+                                        class="img-fluid rounded">
                                 </div>
                             </li>
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-06.svg" alt="" class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-06.svg" alt=""
+                                        class="img-fluid rounded">
                                 </div>
                             </li>
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-07.svg" alt="" class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-07.svg" alt=""
+                                        class="img-fluid rounded">
                                 </div>
                             </li>
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-08.svg" alt="" class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-08.svg" alt=""
+                                        class="img-fluid rounded">
                                 </div>
                             </li>
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-09.svg" alt="" class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-09.svg" alt=""
+                                        class="img-fluid rounded">
                                 </div>
                             </li>
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-10.svg" alt="" class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-10.svg" alt=""
+                                        class="img-fluid rounded">
                                 </div>
                             </li>
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-11.svg" alt="" class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-11.svg" alt=""
+                                        class="img-fluid rounded">
                                 </div>
                             </li>
                         </ul>
@@ -528,12 +551,7 @@
                     </p>
                     <form action="">
                         <div class="control-wrapper-merge-button bg-accent-50">
-                            <input
-                                type="text"
-                                id="email"
-                                class="w-100 px-3"
-                                style="background: unset;"
-                            >
+                            <input type="text" id="email" class="w-100 px-3" style="background: unset;">
                             <button class="bg-0">
                                 <span class="visually-hidden">Subscribe</span>
                                 <img src="./assets/images/icons/green-plane.svg" alt="" class="img-fluid">
@@ -546,6 +564,14 @@
         <hr style="border: 1px solid var(--clr-accent-50)">
         <p class="mb-0 text-center base-text-color-200 fs-50 pb-2">Mainland clinic 2023</p>
     </footer>
+
+
+    <!-- Appointment modal -->
+    <?php include "./components/appointment-modal.php"; ?>
+
+
+
+
     <!-- jquery-3.7.0 -->
     <script src="./assets/lib/jquery-3.7.0.min.js"></script>
     <!-- Bootstrap JS @5.2.3 -->
@@ -572,4 +598,5 @@
     <script src="./assets/scripts/index.jquery.js"></script>
     <script src="./assets/scripts/index.js"></script>
 </body>
+
 </html>

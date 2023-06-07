@@ -54,6 +54,11 @@ a.button {
   &:focus-visible {
     background-color: var(--clr-primary-600);
   }
+
+  &:disabled {
+    background: #c4c4c4;
+    border: 1px solid #c4c4c4;
+  }
 }
 
 .button[data-type="inverted"] {
