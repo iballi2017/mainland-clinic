@@ -1725,30 +1725,6 @@ table [aria-label="list of checkout items"] tr:not(:last-child) td {
   line-height: 30px;
 }
 
-.calendar-header-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.calendarDiv {
-  display: none;
-  text-align: center;
-}
-
-.calendarDiv table {
-  width: 100%;
-}
-
-.calendarDiv table tbody th, .calendarDiv table tbody td {
-  height: 60px;
-  width: 60px;
-}
-
-#calendarTable_1 {
-  display: block;
-}
-
 .modal-header {
   display: flex;
   flex-shrink: 0;

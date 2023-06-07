@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   var calendarEl = document.getElementById("calendar");
+  var dateData;
+  var fullateData;
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
     initialDate: "2023-01-12",
@@ -68,18 +70,39 @@ document.addEventListener("DOMContentLoaded", function () {
   calendar.render();
 
   let fcDay = document.querySelectorAll(".fc-day");
+  let calModal = document.getElementById("confirmSelection");
   for (let i = 0; i < fcDay.length; i++) {
     const element = fcDay[i];
+    if (!element) return;
     element.addEventListener("click", () => {
-      console.log("element: ", $(element).attr("data-date"));
-      console.log("element new Date: ", new Date($(element).attr("data-date")));
-      alert($(element).attr("data-date"))
-      let x = $(element)
-        .children(":first-child")
-        .children(":first-child")
-        .html();
-        console.log("x.attr('data-date'): ", $(x).attr("aria-label"));
-        console.log("x.attr('data-date') new Date: ", new Date($(x).attr("aria-label")));
+      let _date = element.getAttribute("data-date");
+      // console.log("_date: ", _date);
+      dateData = _date;
+      fullateData = _date;
+      // console.log("$('#confirmSelection'): ", $("#confirmSelection"));
+      // $("#confirmSelection").modal();
+      var myModal = new bootstrap.Modal(calModal, {});
+      myModal.show();
+
+      //
+      let _fullDate = new Date(element.getAttribute("data-date"));
+      // console.log("_fullDate: ", _fullDate);
+      // alert(element.getAttribute("data-date"))
+      let y =
+        element.firstChild.firstChild.firstChild.getAttribute("aria-label");
+      // console.log(" y: ", y);
     });
   }
+
+  calModal.addEventListener("hidden.bs.modal", function (event) {
+    // do something...
+    // console.log("hidden: ", event.target);
+  });
+  calModal.addEventListener("show.bs.modal", function (event) {
+    // do something...
+    // console.log("show: ", event.target);
+    console.log("date data: ", dateData);
+    fullateData;
+    console.log("fulldate data: ", fullateData);
+  });
 });
