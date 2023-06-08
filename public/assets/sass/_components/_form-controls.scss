@@ -32,25 +32,41 @@ input[type="number"],
 input[type="email"],
 input[type="search"],
 input[type="tel"],
+input[type="date"],
 textarea,
 select {
   &.form-control,
   &.form-select {
     border: 1px solid var(--clr-accent-50);
     border-radius: var(--size-250);
+    font-size: var(--fs-100);
     &:focus {
       background-color: unset;
       outline: 0;
       box-shadow: none;
       border: 1px solid var(--clr-primary-500);
     }
-    //
-    height: 40px;
-    font-size: var(--fs-100);
-    @include mixins.minmq(50em) {
-      height: 45px;
-    }
   }
+}
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="search"],
+input[type="tel"],
+input[type="date"],
+select {
+  height: 40px;
+  @include mixins.minmq(50em) {
+    height: 45px;
+  }
+}
+
+/* Remove date input icon */
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
 }
 
 // input[type="text"],
@@ -122,6 +138,7 @@ select {
   input[type="number"],
   input[type="email"],
   input[type="search"],
+  input[type="date"],
   textarea,
   select {
     &.form-control,
@@ -236,6 +253,7 @@ select {
 
 .custom-cvv-control,
 .custom-date-control,
+.custom-time-control,
 .custom-card-number-control {
   position: relative;
   display: flex;
@@ -269,10 +287,27 @@ select {
   }
 }
 
-.custom-card-number-control{
+.custom-date-control[aria-label="inverse-green-icon-date"],
+.custom-time-control {
+  input {
+    flex-basis: calc(100% - 30px);
+    margin-left: 0.5em;
+  }
+  &::before {
+    content: url(../../assets/images/icons/material-symbols_calendar-month-outline-sharp-green.svg);
+    order: 2;
+    flex-basis: 30px;
+  }
+}
+
+.custom-time-control {
+  &::before {
+    content: url(../../assets/images/icons/schedule_FILL0_wght400_GRAD0_opsz48.svg);
+  }
+}
+
+.custom-card-number-control {
   &::before {
     content: url(../../assets/images/icons/ic_baseline-credit-card.svg);
   }
 }
-
-/* Contact Us Form*/

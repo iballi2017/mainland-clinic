@@ -19,7 +19,7 @@
     <div class="container">
         <!-- filter select -->
         <div class="custom-select rounded-250 mb-5" style="max-width: 200px; height: 36px;">
-            <select class="form-select" aria-label="Default select example">
+            <select class="form-select" aria-label="Filter select">
                 <option selected>Job Type</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>

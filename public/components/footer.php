@@ -93,6 +93,17 @@
 <script src="../assets/lib/owlcarousel/js/owl.carousel.min.js"></script>
 <!-- RateYo -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+<!-- Cleave -->
+<script>
+    var cleaveDate = new Cleave('.input-date', {
+        date: true,
+        datePattern: ['d', 'm', 'Y']
+    });
+    var cleave = new Cleave('.input-element', {
+        time: true,
+        timePattern: ['h', 'm', 's']
+    });
+</script>
 <!-- Custom JS -->
 <script src="../assets/scripts/index.jquery.js"></script>
 <script src="../assets/scripts/index.js"></script>
