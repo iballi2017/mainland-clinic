@@ -1,0 +1,105 @@
+.custom-search-dropdown {
+    position: relative;
+    &.active {
+        .content {
+            display: block;
+        }
+
+        .select-btn i {
+            transform: rotate(-180deg);
+            transition: transform 0.3s linear;
+        }
+    }
+}
+
+.select-btn,
+.options li {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+.select-btn {
+    height: 45px;
+    padding: 0 1em;
+    border-radius: 7px;
+    background-color: #ffffff;
+    justify-content: space-between;
+    border: 1px solid var(--clr-accent-50);
+    border-radius: var(--size-250);
+    position: relative;
+    z-index: 2;
+    .placeholder-text {
+        color: #c4c4c4;
+    }
+}
+
+.content {
+    margin-top: -1em;
+    // border-radius: 7px;
+    background-color: #ffffff;
+    // background-color: #c70909;
+    display: none;
+    position: absolute;
+    width: 100%;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 2em;
+    z-index: 1;
+
+    .search {
+        position: relative;
+        svg {
+            left: 15px;
+            color: #999;
+            font-size: 20px;
+            line-height: 53px;
+            position: absolute;
+            top: 20%;
+            max-width: 18px;
+        }
+
+        input {
+            height: 40px;
+            width: 100%;
+            outline: none;
+            font-size: 13px;
+            border-radius: 5px;
+            padding: 0 15px 0 43px;
+            border: 1px solid #b3b3b3;
+        }
+    }
+
+    .options {
+        // margin-top: 10px;
+        max-height: 250px;
+        padding-top: .5em;
+        // padding: 1em 0 1em 0.5em;
+        // background-color: #ffffff;
+        // background-color: #bc1a1a;
+        // position: absolute;
+        // width: 100%;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+            width: 7px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+            border-radius: 25px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #ccc;
+            border-radius: 25px;
+        }
+        li {
+            // height: 50px;
+            padding: 0 13px;
+            // font-size: 21px;
+            border-radius: 5px;
+            line-height: 30px;
+            &:hover,
+            &.selected {
+                background-color: #f2f2f2;
+            }
+        }
+    }
+}

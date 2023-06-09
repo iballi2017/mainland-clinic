@@ -50,7 +50,7 @@
   color: var(--base-text-color-200);
 }
 .base-text-color-500 {
-  color: var(--base-text-color-500);
+  color: var(--base-text-color-500) !important;
 }
 
 .bg-accent-50 {

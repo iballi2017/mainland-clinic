@@ -94,16 +94,23 @@
 <!-- RateYo -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 <!-- Cleave -->
-<script>
-    var cleaveDate = new Cleave('.input-date', {
-        date: true,
-        datePattern: ['d', 'm', 'Y']
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        var cleaveDate = new Cleave('.input-date', {
+            date: true,
+            datePattern: ['d', 'm', 'Y']
+        });
+        var cleave = new Cleave('.input-element', {
+            time: true,
+            timePattern: ['h', 'm', 's']
+        });
     });
-    var cleave = new Cleave('.input-element', {
-        time: true,
-        timePattern: ['h', 'm', 's']
-    });
-</script>
+</script> -->
+<!-- FullCalendar -->
+<!-- <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.8/index.global.min.js'></script>
+<script src="../assets/lib/fullCalendar/index.global.min.js"></script> -->
+<script src="../assets/lib/fullCalendar/index.global.js"></script>
+<script src="../assets/lib/fullCalendar/app.js"></script>
 <!-- Custom JS -->
 <script src="../assets/scripts/index.jquery.js"></script>
 <script src="../assets/scripts/index.js"></script>

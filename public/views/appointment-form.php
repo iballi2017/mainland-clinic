@@ -87,32 +87,104 @@
                                     <textarea name="" id="" cols="30" rows="7" class="form-control"></textarea>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="ServicesOffer" class="form-label">Services offer</label>
-                                    <!-- https://www.w3schools.com/howto/howto_js_filter_dropdown.asp -->
-                                    <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_filter -->
-                                    <div class="dropdown">
-                                        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                                        <div id="myDropdown" class="dropdown-content">
-                                            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                                            <a href="#about">About</a>
-                                            <a href="#base">Base</a>
-                                            <a href="#blog">Blog</a>
-                                            <a href="#contact">Contact</a>
-                                            <a href="#custom">Custom</a>
-                                            <a href="#support">Support</a>
-                                            <a href="#tools">Tools</a>
+                                    <label for="AppointmentTime" class="form-label">Services offer</label>
+
+                                    <div class="custom-search-dropdown wrapper custom-search-dropdown-1">
+                                        <div class="select-btn">
+                                            <span class="placeholder-text">Select category</span>
+                                            <i data-feather="chevron-down"></i>
+                                        </div>
+                                        <div class="content">
+                                            <div class="search">
+                                                <i data-feather="search"></i>
+                                                <input type="text" placeholder="Search">
+                                            </div>
+                                            <ul class="options ps-0">
+                                                <li>Australia</li>
+                                                <li>Colombia</li>
+                                                <li>Denmark</li>
+                                                <li>Germany</li>
+                                                <li>Indonesia</li>
+                                                <li>Australia</li>
+                                                <li>Colombia</li>
+                                                <li>Denmark</li>
+                                                <li>Germany</li>
+                                                <li>Indonesia</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="AppointmentTime" class="form-label">Type</label>
+                                    <!-- <div class="custom-search-dropdown wrapper" id="custom-search-dropdown-2"> -->
+                                    <div class="custom-search-dropdown custom-search-dropdown-2 wrapper">
+                                        <div class="select-btn">
+                                            <span class="placeholder-text">Select type</span>
+                                            <i data-feather="chevron-down"></i>
+                                        </div>
+                                        <div class="content">
+                                            <div class="search">
+                                                <i data-feather="search"></i>
+                                                <input type="text" placeholder="Search">
+                                            </div>
+                                            <ul class="options ps-0">
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- Reason for visit / appointment -->
                             </div>
+                            <fieldset>
+                                <legend class="fs-200">Is this your first appointment with us/are you a new patient ?</legend>
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="list-style-none ps-0 mb-0">
+                                            <li class="mb-2">
+                                                <div class="custom-radio-control">
+                                                    <input type="radio" name="FirstAppointment" id="Yes" value="1">
+                                                    <label for="Yes" class="fs-200">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <div class="fake-btn"></div>
+                                                            Yes
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="custom-radio-control">
+                                                    <input type="radio" name="FirstAppointment" id="No" value="0">
+                                                    <label for="No" class="fs-200">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <div class="fake-btn"></div>
+                                                            No
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                         </div>
+                        </fieldset>
                     </div>
-                </form>
             </div>
+            </form>
         </div>
     </div>
+    </div>
 </section>
+<script>
+    /* Cleave  */
+    var cleaveDate = new Cleave(".input-date", {
+        date: true,
+        datePattern: ["d", "m", "Y"],
+    });
+    var cleaveTime = new Cleave(".input-element", {
+        time: true,
+        timePattern: ["h", "m", "s"],
+    });
+</script>
 <!-- Footer -->
 <?php include_once "../components/footer.php" ?>

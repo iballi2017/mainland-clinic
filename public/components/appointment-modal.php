@@ -4,14 +4,14 @@
         <div class="modal-content">
             <div class="modal-header px-4">
                 <h1 class="fs-300 fw-semi-bold mb-0" id="exampleModalLabel">Select Appointment type</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body px-4 pb-5">
                 <form action="">
                     <div>
                         <ul class="appointment-types | list-style-none ps-0">
                             <li>
-                                <div class="book-radio">
+                                <div class="book-radio custom-radio-control">
                                     <input type="radio" name="Appointment" id="ClinicVisit" value="Onsite/Physical clinic visit">
                                     <label for="ClinicVisit" class="fs-200">
                                         <div class="d-flex justify-content-between align-items-center w-100">
@@ -25,7 +25,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="book-radio">
+                                <div class="book-radio custom-radio-control">
                                     <input type="radio" name="Appointment" id="HomeCare" value="Home care service">
                                     <label for="HomeCare" class="fs-200">
                                         <div class="d-flex justify-content-between align-items-center w-100">
@@ -39,7 +39,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="book-radio">
+                                <div class="book-radio custom-radio-control">
                                     <input type="radio" name="Appointment" id="VirtualClinic" value="Virtual clinic">
                                     <label for="VirtualClinic" class="fs-200">
                                         <div class="d-flex justify-content-between align-items-center w-100">
@@ -64,3 +64,18 @@
         </div>
     </div>
 </div>
+
+
+
+<script>
+    var x = document.querySelectorAll(".book-radio input")
+    for (let i = 0; i < x.length; i++) {
+        const element = x[i];
+        element.addEventListener("click", () => {
+            if (element.checked) {
+                document.getElementById("appointmentSelectionBtn").removeAttribute("disabled")
+            }
+        })
+
+    }
+</script>

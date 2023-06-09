@@ -205,7 +205,7 @@ svg {
 }
 
 .base-text-color-500 {
-  color: var(--base-text-color-500);
+  color: var(--base-text-color-500) !important;
 }
 
 .bg-accent-50 {
@@ -1817,6 +1817,33 @@ table [aria-label="list of checkout items"] tr:not(:last-child) td {
   margin-bottom: 2em;
 }
 
+.custom-radio-control input[type=radio] {
+  visibility: hidden;
+  position: absolute;
+}
+.custom-radio-control input[type=radio] + label {
+  display: flex;
+  align-items: center;
+  transition: all 320ms ease-in-out;
+  cursor: pointer;
+}
+.custom-radio-control input[type=radio] + label .fake-btn {
+  display: block;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  margin-right: 0.7em;
+  background-color: var(--clr-accent-600);
+  border: 4px solid white;
+  outline: 3px solid var(--clr-accent-600);
+  transition: all 320ms ease-in-out;
+}
+.custom-radio-control input[type=radio]:checked + label .fake-btn {
+  background-color: #208d05;
+  border: 4px solid #c7f38e;
+  outline: 3px solid #208d05;
+}
+
 .book-radio {
   background: #ffffff;
   border: 1px solid #c4c4c4;
@@ -1828,21 +1855,11 @@ table [aria-label="list of checkout items"] tr:not(:last-child) td {
 }
 .book-radio input[type=radio] + label {
   padding: 1.1em 1.4em;
-  display: flex;
-  align-items: center;
-  transition: all 320ms ease-in-out;
-  cursor: pointer;
 }
 .book-radio input[type=radio] + label .fake-btn {
-  display: block;
   height: 20px;
   width: 20px;
-  border-radius: 50%;
-  margin-right: 0.7em;
-  background-color: var(--clr-accent-600);
   border: 5px solid white;
-  outline: 3px solid var(--clr-accent-600);
-  transition: all 320ms ease-in-out;
 }
 .book-radio input[type=radio]:checked + label {
   background: #c7f38e;
@@ -1851,9 +1868,97 @@ table [aria-label="list of checkout items"] tr:not(:last-child) td {
   color: #208d05;
 }
 .book-radio input[type=radio]:checked + label .fake-btn {
-  background-color: #208d05;
   border: 5px solid #c7f38e;
-  outline: 3px solid #208d05;
+}
+
+.custom-search-dropdown {
+  position: relative;
+}
+.custom-search-dropdown.active .content {
+  display: block;
+}
+.custom-search-dropdown.active .select-btn i {
+  transform: rotate(-180deg);
+  transition: transform 0.3s linear;
+}
+
+.select-btn,
+.options li {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.select-btn {
+  height: 45px;
+  padding: 0 1em;
+  border-radius: 7px;
+  background-color: #ffffff;
+  justify-content: space-between;
+  border: 1px solid var(--clr-accent-50);
+  border-radius: var(--size-250);
+  position: relative;
+  z-index: 2;
+}
+.select-btn .placeholder-text {
+  color: #c4c4c4;
+}
+
+.content {
+  margin-top: -1em;
+  background-color: #ffffff;
+  display: none;
+  position: absolute;
+  width: 100%;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-top: 2em;
+  z-index: 1;
+}
+.content .search {
+  position: relative;
+}
+.content .search svg {
+  left: 15px;
+  color: #999;
+  font-size: 20px;
+  line-height: 53px;
+  position: absolute;
+  top: 20%;
+  max-width: 18px;
+}
+.content .search input {
+  height: 40px;
+  width: 100%;
+  outline: none;
+  font-size: 13px;
+  border-radius: 5px;
+  padding: 0 15px 0 43px;
+  border: 1px solid #b3b3b3;
+}
+.content .options {
+  max-height: 250px;
+  padding-top: 0.5em;
+  overflow-y: auto;
+}
+.content .options::-webkit-scrollbar {
+  width: 7px;
+}
+.content .options::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 25px;
+}
+.content .options::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 25px;
+}
+.content .options li {
+  padding: 0 13px;
+  border-radius: 5px;
+  line-height: 30px;
+}
+.content .options li:hover, .content .options li.selected {
+  background-color: #f2f2f2;
 }
 
 .intro-content {
