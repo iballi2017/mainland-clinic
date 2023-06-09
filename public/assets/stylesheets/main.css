@@ -1905,15 +1905,15 @@ table [aria-label="list of checkout items"] tr:not(:last-child) td {
 }
 
 .content {
-  margin-top: -1em;
+  margin-top: 0;
   background-color: #ffffff;
   display: none;
   position: absolute;
   width: 100%;
-  padding-right: 1em;
-  padding-left: 1em;
-  padding-top: 2em;
-  z-index: 1;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  z-index: 10;
 }
 .content .search {
   position: relative;
@@ -1928,13 +1928,14 @@ table [aria-label="list of checkout items"] tr:not(:last-child) td {
   max-width: 18px;
 }
 .content .search input {
-  height: 40px;
+  height: 35px;
   width: 100%;
   outline: none;
   font-size: 13px;
-  border-radius: 5px;
-  padding: 0 15px 0 43px;
-  border: 1px solid #b3b3b3;
+  border-radius: 0;
+  padding-left: 43px;
+  border: 0;
+  border-bottom: 1px solid #b3b3b3;
 }
 .content .options {
   max-height: 250px;

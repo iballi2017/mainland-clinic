@@ -17,8 +17,8 @@
 </div>
 
 <section class="padding-block-600">
-    <div class="container">
-        <div class="card">
+    <div class="container mb-5">
+        <div class="card mb-3">
             <div class="card-header bg-secondary-500">
                 <div style="max-width: 124px">
                     <img src="../assets/images/brand-logo-black-and-white.svg" alt="" class="img-fluid">
@@ -37,7 +37,7 @@
                 </div>
                 <!--  -->
                 <form action="">
-                    <div class="card">
+                    <div class="card mb-3">
                         <div class="card-body">
                             <div class="row mb-3 g-2 g-md-3">
                                 <div class="col-md-6">
@@ -51,7 +51,7 @@
                                 <div class="col-md-6">
                                     <label for="DoB" class="form-label">Date of Birth</label>
                                     <div class="custom-date-control" aria-label="inverse-green-icon-date">
-                                        <input type="tel" class="input-date border-0" placeholder="DD/MM/YYYY" id="DoB" onfocus="this.showPicker()">
+                                        <input type="tel" class="input-date border-0" placeholder="DD/MM/YYYY" id="DoB">
                                     </div>
                                     <!-- <input type="date" class="form-control" placeholder="DD/MM/YYYY" id="DoB"> -->
                                 </div>
@@ -91,10 +91,10 @@
 
                                     <div class="custom-search-dropdown wrapper custom-search-dropdown-1">
                                         <div class="select-btn">
-                                            <span class="placeholder-text">Select category</span>
+                                            <span class="placeholder-text" id="serviceCategory">Select category</span>
                                             <i data-feather="chevron-down"></i>
                                         </div>
-                                        <div class="content">
+                                        <div class="content shadow-sm">
                                             <div class="search">
                                                 <i data-feather="search"></i>
                                                 <input type="text" placeholder="Search">
@@ -120,10 +120,10 @@
                                     <!-- <div class="custom-search-dropdown wrapper" id="custom-search-dropdown-2"> -->
                                     <div class="custom-search-dropdown custom-search-dropdown-2 wrapper">
                                         <div class="select-btn">
-                                            <span class="placeholder-text">Select type</span>
+                                            <span class="placeholder-text" id="serviceType">Select type</span>
                                             <i data-feather="chevron-down"></i>
                                         </div>
-                                        <div class="content">
+                                        <div class="content shadow-sm">
                                             <div class="search">
                                                 <i data-feather="search"></i>
                                                 <input type="text" placeholder="Search">
@@ -138,7 +138,7 @@
                             </div>
                             <fieldset>
                                 <legend class="fs-200">Is this your first appointment with us/are you a new patient ?</legend>
-                                <div class="row">
+                                <div class="row mb-3 g-2 g-md-3">
                                     <div class="col">
                                         <ul class="list-style-none ps-0 mb-0">
                                             <li class="mb-2">
@@ -166,18 +166,36 @@
                                         </ul>
                                     </div>
                                 </div>
+                            </fieldset>
+                            <div class="row g-2 g-md-3">
+                                <div class="col-md-6">
+                                    <label for="LastAppointmentDate" class="form-label">If yes last appointment date</label>
+                                    <div class="custom-date-control" aria-label="inverse-green-icon-date">
+                                        <input type="tel" class="input-date-2 border-0" placeholder="DD/MM/YYYY" id="LastAppointmentDate">
+                                    </div>
+                                    <!-- <input type="date" class="form-control" placeholder="DD/MM/YYYY" id="DoB"> -->
+                                </div>
+                                <div class="col-12">
+                                    <label for="Comment" class="form-label">Comment</label>
+                                    <textarea name="Comment" id="Comment" cols="30" rows="4" class="form-control"></textarea>
+                                </div>
+                            </div>
                         </div>
-                        </fieldset>
                     </div>
+                    <button class="btn button px-3 text-white">Continue to Payment</button>
+                </form>
             </div>
-            </form>
         </div>
-    </div>
+        <button class="btn button px-3" data-type="inverted">Go back to calender</button>
     </div>
 </section>
 <script>
     /* Cleave  */
     var cleaveDate = new Cleave(".input-date", {
+        date: true,
+        datePattern: ["d", "m", "Y"],
+    });
+    var cleaveDate2 = new Cleave(".input-date-2", {
         date: true,
         datePattern: ["d", "m", "Y"],
     });

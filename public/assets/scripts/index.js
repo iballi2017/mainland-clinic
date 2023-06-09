@@ -63,47 +63,87 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 /** */
+
+const servicesCategories = [
+  "Point of care testing",
+  "Home services",
+  "Medical Screening",
+  "Other services",
+];
+// const serviceTypes = ["hello", "hi", "me"];
+var serviceTypes = [];
+var availableServiceTypes = [
+  {
+    offer: "Point of care testing",
+    types: [
+      "Blood sample testing: Blood Pregnancy test",
+      "Blood sample testing: Malaria Parasite",
+      "Blood sample testing: Widal reactivity",
+      "Blood sample testing: Hepatitis A",
+      "Blood sample testing: Hepatitis B",
+      "Blood sample testing: Hepatitis C",
+      "Blood sample testing: Random blood sugar",
+      "Blood sample testing: Fasting blood sugar",
+      "Blood sample testing: Serum total cholesterol level",
+      "Blood sample testing: Blood Haemoglobin level",
+      "Urine sample testing: Leukocytes",
+      "Urine sample testing: Nitrite",
+      "Urine sample testing: Urobilinogen",
+      "Urine sample testing: Protein",
+      "Urine sample testing: PH",
+      "Urine sample testing: Blood",
+      "Urine sample testing: Specific Gravity",
+      "Urine sample testing: Ketone",
+      "Urine sample testing: Bilirubin",
+      "Urine sample testing: Glucose",
+    ],
+  },
+  {
+    offer: "Home services",
+    types: [
+      "Request a doctor",
+      "Request a nurse",
+      "Request a drug refill",
+      "Home care services",
+    ],
+  },
+  {
+    offer: "Medical Screening",
+    types: [
+      "Food handlers testing",
+      "Pre-employment testing",
+      "Drivers fitness test",
+      "Pregnancy fit to fly testing",
+    ],
+  },
+  {
+    offer: "Other services",
+    types: [
+      "First aid/ medical training for company staff",
+      "Management of onsite clinic for corporate bodies",
+    ],
+  },
+];
 const wrapper = document.querySelector(".custom-search-dropdown");
 selectBtn = wrapper.querySelector(".select-btn");
 searchInput = wrapper.querySelector("input");
 options = wrapper.querySelector(".options");
 
-/**array of some countries */
-let countries = [
-  "Afghanistan",
-  "Algeria",
-  "Argenetina",
-  "Australia",
-  "Bangladesh",
-  "Belgium",
-  "Bhutan",
-  "Brazil",
-  "Canada",
-  "China",
-  "Denmark",
-  "Ethiopia",
-  "Finland",
-  "France",
-  "Germany",
-  "Hungary",
-  "Iceland",
-  "India",
-  "Indonesia",
-  "Iran",
-  "Italy",
-  "Japan",
-  "Malaysia",
-  "Maldives",
-  "Mexico",
-];
+var serviceValue = {
+  category: null,
+  type: null,
+};
+
 /**############################### */
 
 class DropdownSearch {
-  countries;
+  arrayList;
   wrapper;
   constructor(dropdownName, list) {
     this.wrapper = dropdownName;
-    this.countries = [...list];
+    if (list) {
+      this.arrayList = [...list];
+    }
     this.wrapper.addEventListener("mouseleave", () => {
       if (!this.wrapper.classList.contains("active")) return;
       this.wrapper.classList.remove("active");
@@ -115,16 +155,18 @@ class DropdownSearch {
 
   addCountry(selectedCountry) {
     this.wrapper.querySelector(".options").innerHTML = "";
-    this.countries.forEach((country) => {
-      // console.log("country: ", country);
-      /**if selected country value is same then add selected class */
-      let isSelected = country == selectedCountry ? "selected" : "";
-      // adding each country inside li and inserting all li inside options tag
-      let li = `<li class='${isSelected}'>${country}</li>`;
-      this.wrapper
-        .querySelector(".options")
-        .insertAdjacentHTML("beforeend", li);
-    });
+    this.arrayList
+      ? this.arrayList.forEach((country) => {
+          // console.log("country: ", country);
+          /**if selected country value is same then add selected class */
+          let isSelected = country == selectedCountry ? "selected" : "";
+          // adding each country inside li and inserting all li inside options tag
+          let li = `<li class='${isSelected}'>${country}</li>`;
+          this.wrapper
+            .querySelector(".options")
+            .insertAdjacentHTML("beforeend", li);
+        })
+      : null;
   }
 
   updateName(selectedLi) {
@@ -136,6 +178,33 @@ class DropdownSearch {
     this.wrapper
       .querySelector(".select-btn")
       .firstElementChild.classList.add("base-text-color-500");
+
+    this.appointmentFormOfferUpdate(selectedLi.innerText);
+  }
+
+  appointmentFormOfferUpdate(data) {
+    // serviceTypes = [];
+    
+    let c = availableServiceTypes.find((item) => item.offer == data);
+    serviceTypes = c?.types;
+
+    const serviceType = document.querySelector(".custom-search-dropdown-2");
+    var serviceTypesDropSearch = new DropdownSearch(serviceType, serviceTypes);
+    serviceTypesDropSearch.searchItem();
+    serviceTypesDropSearch.selectButton();
+    // this.triggerSelectionEvent();
+
+    var selectedServiceCategory = document.querySelector("#serviceCategory");
+    var selectedServiceType = document.querySelector("#serviceType");
+
+    serviceValue.category = selectedServiceCategory.textContent;
+    serviceValue.type = selectedServiceType.textContent;
+
+    if (serviceValue.category == "Select offer") serviceValue.category = null;
+
+    if (serviceValue.type == "Select type") serviceValue.type = null;
+
+    console.log("serviceValue: ", serviceValue);
   }
 
   searchItem() {
@@ -161,10 +230,10 @@ class DropdownSearch {
   searchTerm() {
     let arr = []; /**create empty array */
     let searchVal = this.wrapper.querySelector("input").value;
-    /**returning all countries from array which starts with user searched value
+    /**returning all arrayList from array which starts with user searched value
      * and mapping returned country wit li and joining them
      */
-    arr = this.countries
+    arr = this.arrayList
       .filter((data) => {
         return data.toLowerCase().startsWith(searchVal);
       })
@@ -173,7 +242,8 @@ class DropdownSearch {
     //   console.log(arr);
     this.wrapper.querySelector(".options").innerHTML = arr
       ? arr
-      : `<p>Oops!, Country not found</p>`;
+      : `<p>
+      <small>Oops!, No data found</small></p>`;
 
     //
   }
@@ -189,24 +259,16 @@ class DropdownSearch {
   }
 }
 
-const test1 = document.querySelector(".custom-search-dropdown-1");
-const myList = ["hello", "hi", "me"];
-var x = new DropdownSearch(test1, countries);
-// x.addCountry();
-// function updateValue(data) {
-//   x.updateName(data);
-// }
-x.searchItem();
-x.selectButton();
+const serviceOffer = document.querySelector(".custom-search-dropdown-1");
+var servicesCategoriesDropSearch = new DropdownSearch(
+  serviceOffer,
+  servicesCategories
+);
+servicesCategoriesDropSearch.searchItem();
+servicesCategoriesDropSearch.selectButton();
 
-//
-
-const test2 = document.querySelector(".custom-search-dropdown-2");
-const myList2 = ["hello", "hi", "me"];
-var y = new DropdownSearch(test2, myList);
-// y.addCountry();
-// function updateValue(data) {
-//   y.updateName(data);
-// }
-y.searchItem();
-y.selectButton();
+/** */
+// const serviceType = document.querySelector(".custom-search-dropdown-2");
+// var serviceTypesDropSearch = new DropdownSearch(serviceType, serviceTypes);
+// serviceTypesDropSearch.searchItem();
+// serviceTypesDropSearch.selectButton();
