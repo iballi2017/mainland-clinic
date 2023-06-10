@@ -140,14 +140,14 @@
                                 <legend class="fs-200">Is this your first appointment with us/are you a new patient ?</legend>
                                 <div class="row mb-3 g-2 g-md-3">
                                     <div class="col">
-                                        <ul class="list-style-none ps-0 mb-0">
-                                            <li class="mb-2">
+                                        <ul class="list-style-none ps-0 mb-0 d-flex align-items-center">
+                                            <li class="me-5">
                                                 <div class="custom-radio-control">
                                                     <input type="radio" name="FirstAppointment" id="Yes" value="1">
                                                     <label for="Yes" class="fs-200">
                                                         <div class="d-flex justify-content-between align-items-center">
                                                             <div class="fake-btn"></div>
-                                                            Yes
+                                                            <span class="fw-semi-bold">Yes</span>
                                                         </div>
                                                     </label>
                                                 </div>
@@ -158,7 +158,7 @@
                                                     <label for="No" class="fs-200">
                                                         <div class="d-flex justify-content-between align-items-center">
                                                             <div class="fake-btn"></div>
-                                                            No
+                                                            <span class="fw-semi-bold">No</span>                                                            
                                                         </div>
                                                     </label>
                                                 </div>

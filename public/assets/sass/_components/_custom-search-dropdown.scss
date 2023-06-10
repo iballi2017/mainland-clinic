@@ -1,13 +1,17 @@
 .custom-search-dropdown {
     position: relative;
+
+    .select-btn svg {
+        transition: transform 0.3s linear;
+    }
     &.active {
         .content {
             display: block;
         }
 
-        .select-btn i {
+        .select-btn svg {
             transform: rotate(-180deg);
-            transition: transform 0.3s linear;
+            // transition: transform 0.3s linear;
         }
     }
 }

@@ -125,9 +125,14 @@ var availableServiceTypes = [
   },
 ];
 const wrapper = document.querySelector(".custom-search-dropdown");
-selectBtn = wrapper.querySelector(".select-btn");
-searchInput = wrapper.querySelector("input");
-options = wrapper.querySelector(".options");
+var selectBtn;
+var searchInput;
+var searchInput;
+if (wrapper) {
+  selectBtn = wrapper.querySelector(".select-btn");
+  searchInput = wrapper.querySelector("input");
+  options = wrapper.querySelector(".options");
+}
 
 var serviceValue = {
   category: null,
@@ -144,6 +149,7 @@ class DropdownSearch {
     if (list) {
       this.arrayList = [...list];
     }
+    if (!this.wrapper) return;
     this.wrapper.addEventListener("mouseleave", () => {
       if (!this.wrapper.classList.contains("active")) return;
       this.wrapper.classList.remove("active");
@@ -184,7 +190,7 @@ class DropdownSearch {
 
   appointmentFormOfferUpdate(data) {
     // serviceTypes = [];
-    
+
     let c = availableServiceTypes.find((item) => item.offer == data);
     serviceTypes = c?.types;
 
@@ -208,6 +214,7 @@ class DropdownSearch {
   }
 
   searchItem() {
+    if (!this.wrapper) return;
     this.wrapper.querySelector("input").addEventListener("keyup", () => {
       this.searchTerm();
       this.triggerSelectionEvent();
@@ -215,6 +222,7 @@ class DropdownSearch {
   }
 
   selectButton() {
+    if (!this.wrapper) return;
     this.wrapper.querySelector(".select-btn").addEventListener("click", () => {
       this.wrapper.classList.toggle("active");
 

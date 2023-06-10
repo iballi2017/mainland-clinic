@@ -110,7 +110,7 @@
 <!-- <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.8/index.global.min.js'></script>
 <script src="../assets/lib/fullCalendar/index.global.min.js"></script> -->
 <script src="../assets/lib/fullCalendar/index.global.js"></script>
-<script src="../assets/lib/fullCalendar/app.js"></script>
+<!-- <script src="../assets/lib/fullCalendar/app.js"></script> -->
 <!-- Custom JS -->
 <script src="../assets/scripts/index.jquery.js"></script>
 <script src="../assets/scripts/index.js"></script>

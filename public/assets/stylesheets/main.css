@@ -1874,12 +1874,14 @@ table [aria-label="list of checkout items"] tr:not(:last-child) td {
 .custom-search-dropdown {
   position: relative;
 }
+.custom-search-dropdown .select-btn svg {
+  transition: transform 0.3s linear;
+}
 .custom-search-dropdown.active .content {
   display: block;
 }
-.custom-search-dropdown.active .select-btn i {
+.custom-search-dropdown.active .select-btn svg {
   transform: rotate(-180deg);
-  transition: transform 0.3s linear;
 }
 
 .select-btn,
