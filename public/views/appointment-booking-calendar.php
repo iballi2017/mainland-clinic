@@ -21,7 +21,8 @@
         text-align: center;
     }
 
-    #calendarPrev:disabled , #calendarPrev:disabled +  span{
+    #calendarPrev:disabled,
+    #calendarPrev:disabled+span {
         display: none;
     }
 
@@ -63,9 +64,57 @@
         border: 1px solid var(--clr-accent-50);
     }
 
+    /** */
+    .calendarDiv table tbody td div {
+        position: relative;
+        /* display: inline-block; */
+        border-bottom: 1px dotted black;
+    }
+
+    .calendarDiv table tbody td div .tooltiptext {
+        visibility: hidden;
+        width: auto;
+        background-color: #FFFFFF;
+        color: #818181;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 10px;
+        position: absolute;
+        z-index: 1;
+        /* bottom: 125%;
+        left: 50%;
+        margin-left: -60px; */
+        left: 20%;
+        right: 20%;
+        margin-left: -100px;
+        /*  */
+        opacity: 0;
+        transition: opacity 0.3s;
+        border: 1px solid #818181;
+        font-size: var(--fs-50);
+        font-weight: var(--fw-regular);
+    }
+
+    .calendarDiv table tbody td div .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+    .calendarDiv table tbody td div:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /** */
     @media (min-width: 768px) {
         .calendarDiv table tbody td {
-            height: 7.3rem;
+            height: 5.5rem;
         }
     }
 
@@ -88,6 +137,26 @@
     </div>
 </section>
 
+
+<!--  -->
+
+<button class="button cta | d-none d-xl-block" data-bs-toggle="modal" data-bs-target="#confirmSelection">Book an appointment</button>
+<div class="modal fade" id="confirmSelection" data-bs-backdrop="static" tabindex="-1" aria-labelledby="confirmSelectionLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header px-4 justify-content-center border-0">
+                <h1 class="fs-300 fw-semi-bold mb-0" id="confirmSelectionLabel">Do you want to proceed?</h1>
+            </div>
+            <div class="modal-body px-4 pb-5">
+                <div class="d-grid">
+                    <button type="button" class="btn button py-3 text-white" id="appointmentSelectionBtn">Yes</button>
+                    <div class="my-2"></div>
+                    <button type="button" class="btn button py-3" data-type="inverted" data-bs-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!-- /**SCRIPT */ -->
@@ -124,7 +193,7 @@
             }
         }
 
-        console.log("dates: ", dates);
+        // console.log("dates: ", dates);
         let currentMonthYearTitle = "March 2023"
         let content =
             "<div class='d-flex align-items-center justify-content-between border-bottom border-accent-50 py-3 px-4'>"
@@ -344,10 +413,21 @@
     setInitialPageMonthTitle();
 
 
-    var closedDates = [
-        "Fri Jun 02 2023 00:00:00 GMT+0100 (West Africa Standard Time)",
-        "Wed Jun 14 2023 00:00:00 GMT+0100 (West Africa Standard Time)",
-        "Sat Jun 17 2023 00:00:00 GMT+0100 (West Africa Standard Time)"
+    var closedDates = [{
+            message: "Doctor not available",
+            date: "Fri Jun 02 2023 00:00:00 GMT+0100 (West Africa Standard Time)"
+        },
+        {
+            message: "Public holiday",
+            date: "Wed Jun 14 2023 00:00:00 GMT+0100 (West Africa Standard Time)"
+        },
+        {
+            message: "No space for new patients",
+            date: "Sat Jun 17 2023 00:00:00 GMT+0100 (West Africa Standard Time)"
+        }
+        // "Fri Jun 02 2023 00:00:00 GMT+0100 (West Africa Standard Time)",
+        // "Wed Jun 14 2023 00:00:00 GMT+0100 (West Africa Standard Time)",
+        // "Sat Jun 17 2023 00:00:00 GMT+0100 (West Africa Standard Time)"
     ]
 
     function onClosedDates() {
@@ -361,22 +441,69 @@
         // console.log("dayTds: ", dayTds)
         for (let i = 0; i < dayTds.length; i++) {
             const td = dayTds[i];
-            if (
-                closedDates.includes(td.getAttribute("date-data"))) {
+            // if (
+            //     closedDates.includes(td.getAttribute("date-data"))) {
+            //     if (!td.classList.contains("closed-day")) {
+            //         td.classList.add("closed-day");
+            //         const para = document.createElement("span");
+            //         const node = document.createTextNode("This is new. lorem something good");
+            //         para.appendChild(node);
+            //         td.firstElementChild.appendChild(para);
+            //         td.firstElementChild.firstElementChild.setAttribute('class', 'tooltiptext');
+            //     }
+            // }
+
+            let u = closedDates.findIndex(i => i.date == td.getAttribute("date-data"))
+            if (u >= 0) {
+                console.log("u: ", closedDates[u])
                 if (!td.classList.contains("closed-day")) {
                     td.classList.add("closed-day");
-                    td.setAttribute("title", "closed")
-                    td.setAttribute("data-bs-toggle", "tooltip")
-                    td.setAttribute("data-bs-placement", "top")
-                    // data-bs-toggle="tooltip" data-bs-placement="top"
+                    const para = document.createElement("span");
+                    // const node = document.createTextNode("This is new. lorem\n\n\n something good");
+                    const node = document.createTextNode(`${closedDates[u].message}`);
+                    para.appendChild(node);
+                    td.firstElementChild.appendChild(para);
+                    td.firstElementChild.firstElementChild.setAttribute('class', 'tooltiptext');
+                    td.firstElementChild.firstElementChild.setAttribute('class', 'tooltiptext');
                 }
+            }
+
+            if (td.firstElementChild && !td.classList.contains("closed-day")) {
+                td.firstElementChild.setAttribute('data-bs-toggle', 'modal');
+                td.firstElementChild.setAttribute('data-bs-target', '#confirmSelection');
             }
 
             td.addEventListener("click", () => {
                 if (!td.classList.contains("closed-day")) {
                     console.log(td.attributes)
                     console.log(td.getAttribute("date-data"))
-                    alert(td.getAttribute("date-data"))
+                    // alert(td.getAttribute("date-data"))
+
+
+
+                    /**trigger modal */
+                    // let myModalEl = document.getElementById('#confirmSelection')
+                    // myModalEl.addEventListener('hidden.bs.modal', event => {
+                    //     // do something...
+                    // })
+                    const exampleModal = document.getElementById('confirmSelection')
+                    exampleModal.addEventListener('show.bs.modal', event => {
+                        // Button that triggered the modal
+                        const button = event.relatedTarget
+                        console.log("button$: ", button)
+                        let recipient;
+                        if (!button) return;
+                        // Extract info from data-bs-* attributes
+                        recipient = button.getAttribute('data-bs-whatever')
+                        // If necessary, you could initiate an AJAX request here
+                        // and then do the updating in a callback.
+                        //
+                        // Update the modal's content.
+                        const modalTitle = exampleModal.querySelector('.modal-title')
+                        const modalBodyInput = exampleModal.querySelector('.modal-body input')
+                        if (modalTitle) modalTitle.textContent = `New message to ${recipient}`
+                        if (modalBodyInput) modalBodyInput.value = recipient;
+                    })
                 }
             })
 
