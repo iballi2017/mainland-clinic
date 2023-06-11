@@ -73,6 +73,8 @@
         const element = x[i];
         element.addEventListener("click", () => {
             if (element.checked) {
+                // console.log("element: ", element)
+                // console.log("button: ", document.getElementById("appointmentSelectionBtn"))
                 document.getElementById("appointmentSelectionBtn").removeAttribute("disabled")
             }
         })

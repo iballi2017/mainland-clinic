@@ -34,6 +34,10 @@
     z-index: 2;
     .placeholder-text {
         color: #c4c4c4;
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
@@ -45,9 +49,9 @@
     display: none;
     position: absolute;
     width: 100%;
-    padding-right: .5em;
-    padding-left: .5em;
-    padding-top: .5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
     z-index: 10;
 
     .search {
@@ -78,7 +82,7 @@
     .options {
         // margin-top: 10px;
         max-height: 250px;
-        padding-top: .5em;
+        padding-top: 0.5em;
         // padding: 1em 0 1em 0.5em;
         // background-color: #ffffff;
         // background-color: #bc1a1a;
