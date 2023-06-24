@@ -181,9 +181,11 @@ function callNext() {
       // allTables[i].style.display = "none";
       allTables[i].classList.add("d-none");
       allTables[i].classList.remove("d-block");
-    }
+    };
+
     // document.getElementById("calendarTable_" + calendarShow).style.display =
     //     "block";
+    
     document
       .getElementById("calendarTable_" + calendarShow)
       .classList.add("d-block");
@@ -217,6 +219,7 @@ function callPrev() {
     }
     // document.getElementById("calendarTable_" + calendarShow).style.display =
     //     "block";
+
     document
       .getElementById("calendarTable_" + calendarShow)
       .classList.add("d-block");
