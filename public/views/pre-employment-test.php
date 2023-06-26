@@ -21,7 +21,7 @@
         <div class="row g-xl-5 align-items-center">
             <div class="col-12 col-md-5">
                 <div class="rounded-2 overflow-hidden mb-3 fade-in">
-                    <img src="../assets/images/featured-image-1.png" alt="Take control of your health" class="img-fluid">
+                    <img src="../assets/images/feature-card-image-3.png" alt="Take control of your health" class="img-fluid">
                 </div>
             </div>
             <div class="col-12 col-md-7">

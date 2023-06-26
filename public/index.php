@@ -9,9 +9,7 @@
     <!-- Font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS @5.2.3 -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
@@ -38,8 +36,7 @@
                 <a href="./views/auth.html" class="base-text-color-100 text-decoration-none">login</a> |
                 <a href="./views/signup.html" class="base-text-color-100 text-decoration-none">Sign Up</a>
                 <div class="dropdown">
-                    <span class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true"
-                        aria-expanded="false">My Account</span>
+                    <span class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account</span>
                     <div class="dropdown-menu">
                         <a class="dropdown-item py-2" href="#">My profile</a>
                         <a class="dropdown-item py-2" href="#">Appointment history</a>
@@ -59,9 +56,7 @@
                     <img src="./assets/images/brand-logo.svg" alt="Mainland Clinics" class="img-fluid">
                 </a>
                 <div class="d-flex align-items-center">
-                    <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                    <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                         <!-- <span class="navbar-toggler-icon"></span> -->
                         <i data-feather="menu"></i>
                         <i data-feather="x"></i>
@@ -70,8 +65,7 @@
                         <span class="spacer"></span>
                         <a href="./views/shopping-cart.php" class="shopping-cart-wrap | position-relative">
                             <img src="./assets/images/icons/shopping-cart.svg" alt="" class="img-fluid">
-                            <span
-                                class="counter | position-absolute top-0 start-100 translate-middle badge rounded-pill">2</span>
+                            <span class="counter | position-absolute top-0 start-100 translate-middle badge rounded-pill">2</span>
                         </a>
                     </div>
                 </div>
@@ -84,19 +78,15 @@
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                                aria-haspopup="true" aria-expanded="false">Services</a>
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item py-2 text-center" href="./views/clinical-services.php">
                                     Clinical
                                     Services
                                 </a>
-                                <a class="dropdown-item py-2 text-center"
-                                    href="./views/fitness-wellness-test.php">Fitness/Wellness Test</a>
-                                <a class="dropdown-item py-2 text-center"
-                                    href="./views/telemedicine.php">Telemedicine</a>
-                                <a class="dropdown-item py-2 text-center"
-                                    href="./views/pre-employment-test.php">Pre-employment Test</a>
+                                <a class="dropdown-item py-2 text-center" href="./views/fitness-wellness-test.php">Fitness/Wellness Test</a>
+                                <a class="dropdown-item py-2 text-center" href="./views/telemedicine.php">Telemedicine</a>
+                                <a class="dropdown-item py-2 text-center" href="./views/pre-employment-test.php">Pre-employment Test</a>
                                 <a class="dropdown-item py-2 text-center" href="./views/food-handlers-test.php">
                                     Food
                                     Handlers Test
@@ -116,15 +106,12 @@
                 </nav>
                 <div class="d-lg-flex d-none">
                     <div class="d-flex align-items-center">
-                        <button class="button cta | d-none d-xl-block" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">Book an appointment</button>
+                        <button class="button cta | d-none d-xl-block" data-bs-toggle="modal" data-bs-target="#exampleModal">Book an appointment</button>
                         <!-- <a href="./views/book-appointment.php" class="button cta | d-none d-xl-block">Book an appointment</a> -->
                         <span class="spacer"></span>
-                        <a href="./views/shopping-cart.php"
-                            class="shopping-cart-wrap | position-relative d-none d-md-block">
+                        <a href="./views/shopping-cart.php" class="shopping-cart-wrap | position-relative d-none d-md-block">
                             <img src="./assets/images/icons/shopping-cart.svg" alt="" class="img-fluid">
-                            <span
-                                class="counter | position-absolute top-0 start-100 translate-middle badge rounded-pill">2</span>
+                            <span class="counter | position-absolute top-0 start-100 translate-middle badge rounded-pill">2</span>
                         </a>
                     </div>
                 </div>
@@ -213,8 +200,7 @@
                 <div class="row g-xl-5">
                     <div class="col-12 col-md-5">
                         <div class="rounded-2 overflow-hidden mb-3 fade-in">
-                            <img src="./assets/images/featured-image-1.png" alt="Take control of your health"
-                                class="img-fluid">
+                            <img src="./assets/images/featured-image-1.png" alt="Take control of your health" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-12 col-md-7">
@@ -249,49 +235,54 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="feature-card">
-                            <img src="./assets/images/feature-card-image-2.png" alt="Clinical Service"
-                                class="img-fluid">
-                            <div class="title">
-                                <span>Clinical Service</span>
+                        <a href="./views/clinical-services.php">
+                            <div class="feature-card">
+                                <img src="./assets/images/feature-card-image-1.png" alt="Clinical Service" class="img-fluid">
+                                <div class="title">
+                                    <span>Clinical Service</span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="item">
-                        <div class="feature-card">
-                            <img src="./assets/images/feature-card-image-3.png" alt="Clinical Service"
-                                class="img-fluid">
-                            <div class="title">
-                                <span>Food Handlers Test</span>
+                        <a href="./views/food-handlers-test.php">
+                            <div class="feature-card">
+                                <img src="./assets/images/feature-card-image-2.png" alt="Clinical Service" class="img-fluid">
+                                <div class="title">
+                                    <span>Food Handlers Test</span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="item">
-                        <div class="feature-card">
-                            <img src="./assets/images/feature-card-image-1.png" alt="Clinical Service"
-                                class="img-fluid">
-                            <div class="title">
-                                <span>Pre-employment Test</span>
+                        <a href="./views/pre-employment-test.php">
+                            <div class="feature-card">
+                                <img src="./assets/images/feature-card-image-3.png" alt="Clinical Service" class="img-fluid">
+                                <div class="title">
+                                    <span>Pre-employment Test</span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="item">
-                        <div class="feature-card">
-                            <img src="./assets/images/feature-card-image-4.png" alt="Clinical Service"
-                                class="img-fluid">
-                            <div class="title">
-                                <span>Fitness/Wellness Test</span>
+                        <a href="./views/fitness-wellness-test.php">
+                            <div class="feature-card">
+                                <img src="./assets/images/feature-card-image-4.png" alt="Clinical Service" class="img-fluid">
+                                <div class="title">
+                                    <span>Fitness/Wellness Test</span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="item">
-                        <div class="feature-card">
-                            <img src="./assets/images/feature-card-image-5.png" alt="Clinical Service"
-                                class="img-fluid">
-                            <div class="title">
-                                <span>Telemedicine</span>
+                        <a href="./views/telemedicine.php">
+                            <div class="feature-card">
+                                <img src="./assets/images/feature-card-image-5.png" alt="Clinical Service" class="img-fluid">
+                                <div class="title">
+                                    <span>Telemedicine</span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="item">
                         <div class="card border-0 h-100">
@@ -347,8 +338,7 @@
                         <div class="review-footer bg-primary-500 text-white fw-regular p-4">
                             <div class="foot-text fs-150">Contractor</div>
                             <div class="foot-image">
-                                <img data-src="./assets/images/avartar-sample-2.jpg" alt="Reviewer image"
-                                    class="img-fluid owl-lazy">
+                                <img data-src="./assets/images/avartar-sample-2.jpg" alt="Reviewer image" class="img-fluid owl-lazy">
                             </div>
                         </div>
                     </div>
@@ -364,8 +354,7 @@
                         <div class="review-footer bg-primary-500 text-white fw-regular p-4">
                             <div class="foot-text fs-150">Contractor</div>
                             <div class="foot-image">
-                                <img data-src="./assets/images/avartar-sample.jpg" alt="Reviewer image"
-                                    class="img-fluid owl-lazy">
+                                <img data-src="./assets/images/avartar-sample.jpg" alt="Reviewer image" class="img-fluid owl-lazy">
                             </div>
                         </div>
                     </div>
@@ -381,8 +370,7 @@
                         <div class="review-footer bg-primary-500 text-white fw-regular p-4">
                             <div class="foot-text fs-150">Contractor</div>
                             <div class="foot-image">
-                                <img data-src="./assets/images/avartar-sample-2.jpg" alt="Reviewer image"
-                                    class="img-fluid owl-lazy">
+                                <img data-src="./assets/images/avartar-sample-2.jpg" alt="Reviewer image" class="img-fluid owl-lazy">
                             </div>
                         </div>
                     </div>
@@ -398,8 +386,7 @@
                         <div class="review-footer bg-primary-500 text-white fw-regular p-4">
                             <div class="foot-text fs-150">Contractor</div>
                             <div class="foot-image">
-                                <img data-src="./assets/images/avartar-sample.jpg" alt="Reviewer image"
-                                    class="img-fluid owl-lazy">
+                                <img data-src="./assets/images/avartar-sample.jpg" alt="Reviewer image" class="img-fluid owl-lazy">
                             </div>
                         </div>
                     </div>
@@ -417,68 +404,57 @@
                         <ul role="list" data-type="sponsors" class="ps-0 fade-in">
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-01.svg" alt=""
-                                        class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-01.svg" alt="" class="img-fluid rounded">
                                 </div>
                             </li>
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-02.svg" alt=""
-                                        class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-02.svg" alt="" class="img-fluid rounded">
                                 </div>
                             </li>
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-03.svg" alt=""
-                                        class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-03.svg" alt="" class="img-fluid rounded">
                                 </div>
                             </li>
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-04.svg" alt=""
-                                        class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-04.svg" alt="" class="img-fluid rounded">
                                 </div>
                             </li>
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-05.svg" alt=""
-                                        class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-05.svg" alt="" class="img-fluid rounded">
                                 </div>
                             </li>
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-06.svg" alt=""
-                                        class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-06.svg" alt="" class="img-fluid rounded">
                                 </div>
                             </li>
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-07.svg" alt=""
-                                        class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-07.svg" alt="" class="img-fluid rounded">
                                 </div>
                             </li>
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-08.svg" alt=""
-                                        class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-08.svg" alt="" class="img-fluid rounded">
                                 </div>
                             </li>
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-09.svg" alt=""
-                                        class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-09.svg" alt="" class="img-fluid rounded">
                                 </div>
                             </li>
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-10.svg" alt=""
-                                        class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-10.svg" alt="" class="img-fluid rounded">
                                 </div>
                             </li>
                             <li>
                                 <div class="sponsor">
-                                    <img src="./assets/images/partner-logos/image-11.svg" alt=""
-                                        class="img-fluid rounded">
+                                    <img src="./assets/images/partner-logos/image-11.svg" alt="" class="img-fluid rounded">
                                 </div>
                             </li>
                         </ul>
