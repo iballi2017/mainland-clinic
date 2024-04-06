@@ -9,7 +9,7 @@
                 <section class="foot-section">
                     <h6 class="navbar-brand mb-4">
                         <span class="visually-hidden">Mainland Clinics</span>
-                        <img src="../assets/images/brand-logo.svg" alt="" class="img-fluid">
+                        <img src="./assets/images/brand-logo.svg" alt="" class="img-fluid">
                     </h6>
                     <p>At Mainland Clinic, we are dedicated to providing the highest quality of medical care and
                         wellness support to our patients. </p>
@@ -51,7 +51,7 @@
                         <input type="text" id="email" class="w-100 px-3" style="background: unset;">
                         <button class="bg-0">
                             <span class="visually-hidden">Subscribe</span>
-                            <img src="../assets/images/icons/green-plane.svg" alt="" class="img-fluid">
+                            <img src="./assets/images/icons/green-plane.svg" alt="" class="img-fluid">
                         </button>
                     </div>
                 </form>
@@ -71,7 +71,7 @@
 
 
 <!-- jquery-3.7.0 -->
-<script src="../assets/lib/jquery-3.7.0.min.js"></script>
+<script src="./lib/jquery-3.7.0.min.js"></script>
 <!-- Bootstrap JS @5.2.3 -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -79,8 +79,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
     integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
     crossorigin="anonymous"></script> -->
-<script src="../assets/lib/popper-core@2.11.6.min.js"></script>
-<script src="../assets/lib/bootstrap-5.2.3/bootstrap.min.js"></script>
+<script src="./lib/popper-core@2.11.6.min.js"></script>
+<script src="./lib/bootstrap-5.2.3/bootstrap.min.js"></script>
 
 <!-- Feather Icons -->
 <script src="https://unpkg.com/feather-icons"></script>
@@ -90,7 +90,7 @@
     feather.replace()
 </script>
 <!-- OwlCarousel 2.3.4 -->
-<script src="../assets/lib/owlcarousel/js/owl.carousel.min.js"></script>
+<script src="./lib/owlcarousel/js/owl.carousel.min.js"></script>
 <!-- RateYo -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 <!-- Cleave -->
@@ -107,9 +107,9 @@
     });
 </script> -->
 <!-- Custom JS -->
-<script src="../assets/scripts/custom-booking-calendar.js"></script>
-<script src="../assets/scripts/index.jquery.js"></script>
-<script src="../assets/scripts/index.js"></script>
+<script src="./scripts/custom-booking-calendar.js"></script>
+<script src="./scripts/index.jquery.js"></script>
+<script src="./scripts/index.js"></script>
 </body>
 
 </html>

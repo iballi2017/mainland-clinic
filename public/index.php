@@ -13,14 +13,14 @@
     <!-- Bootstrap CSS @5.2.3 -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="./assets/stylesheets/bootstrap-5.2.3/bootstrap.min.css">
+    <link rel="stylesheet" href="./stylesheets/bootstrap-5.2.3/bootstrap.min.css">
     <!-- Animate.CSS 4.1.1 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- OwlCarousel 2.3.4 -->
-    <link rel="stylesheet" href="./assets/lib/owlcarousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./assets/lib/owlcarousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./lib/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./lib/owlcarousel/css/owl.theme.default.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/stylesheets/main.css">
+    <link rel="stylesheet" href="./stylesheets/main.css">
 </head>
 
 <body>
@@ -549,7 +549,7 @@
 
 
     <!-- jquery-3.7.0 -->
-    <script src="./assets/lib/jquery-3.7.0.min.js"></script>
+    <script src="./lib/jquery-3.7.0.min.js"></script>
     <!-- Bootstrap JS @5.2.3 -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -557,8 +557,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script> -->
-    <script src="./assets/lib/popper-core@2.11.6.min.js"></script>
-    <script src="./assets/lib/bootstrap-5.2.3/bootstrap.min.js"></script>
+    <script src="./lib/popper-core@2.11.6.min.js"></script>
+    <script src="./lib/bootstrap-5.2.3/bootstrap.min.js"></script>
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
     <script>
@@ -567,12 +567,12 @@
         feather.replace()
     </script>
     <!-- OwlCarousel 2.3.4 -->
-    <script src="./assets/lib/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="./lib/owlcarousel/js/owl.carousel.min.js"></script>
     <!-- RateYo -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
     <!-- Custom JS -->
-    <script src="./assets/scripts/index.jquery.js"></script>
-    <script src="./assets/scripts/index.js"></script>
+    <script src="./scripts/index.jquery.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>

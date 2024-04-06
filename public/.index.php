@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAC | </title>
-    <link rel="stylesheet" href="./assets/stylesheets/main.css">
-    <!-- <link rel="stylesheet" href="./assets/stylesheets/bootstrap-5.2.3/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./stylesheets/main.css">
+    <!-- <link rel="stylesheet" href="./stylesheets/bootstrap-5.2.3/bootstrap.min.css"> -->
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/490087c906.js" crossorigin="anonymous"></script>
 </head>
@@ -126,7 +126,7 @@
 
 
     <!-- Custom script -->
-    <script src="./assets/scripts/index.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>

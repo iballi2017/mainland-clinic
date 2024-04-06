@@ -13,15 +13,15 @@
     <!-- Bootstrap CSS @5.2.3 -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="../assets/stylesheets/bootstrap-5.2.3/bootstrap.min.css">
+    <link rel="stylesheet" href="./stylesheets/bootstrap-5.2.3/bootstrap.min.css">
     <!-- Animate.CSS 4.1.1 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- OwlCarousel 2.3.4 -->
-    <link rel="stylesheet" href="../assets/lib/owlcarousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../assets/lib/owlcarousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./lib/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./lib/owlcarousel/css/owl.theme.default.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../assets/stylesheets/main.css">
-    <!-- <link rel="stylesheet" href="../assets/lib/fullCalendar/app.css"> -->
+    <link rel="stylesheet" href="./stylesheets/main.css">
+    <!-- <link rel="stylesheet" href="./lib/fullCalendar/app.css"> -->
     <!-- cleave 1.6.0 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js" integrity="sha512-KaIyHb30iXTXfGyI9cyKFUIRSSuekJt6/vqXtyQKhQP6ozZEGY8nOtRS6fExqE4+RbYHus2yGyYg1BrqxzV6YA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
@@ -36,7 +36,7 @@
                 <span>clientservices@hacmedical.org</span>
             </div>
             <div>
-                <a href="../views/auth.html" class="base-text-color-100 text-decoration-none">login</a> | <a href="../views/signup.html" class="base-text-color-100 text-decoration-none">Sign Up</a>
+                <a href="./auth.html" class="base-text-color-100 text-decoration-none">login</a> | <a href="./signup.html" class="base-text-color-100 text-decoration-none">Sign Up</a>
                 <div class="dropdown">
                     <span class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account</span>
                     <div class="dropdown-menu">
@@ -55,7 +55,7 @@
             <!-- <div class="container py-1 py-xl-3"> -->
             <div class="container">
                 <a href="../" class="navbar-brand">
-                    <img src="../assets/images/brand-logo.svg" alt="Mainland Clinics" class="img-fluid">
+                    <img src="./assets/images/brand-logo.svg" alt="Mainland Clinics" class="img-fluid">
                 </a>
                 <div class="d-flex align-items-center">
                     <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,8 +65,8 @@
                     </button>
                     <div class="d-lg-none d-flex align-items-center">
                         <span class="spacer"></span>
-                        <a href="../views/shopping-cart.php" class="shopping-cart-wrap | position-relative">
-                            <img src="../assets/images/icons/shopping-cart.svg" alt="" class="img-fluid">
+                        <a href="./shopping-cart.php" class="shopping-cart-wrap | position-relative">
+                            <img src="./assets/images/icons/shopping-cart.svg" alt="" class="img-fluid">
                             <span class="counter | position-absolute top-0 start-100 translate-middle badge rounded-pill">2</span>
                         </a>
                     </div>
@@ -74,40 +74,40 @@
                 <nav class="collapse navbar-collapse" id="navbarColor02">
                     <ul role="list" class="navbar-nav ms-auto" aria-label="primary">
                         <li class="nav-item">
-                            <a class="nav-link active" href="../views/about-us.php">About us
+                            <a class="nav-link active" href="./about-us.php">About us
                                 <span class="visually-hidden">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item py-2 text-center" href="../views/clinical-services.php">Clinical
+                                <a class="dropdown-item py-2 text-center" href="./clinical-services.php">Clinical
                                     Services</a>
-                                <a class="dropdown-item py-2 text-center" href="../views/fitness-wellness-test.php">Fitness/Wellness Test</a>
-                                <a class="dropdown-item py-2 text-center" href="../views/telemedicine.php">Telemedicine</a>
-                                <a class="dropdown-item py-2 text-center" href="../views/pre-employment-test.php">Pre-employment Test</a>
-                                <a class="dropdown-item py-2 text-center" href="../views/food-handlers-test.php">Food
+                                <a class="dropdown-item py-2 text-center" href="./fitness-wellness-test.php">Fitness/Wellness Test</a>
+                                <a class="dropdown-item py-2 text-center" href="./telemedicine.php">Telemedicine</a>
+                                <a class="dropdown-item py-2 text-center" href="./pre-employment-test.php">Pre-employment Test</a>
+                                <a class="dropdown-item py-2 text-center" href="./food-handlers-test.php">Food
                                     Handlers Test</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../views/contact-us.php">Contact us</a>
+                            <a class="nav-link" href="./contact-us.php">Contact us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../views/career.php">Career</a>
+                            <a class="nav-link" href="./career.php">Career</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../views/shop.php">Shop</a>
+                            <a class="nav-link" href="./shop.php">Shop</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="d-lg-flex d-none">
                     <div class="d-flex align-items-center">
                         <button class="button cta | d-none d-xl-block" data-bs-toggle="modal" data-bs-target="#exampleModal">Book an appointment</button>
-                        <!-- <a href="../views/book-appointment.php" class="button cta | d-none d-xl-block">Book an appointment</a> -->
+                        <!-- <a href="./book-appointment.php" class="button cta | d-none d-xl-block">Book an appointment</a> -->
                         <span class="spacer"></span>
-                        <a href="../views/shopping-cart.php" class="shopping-cart-wrap | position-relative d-none d-md-block">
-                            <img src="../assets/images/icons/shopping-cart.svg" alt="" class="img-fluid">
+                        <a href="./shopping-cart.php" class="shopping-cart-wrap | position-relative d-none d-md-block">
+                            <img src="./assets/images/icons/shopping-cart.svg" alt="" class="img-fluid">
                             <span class="counter | position-absolute top-0 start-100 translate-middle badge rounded-pill">2</span>
                         </a>
                     </div>
