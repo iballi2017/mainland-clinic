@@ -1,0 +1,109 @@
+.calendarDiv {
+    display: none;
+    text-align: center;
+}
+
+#calendarPrev:disabled,
+#calendarPrev:disabled + span {
+    display: none;
+}
+
+#calendarPrev:before {
+    content: url(../../assets/images/icons/arrow-left-caret-green-circle.svg);
+}
+
+#calendarNext:before {
+    content: url(../../assets/images/icons/arrow-right-caret-green-circle.svg);
+}
+
+.calendarDiv table {
+    width: 100%;
+}
+
+.calendarDiv table tbody th,
+.calendarDiv table tbody td {
+    height: 60px;
+    width: 60px;
+}
+
+.calendarDiv table tbody td {
+    padding: 0.3em;
+    position: relative;
+}
+
+.calendarDiv table tbody td div {
+    /* background-color: red; */
+    position: inherit;
+    /* top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0.5em;
+    border: 1px solid var(--clr-accent-50);
+}
+
+/** */
+.calendarDiv table tbody td div {
+    position: relative;
+    /* display: inline-block; */
+    border-bottom: 1px dotted black;
+}
+
+.calendarDiv table tbody td div .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    background-color: #ffffff;
+    color: #818181;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    /* bottom: 125%;
+        left: 50%;
+        margin-left: -60px; */
+    left: 20%;
+    right: 20%;
+    margin-left: -100px;
+    /*  */
+    opacity: 0;
+    transition: opacity 0.3s;
+    border: 1px solid #818181;
+    font-size: var(--fs-50);
+    font-weight: var(--fw-regular);
+}
+
+.calendarDiv table tbody td div .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.calendarDiv table tbody td div:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/** */
+@media (min-width: 768px) {
+    .calendarDiv table tbody td {
+        height: 5.5rem;
+    }
+}
+
+td.closed-day > div {
+    background-color: #c3c3c3 !important;
+    color: #ffffff !important;
+}
+
+#calendarTable_1 {
+    display: block;
+}

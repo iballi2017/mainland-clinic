@@ -1,0 +1,20 @@
+.brand-logo {
+  display: block;
+  max-width: 124px;
+}
+
+.shopping-cart-wrap {
+  display: block;
+  max-width: 19px;
+
+  .counter {
+    background: #c7f38e;
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--clr-primary-700);
+    &.translate-middle {
+      transform: translate(-40%, -100%) !important;
+    }
+  }
+}

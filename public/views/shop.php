@@ -1,5 +1,5 @@
 <!-- Header -->
-<?php include_once "./components/header.php" ?>
+<?php include_once "../components/header.php" ?>
 
 <!-- Title section -->
 <section class="title-section-container">
@@ -21,7 +21,7 @@
         <div class="d-flex align-items-center justify-content-between mt-4">
 
             <!-- filter select -->
-            <div class="custom-select rounded-250 mb-5 me-2">
+            <div class="custom-select rounded-250 mb-5 me-2" style="max-width: 200px; height: 36px;">
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Sort by</option>
                     <option value="1">One</option>
@@ -36,7 +36,7 @@
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
                     <button class="btn" type="button" id="button-addon2">
-                        <img src="./assets/images/icons/search-green.svg" alt="" class="img-fluid">
+                        <img src="../assets/images/icons/search-green.svg" alt="" class="img-fluid">
                     </button>
                 </div>
             </div>
@@ -49,7 +49,7 @@
                 <div class="product-item-wrap out-of-stock">
                     <div class="card rounded-250 border-accent-50">
                         <div class="img-wrap">
-                            <img src="./assets/images/products/surgical-tables.png" class="card-img-top" alt="Surgical tables">
+                            <img src="../assets/images/products/surgical-tables.png" class="card-img-top" alt="Surgical tables">
                         </div>
 
                         <div class="card-body">
@@ -73,7 +73,7 @@
                 <div class="product-item-wrap">
                     <div class="card rounded-250 border-accent-50">
                         <div class="img-wrap">
-                            <img src="./assets/images/products/product-sample-1.png" class="card-img-top" alt="...">
+                            <img src="../assets/images/products/product-sample-1.png" class="card-img-top" alt="...">
                         </div>
 
                         <div class="card-body">
@@ -107,7 +107,7 @@
                         <svg style="transform: rotate(-90deg);" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-triangle">
                             <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
                         </svg>
-                        <!-- <img src="./assets/images/" alt="" class="img-fluid"> -->
+                        <!-- <img src="../assets/images/" alt="" class="img-fluid"> -->
                     </a></li>
                 <li class="page-item active"><a class="page-link" href="#">1</a></li>
                 <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -127,4 +127,4 @@
 
 
 <!-- Footer -->
-<?php include_once "./components/footer.php" ?>
+<?php include_once "../components/footer.php" ?>

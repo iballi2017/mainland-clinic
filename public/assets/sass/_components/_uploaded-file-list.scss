@@ -1,0 +1,24 @@
+#file-list {
+  .file-item {
+    border: 1px solid #c4c4c4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 0.8em;
+    border-radius: 3px;
+    margin-bottom: 0.5em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    span {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: #1b3512;
+      max-width: calc(100% - 20px);
+      white-space: nowrap;
+     text-overflow: ellipsis;
+     overflow: hidden;
+    }
+  }
+}

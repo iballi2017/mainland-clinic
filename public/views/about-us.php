@@ -1,5 +1,5 @@
 <!-- Header -->
-<?php include_once "./components/header.php" ?>
+<?php include_once "../components/header.php" ?>
 
 <!-- Title section -->
 <div class="title-section-container">
@@ -35,7 +35,7 @@
         <div class="row g-xl-5">
             <div class="col-12 col-md-5">
                 <div class="rounded-2 overflow-hidden mb-3 fade-in">
-                    <img src="./assets/images/featured-image-1.png" alt="Take control of your health" class="img-fluid">
+                    <img src="../assets/images/featured-image-1.png" alt="Take control of your health" class="img-fluid">
                 </div>
             </div>
             <div class="col-12 col-md-7">
@@ -52,13 +52,13 @@
 </section>
 
 <!-- Partners -->
-<?php include_once "./components/partners.php" ?>
+<?php include_once "../components/partners.php" ?>
 
 <!-- Reviews -->
-<?php include_once "./components/reviews.php" ?>
+<?php include_once "../components/reviews.php" ?>
 
 <!-- Appointment Booking -->
-<?php include_once "./components/appointment-booking.php" ?>
+<?php include_once "../components/appointment-booking.php" ?>
 
 <!-- Footer -->
-<?php include_once "./components/footer.php" ?>
+<?php include_once "../components/footer.php" ?>

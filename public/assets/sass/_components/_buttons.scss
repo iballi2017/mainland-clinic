@@ -1,0 +1,122 @@
+@use "../_partials/mixins";
+
+.btn {
+  &:focus,
+  &:focus-visible,
+  &:active {
+    outline: 0;
+    box-shadow: none;
+    box-shadow: 0;
+    // border-color: unset;
+  }
+}
+
+button {
+  &.navbar-toggler {
+    border: none;
+    &:focus {
+      outline: 0;
+      box-shadow: unset;
+    }
+
+    .feather-menu {
+      display: block;
+    }
+    .feather-x {
+      display: none;
+    }
+
+    &[aria-expanded="true"] {
+      .feather-menu {
+        display: none;
+      }
+      .feather-x {
+        display: block !important;
+      }
+    }
+  }
+}
+
+.button,
+a.button {
+  color: var(--clr-neutral-500);
+  background-color: var(--clr-primary-500);
+  padding: 0.8em 1.8em;
+  border: 0;
+  border-radius: 5px;
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-button);
+  line-height: 1;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--clr-primary-600);
+  }
+
+  &:disabled {
+    background: #c4c4c4;
+    border: 1px solid #c4c4c4;
+  }
+}
+
+.button[data-type="inverted"] {
+  background-color: var(--clr-neutral-500);
+  color: var(--clr-primary-500);
+  // border: 2px solid var(--clr-neutral-500);
+  border: 2px solid var(--clr-primary-500);
+}
+
+a.button {
+  display: inline-block;
+}
+.cta {
+  display: block;
+  border-radius: 100vmax;
+}
+
+button,
+a {
+  &.cta {
+    display: block;
+    border-radius: 100vmax;
+  }
+}
+.submit-btn {
+  min-height: 39px;
+  padding-right: 2.5em;
+  padding-left: 2.5em;
+  @include mixins.minmq(50em) {
+    min-height: 45px;
+  }
+}
+
+.add-to-cart,
+.add-to-wishlist {
+  height: 45px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.add-to-cart {
+  background: #c4c4c4;
+  border: 1px solid #c4c4c4;
+  color: #ffffff;
+}
+
+.add-to-wishlist {
+  background: #ffffff;
+  border: 1px solid #fa5252;
+  color: #fa5252;
+}
+
+button {
+  &[aria-label="remove item table item"] {
+    border: none;
+    //   width: 25px;
+    max-width: 20px;
+  }
+}

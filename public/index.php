@@ -33,8 +33,8 @@
                 <span>info@mainlandclinics.com</span>
             </div>
             <div>
-                <a href="./views/auth.html" class="base-text-color-100 text-decoration-none">login</a> |
-                <a href="./views/signup.html" class="base-text-color-100 text-decoration-none">Sign Up</a>
+                <a href="./auth.html" class="base-text-color-100 text-decoration-none">login</a> |
+                <a href="./signup.html" class="base-text-color-100 text-decoration-none">Sign Up</a>
                 <div class="dropdown">
                     <span class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account</span>
                     <div class="dropdown-menu">
@@ -63,7 +63,7 @@
                     </button>
                     <div class="d-lg-none d-flex align-items-center">
                         <span class="spacer"></span>
-                        <a href="./views/shopping-cart.php" class="shopping-cart-wrap | position-relative">
+                        <a href="./shopping-cart.php" class="shopping-cart-wrap | position-relative">
                             <img src="./assets/images/icons/shopping-cart.svg" alt="" class="img-fluid">
                             <span class="counter | position-absolute top-0 start-100 translate-middle badge rounded-pill">2</span>
                         </a>
@@ -72,7 +72,7 @@
                 <nav class="collapse navbar-collapse" id="navbarColor02">
                     <ul role="list" class="navbar-nav ms-auto" aria-label="primary">
                         <li class="nav-item">
-                            <a class="nav-link active" href="./views/about-us.php">
+                            <a class="nav-link active" href="./about-us.php">
                                 About us
                                 <span class="visually-hidden">(current)</span>
                             </a>
@@ -80,36 +80,36 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item py-2 text-center" href="./views/clinical-services.php">
+                                <a class="dropdown-item py-2 text-center" href="./clinical-services.php">
                                     Clinical
                                     Services
                                 </a>
-                                <a class="dropdown-item py-2 text-center" href="./views/fitness-wellness-test.php">Fitness/Wellness Test</a>
-                                <a class="dropdown-item py-2 text-center" href="./views/telemedicine.php">Telemedicine</a>
-                                <a class="dropdown-item py-2 text-center" href="./views/pre-employment-test.php">Pre-employment Test</a>
-                                <a class="dropdown-item py-2 text-center" href="./views/food-handlers-test.php">
+                                <a class="dropdown-item py-2 text-center" href="./fitness-wellness-test.php">Fitness/Wellness Test</a>
+                                <a class="dropdown-item py-2 text-center" href="./telemedicine.php">Telemedicine</a>
+                                <a class="dropdown-item py-2 text-center" href="./pre-employment-test.php">Pre-employment Test</a>
+                                <a class="dropdown-item py-2 text-center" href="./food-handlers-test.php">
                                     Food
                                     Handlers Test
                                 </a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./views/contact-us.php">Contact us</a>
+                            <a class="nav-link" href="./contact-us.php">Contact us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./views/career.php">Career</a>
+                            <a class="nav-link" href="./career.php">Career</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./views/shop.php">Shop</a>
+                            <a class="nav-link" href="./shop.php">Shop</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="d-lg-flex d-none">
                     <div class="d-flex align-items-center">
                         <button class="button cta | d-none d-xl-block" data-bs-toggle="modal" data-bs-target="#exampleModal">Book an appointment</button>
-                        <!-- <a href="./views/book-appointment.php" class="button cta | d-none d-xl-block">Book an appointment</a> -->
+                        <!-- <a href="./book-appointment.php" class="button cta | d-none d-xl-block">Book an appointment</a> -->
                         <span class="spacer"></span>
-                        <a href="./views/shopping-cart.php" class="shopping-cart-wrap | position-relative d-none d-md-block">
+                        <a href="./shopping-cart.php" class="shopping-cart-wrap | position-relative d-none d-md-block">
                             <img src="./assets/images/icons/shopping-cart.svg" alt="" class="img-fluid">
                             <span class="counter | position-absolute top-0 start-100 translate-middle badge rounded-pill">2</span>
                         </a>
@@ -217,7 +217,7 @@
                                 compassionate,
                                 personalized healthcare that meets their unique needs and goals.
                             </p>
-                            <a href="./views/about-us.php" class="button">Read more</a>
+                            <a href="./about-us.php" class="button">Read more</a>
                         </div>
                     </div>
                 </div>
@@ -235,7 +235,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <a href="./views/clinical-services.php">
+                        <a href="./clinical-services.php">
                             <div class="feature-card">
                                 <img src="./assets/images/feature-card-image-1.png" alt="Clinical Service" class="img-fluid">
                                 <div class="title">
@@ -245,7 +245,7 @@
                         </a>
                     </div>
                     <div class="item">
-                        <a href="./views/food-handlers-test.php">
+                        <a href="./food-handlers-test.php">
                             <div class="feature-card">
                                 <img src="./assets/images/feature-card-image-2.png" alt="Clinical Service" class="img-fluid">
                                 <div class="title">
@@ -255,7 +255,7 @@
                         </a>
                     </div>
                     <div class="item">
-                        <a href="./views/pre-employment-test.php">
+                        <a href="./pre-employment-test.php">
                             <div class="feature-card">
                                 <img src="./assets/images/feature-card-image-3.png" alt="Clinical Service" class="img-fluid">
                                 <div class="title">
@@ -265,7 +265,7 @@
                         </a>
                     </div>
                     <div class="item">
-                        <a href="./views/fitness-wellness-test.php">
+                        <a href="./fitness-wellness-test.php">
                             <div class="feature-card">
                                 <img src="./assets/images/feature-card-image-4.png" alt="Clinical Service" class="img-fluid">
                                 <div class="title">
@@ -275,7 +275,7 @@
                         </a>
                     </div>
                     <div class="item">
-                        <a href="./views/telemedicine.php">
+                        <a href="./telemedicine.php">
                             <div class="feature-card">
                                 <img src="./assets/images/feature-card-image-5.png" alt="Clinical Service" class="img-fluid">
                                 <div class="title">
